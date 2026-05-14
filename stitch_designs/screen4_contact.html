@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact Us - Hippo Adventures Kenya</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600&amp;family=Noto+Serif:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-fixed-dim": "#fdb96a",
+                        "primary-fixed": "#d9e8c5",
+                        "on-surface-variant": "#454840",
+                        "outline-variant": "#c5c8bd",
+                        "error-container": "#ffdad6",
+                        "error": "#ba1a1a",
+                        "on-primary-container": "#95a384",
+                        "inverse-primary": "#bdccaa",
+                        "on-error-container": "#93000a",
+                        "on-primary-fixed": "#141f09",
+                        "tertiary": "#2f1927",
+                        "background": "#fbf9f5",
+                        "surface-container-highest": "#e4e2de",
+                        "tertiary-fixed": "#fdd8ec",
+                        "on-primary-fixed-variant": "#3e4b31",
+                        "on-secondary-fixed": "#2b1700",
+                        "primary-fixed-dim": "#bdccaa",
+                        "surface-container-high": "#eae8e4",
+                        "tertiary-container": "#462e3d",
+                        "on-tertiary-fixed": "#2a1523",
+                        "surface": "#fbf9f5",
+                        "on-tertiary-container": "#b595a7",
+                        "warm-ochre": "#C6893F",
+                        "surface-container": "#f0eee9",
+                        "on-tertiary": "#ffffff",
+                        "ivory-base": "#FDFCF8",
+                        "deep-charcoal": "#1A1A1B",
+                        "secondary-fixed": "#ffddba",
+                        "surface-bright": "#fbf9f5",
+                        "on-secondary": "#ffffff",
+                        "on-secondary-container": "#774800",
+                        "on-secondary-fixed-variant": "#673d00",
+                        "sand-beige": "#E5D3B3",
+                        "on-surface": "#1b1c19",
+                        "outline": "#75786f",
+                        "on-primary": "#ffffff",
+                        "on-background": "#1b1c19",
+                        "primary": "#18230d",
+                        "primary-container": "#2d3921",
+                        "inverse-on-surface": "#f3f0ec",
+                        "tertiary-fixed-dim": "#e0bdd0",
+                        "inverse-surface": "#30312e",
+                        "surface-dim": "#dcdad6",
+                        "surface-variant": "#e4e2de",
+                        "secondary-container": "#fdb96a",
+                        "surface-container-low": "#f6f3ef",
+                        "terracotta": "#A0522D",
+                        "secondary": "#865309",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed-variant": "#593f4f",
+                        "on-error": "#ffffff",
+                        "sage": "#8A9A5B",
+                        "safari-green": "#2D3921",
+                        "surface-tint": "#556347",
+                        "luxury-gold": "#D4AF37"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "unit": "8px",
+                        "gutter": "32px",
+                        "section-gap": "120px",
+                        "margin-mobile": "20px",
+                        "margin-desktop": "64px",
+                        "container-max": "1280px"
+                    },
+                    "fontFamily": {
+                        "quote": ["notoSerif"],
+                        "body-lg": ["plusJakartaSans"],
+                        "body-md": ["plusJakartaSans"],
+                        "label-sm": ["plusJakartaSans"],
+                        "headline-md": ["notoSerif"],
+                        "display-lg": ["notoSerif"],
+                        "headline-xl": ["notoSerif"]
+                    },
+                    "fontSize": {
+                        "quote": ["24px", { "lineHeight": "1.5", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "label-sm": ["12px", { "lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                        "headline-md": ["32px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "display-lg": ["64px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-xl": ["48px", { "lineHeight": "1.2", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style type="text/tailwindcss">
+        @layer utilities {
+            .bg-safari-pattern {
+                background-image: radial-gradient(circle at 2px 2px, rgba(45, 57, 33, 0.05) 1px, transparent 0);
+                background-size: 24px 24px;
+            }
+        }
+    </style>
+</head>
+<body class="text-on-surface font-body-md antialiased overflow-x-hidden relative">
+<!-- Page Background -->
+<div class="fixed inset-0 z-[-1]">
+<img alt="Safari Background" class="w-full h-full object-cover object-center" src="https://lh3.googleusercontent.com/aida/ADBb0ugtOvt1kJ6aCFjeU5vgElhoCjDXcaN_yZx36YxWP9t3cRK_NPCYnNUyzeIwoaFcLQLvesGtLbsbRwgxHdbH96ueqFz0KAXo6nDusYGr5NIhwvS3Yosa5Z8elhH2qfabgCioMnmvzPCdJJpR0i8iWHo7VDcRae-3VoH41WocFx4iWlOVhBRAWBMrV6zSqOWuecCaOqUlCGdyhZNHv7KyNg7w57eF-2g_usygWFG9mKH9y9nnxpDnlki9Na7KtAxYkER05kM338rSXA"/>
+<div class="absolute inset-0 bg-surface-container/90"></div>
+</div>
+<!-- TopAppBar -->
+<nav class="sticky top-0 w-full z-50 bg-surface border-b border-outline-variant/30 shadow-sm backdrop-blur-md bg-opacity-95 h-[140px] flex items-center">
+<div class="w-full max-w-screen-2xl mx-auto px-margin-desktop flex justify-between items-center h-full">
+<!-- Logo Area -->
+<a class="h-[75%] flex items-center gap-4 hover:opacity-90 transition-opacity" href="#">
+<img alt="Hippo Icon" class="h-full w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0uhYo9_ykhD8mImItnGRAfdBC7WDo0-hHzOttD_26VthXvML4bkBu-4CfmEa58griGDMEDbbbQVdEBLE1HIkbIonk0LLOmT34JSQbhIOytlORYTyExGXqpLcyR9Nxw7L0krm0hoSk7Vs1ldaOB_I505vSAnuCcPvVZno7-eKPVMPFrFqx3WvQhWEHmim2E1JRRUlqM5TW2LAkYDAjcium_ZYKlPSOcnU-zXdvUP6Qa5x8V6tDzj_deNENrG1M3c8SZSHQTY3bqnq"/>
+<div class="flex flex-col justify-center">
+<span class="font-serif text-3xl font-bold text-primary leading-none">Hippo Adventures</span>
+<span class="font-label-sm text-[10px] text-secondary uppercase tracking-[0.2em] mt-1 whitespace-nowrap">Service beyond expectation</span>
+</div>
+</a>
+<!-- Right-side Actions (Nav + Button) -->
+<div class="flex items-center gap-12">
+<!-- Navigation Links -->
+<div class="hidden md:flex items-center gap-8">
+<a class="font-serif text-lg text-on-surface-variant font-medium hover:text-primary transition-all duration-300 tracking-wide" href="#">Home</a>
+<a class="font-serif text-lg text-on-surface-variant font-medium hover:text-primary transition-all duration-300 tracking-wide" href="#">Safaris</a>
+<a class="font-serif text-lg text-on-surface-variant font-medium hover:text-primary transition-all duration-300 tracking-wide" href="#">Packages</a>
+<a class="font-serif text-lg text-on-surface-variant font-medium hover:text-primary transition-all duration-300 tracking-wide" href="#">Our Story</a>
+<a class="font-serif text-lg text-secondary border-b-2 border-secondary pb-1 tracking-wide" href="#">Contact</a>
+</div>
+<!-- Primary Action -->
+<div class="flex items-center">
+<button class="bg-secondary text-on-secondary font-label-sm text-label-sm uppercase px-8 py-4 rounded hover:bg-secondary/90 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 hidden md:block">
+                PLAN YOUR JOURNEY →
+            </button>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</div>
+</div>
+</nav>
+<!-- Main Canvas -->
+<main class="w-full">
+<!-- Hero Section -->
+<section class="relative w-full h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0 bg-surface-container"><img alt="Safari Landscape" class="absolute inset-0 w-full h-full object-cover object-center" src="https://lh3.googleusercontent.com/aida/ADBb0ugf-pJCdvhQpx9xG_21XS8syGP5qeXatCMPN3x1Jzixb0FojMRmroHbBm14Ae5yqJPQnfgX1hmbgw_WGbjpactshBw4QIdtcEwFJsmMb87zvbUw8BGmJzqUTk4xjMl1VvyTGUtPTF8bqTleTzNrLJlETpwRUTatUIR-t7DVQm5caBVfea6MFRp6Ct4LeXZXNZiFUEJg1JwF3dG6Jl1JaKpUx2pazPO1j8O5Mw1NUniDS7SJJuqpakR0iyB1Uf7o_hzHuNIs3Mnzow"/><div class="absolute inset-0 bg-safari-green/40 mix-blend-multiply"></div><div class="absolute inset-0 bg-gradient-to-t from-surface/80 via-transparent to-transparent"></div></div>
+<div class="relative z-10 text-center px-6 max-w-4xl mx-auto mt-20">
+<h1 class="font-display-lg text-display-lg text-ivory-base mb-6 drop-shadow-lg">Your Journey Begins Here</h1>
+<p class="font-body-lg text-body-lg text-sand-beige max-w-2xl mx-auto drop-shadow-md">
+                    Connect with our safari specialists to craft a personalized, luxury expedition into the heart of wild Kenya.
+                </p>
+</div>
+</section>
+<!-- Contact Layout (Bento-style Split) -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop -mt-24 relative z-20 pb-section-gap">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Contact Information & Map Area -->
+<div class="lg:col-span-5 flex flex-col gap-8">
+<!-- Direct Contact Card -->
+<div class="bg-ivory-base p-10 shadow-[0_8px_30px_rgb(45,57,33,0.08)] border border-surface-container-high rounded-lg relative overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-safari-pattern opacity-50 -mr-16 -mt-16 rounded-full"></div>
+<h2 class="font-headline-md text-headline-md text-safari-green mb-8">Get in Touch</h2>
+<div class="space-y-8">
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-warm-ochre">location_on</span>
+</div>
+<div>
+<h3 class="font-label-sm text-label-sm text-outline uppercase mb-1">Headquarters</h3>
+<p class="font-body-md text-body-md text-safari-green font-medium">Kwarandu business square Box 55 Kaloleni, Mombasa County<br/>80200 Kenya</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-warm-ochre">call</span>
+</div>
+<div>
+<h3 class="font-label-sm text-label-sm text-outline uppercase mb-1">Call or WhatsApp</h3>
+<p class="font-body-md text-body-md text-safari-green font-medium">+254 720 899 402</p>
+<p class="font-body-md text-body-md text-safari-green font-medium mt-1"><br/></p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-warm-ochre">mail</span>
+</div>
+<div>
+<h3 class="font-label-sm text-label-sm text-outline uppercase mb-1">Email</h3>
+<p class="font-body-md text-body-md text-safari-green font-medium break-all">hippotransfer@gmail.com</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Map Card -->
+<div class="bg-surface-container-low h-64 rounded-lg overflow-hidden border border-surface-container-high shadow-sm relative">
+<!-- Placeholder for Map -->
+<div class="absolute inset-0 bg-surface-container flex flex-col items-center justify-center text-safari-green">
+<img alt="Map of Mombasa County showing key locations including Tudor and Port Reitz." class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ADBb0uhdoUuZO2HVWvK0m5alzMkzWVAIPjYVpZEZeeDY9vwS5YXTVVILviyZec2dhE2_JWPhgJYQjExCi7LK7h9ca8W-jjw4VxuaRFWyzYQus497IpGWcFNnMB-i40TR_Nzip9idZo91zhcaOYl8T-guvKsSOTe_DLsXXkbPJhE9cTNuyddQH-r_fLnEZ3yT-ZdOe2y2Q5jYnoh0pi06OJhoSZxchv6dRsgcHluPh6QFubYzaboT2dCEk033JDITyTzOVSZTR2JqyqlcbA"/>
+</div>
+</div>
+</div>
+<!-- Inquiry Form -->
+<div class="lg:col-span-7 bg-ivory-base p-10 md:p-14 shadow-[0_12px_40px_rgb(45,57,33,0.06)] border border-surface-container-high rounded-lg relative">
+<h2 class="font-headline-md text-headline-md text-safari-green mb-2">Send an Inquiry</h2>
+<p class="font-body-md text-body-md text-outline mb-10">Please provide details about your desired experience, and our concierges will return with a bespoke proposal.</p>
+<form class="space-y-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Full Name -->
+<div class="relative">
+<input class="block w-full px-0 py-3 bg-transparent border-0 border-b border-outline-variant text-safari-green focus:ring-0 focus:border-safari-green peer font-body-md text-body-md" id="fullName" placeholder=" " required="" type="text"/>
+<label class="absolute left-0 top-3 font-body-md text-body-md text-outline transition-all duration-200 peer-focus:-top-4 peer-focus:text-xs peer-focus:font-label-sm peer-focus:text-safari-green peer-focus:uppercase peer-focus:tracking-widest peer-valid:-top-4 peer-valid:text-xs peer-valid:font-label-sm peer-valid:uppercase peer-valid:tracking-widest" for="fullName">Full Name *</label>
+</div>
+<!-- Email -->
+<div class="relative">
+<input class="block w-full px-0 py-3 bg-transparent border-0 border-b border-outline-variant text-safari-green focus:ring-0 focus:border-safari-green peer font-body-md text-body-md" id="email" placeholder=" " required="" type="email"/>
+<label class="absolute left-0 top-3 font-body-md text-body-md text-outline transition-all duration-200 peer-focus:-top-4 peer-focus:text-xs peer-focus:font-label-sm peer-focus:text-safari-green peer-focus:uppercase peer-focus:tracking-widest peer-valid:-top-4 peer-valid:text-xs peer-valid:font-label-sm peer-valid:uppercase peer-valid:tracking-widest" for="email">Email Address *</label>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Phone -->
+<div class="relative">
+<input class="block w-full px-0 py-3 bg-transparent border-0 border-b border-outline-variant text-safari-green focus:ring-0 focus:border-safari-green peer font-body-md text-body-md" id="phone" placeholder=" " type="tel"/>
+<label class="absolute left-0 top-3 font-body-md text-body-md text-outline transition-all duration-200 peer-focus:-top-4 peer-focus:text-xs peer-focus:font-label-sm peer-focus:text-safari-green peer-focus:uppercase peer-focus:tracking-widest peer-valid:-top-4 peer-valid:text-xs peer-valid:font-label-sm peer-valid:uppercase peer-valid:tracking-widest" for="phone">Phone Number (Opt)</label>
+</div>
+<!-- Subject Dropdown -->
+<div class="relative">
+<select class="block w-full px-0 py-3 bg-transparent border-0 border-b border-outline-variant text-safari-green focus:ring-0 focus:border-safari-green peer font-body-md text-body-md appearance-none" id="subject">
+<option disabled="" hidden="" selected="" value=""></option>
+<option value="safari">Safari Inquiry</option>
+<option value="tour">Day Tour Inquiry</option>
+<option value="general">General Question</option>
+<option value="partnership">Partnership</option>
+</select>
+<label class="absolute left-0 -top-4 text-xs font-label-sm uppercase tracking-widest text-outline" for="subject">Inquiry Subject</label>
+<div class="absolute right-0 top-3 pointer-events-none">
+<span class="material-symbols-outlined text-outline">expand_more</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Dates -->
+<div class="relative">
+<input class="block w-full px-0 py-3 bg-transparent border-0 border-b border-outline-variant text-safari-green focus:ring-0 focus:border-safari-green peer font-body-md text-body-md text-safari-green/80" id="dates" type="date"/>
+<label class="absolute left-0 -top-4 text-xs font-label-sm uppercase tracking-widest text-outline" for="dates">Preferred Travel Dates</label>
+</div>
+<!-- Travelers -->
+<div class="relative">
+<input class="block w-full px-0 py-3 bg-transparent border-0 border-b border-outline-variant text-safari-green focus:ring-0 focus:border-safari-green peer font-body-md text-body-md" id="travelers" min="1" placeholder=" " type="number"/>
+<label class="absolute left-0 top-3 font-body-md text-body-md text-outline transition-all duration-200 peer-focus:-top-4 peer-focus:text-xs peer-focus:font-label-sm peer-focus:text-safari-green peer-focus:uppercase peer-focus:tracking-widest peer-valid:-top-4 peer-valid:text-xs peer-valid:font-label-sm peer-valid:uppercase peer-valid:tracking-widest" for="travelers">Number of Travelers</label>
+</div>
+</div>
+<!-- Message -->
+<div class="relative mt-8">
+<textarea class="block w-full px-0 py-3 bg-transparent border-0 border-b border-outline-variant text-safari-green focus:ring-0 focus:border-safari-green peer font-body-md text-body-md resize-none" id="message" placeholder=" " required="" rows="4"></textarea>
+<label class="absolute left-0 top-3 font-body-md text-body-md text-outline transition-all duration-200 peer-focus:-top-6 peer-focus:text-xs peer-focus:font-label-sm peer-focus:text-safari-green peer-focus:uppercase peer-focus:tracking-widest peer-valid:-top-6 peer-valid:text-xs peer-valid:font-label-sm peer-valid:uppercase peer-valid:tracking-widest" for="message">Your Message / Requirements *</label>
+</div>
+<!-- Submit Area -->
+<div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-6 border-t border-surface-container">
+<p class="font-label-sm text-xs text-outline/80 max-w-xs">By submitting this form, you agree to our <a class="underline hover:text-safari-green" href="#">Privacy Policy</a> regarding your data.</p>
+<button class="w-full sm:w-auto bg-warm-ochre text-on-primary px-8 py-4 font-label-sm text-label-sm uppercase tracking-widest hover:scale-[1.02] transition-transform duration-300 shadow-md flex items-center justify-center gap-2" type="submit">
+                                Submit Inquiry
+                                <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#18230D] text-white pt-20 pb-10">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+<!-- Brand Column -->
+<div class="space-y-6">
+<div class="font-headline-md text-2xl text-ivory-base">Hippo Adventures Kenya</div>
+<p class="font-body-md text-sand-beige/80 max-w-xs">
+                    Crafting unforgettable luxury safari experiences in the heart of East Africa. From the Mara to the coast, your journey begins with us.
+                </p>
+</div>
+<!-- Quick Links -->
+<div>
+<h4 class="font-label-sm text-sm uppercase tracking-widest text-warm-ochre mb-6">Quick Links</h4>
+<ul class="space-y-4">
+<li><a class="font-body-md text-sand-beige/70 hover:text-white transition-colors" href="#">Home</a></li>
+<li><a class="font-body-md text-sand-beige/70 hover:text-white transition-colors" href="#">Safaris</a></li>
+<li><a class="font-body-md text-sand-beige/70 hover:text-white transition-colors" href="#">Packages</a></li>
+<li><a class="font-body-md text-sand-beige/70 hover:text-white transition-colors" href="#">Our Story</a></li>
+</ul>
+</div>
+<!-- Experiences -->
+<div>
+<h4 class="font-label-sm text-sm uppercase tracking-widest text-warm-ochre mb-6">Experiences</h4>
+<ul class="space-y-4">
+<li><a class="font-body-md text-sand-beige/70 hover:text-white transition-colors" href="#">Luxury Safaris</a></li>
+<li><a class="font-body-md text-sand-beige/70 hover:text-white transition-colors" href="#">Beach Holidays</a></li>
+<li><a class="font-body-md text-sand-beige/70 hover:text-white transition-colors" href="#">Cultural Tours</a></li>
+<li><a class="font-body-md text-sand-beige/70 hover:text-white transition-colors" href="#">Photography Safaris</a></li>
+</ul>
+</div>
+<!-- Contact Info -->
+<div>
+<h4 class="font-label-sm text-sm uppercase tracking-widest text-warm-ochre mb-6">Contact</h4>
+<ul class="space-y-4">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-warm-ochre text-xl">location_on</span>
+<span class="font-body-md text-sand-beige/70 small">Kwarandu business square Box 55 Kaloleni, Mombasa</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-warm-ochre text-xl">call</span>
+<span class="font-body-md text-sand-beige/70">+254 720 899 402</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-warm-ochre text-xl">mail</span>
+<span class="font-body-md text-sand-beige/70">hippotransfer@gmail.com</span>
+</li>
+</ul>
+</div>
+</div>
+<!-- Bottom Bar -->
+</div>
+</footer>
+<!-- Floating WhatsApp Button -->
+</body></html>

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Hippo Adventures Kenya | Modern African Safari</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;family=Noto+Serif:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "on-tertiary-fixed": "#281525",
+                "on-secondary-fixed-variant": "#673d00",
+                "tertiary-fixed-dim": "#ddbdd3",
+                "tertiary-container": "#2d1929",
+                "secondary-container": "#fdb96a",
+                "on-surface-variant": "#454840",
+                "on-secondary": "#ffffff",
+                "primary-container": "#18230d",
+                "secondary-fixed": "#ffddba",
+                "on-tertiary-container": "#9b7f93",
+                "surface-tint": "#566347",
+                "primary": "#030a00",
+                "secondary": "#865309",
+                "on-tertiary": "#ffffff",
+                "error": "#ba1a1a",
+                "surface-container": "#f0eee9",
+                "surface-bright": "#fbf9f5",
+                "inverse-surface": "#30312e",
+                "secondary-fixed-dim": "#fdb96a",
+                "on-surface": "#1b1c19",
+                "surface-variant": "#e4e2de",
+                "on-secondary-fixed": "#2b1700",
+                "inverse-on-surface": "#f3f0ec",
+                "surface-container-low": "#f6f3ef",
+                "outline": "#75786f",
+                "tertiary": "#120310",
+                "on-primary-fixed": "#141f09",
+                "inverse-primary": "#bdcbaa",
+                "on-primary-fixed-variant": "#3e4b31",
+                "primary-fixed-dim": "#bdcbaa",
+                "error-container": "#ffdad6",
+                "surface": "#fbf9f5",
+                "on-error-container": "#93000a",
+                "background": "#fbf9f5",
+                "surface-dim": "#dcdad6",
+                "surface-container-lowest": "#ffffff",
+                "on-error": "#ffffff",
+                "surface-container-high": "#eae8e4",
+                "on-primary-container": "#7e8c6e",
+                "on-secondary-container": "#774800",
+                "surface-container-highest": "#e4e2de",
+                "on-tertiary-fixed-variant": "#573f51",
+                "primary-fixed": "#d9e8c5",
+                "outline-variant": "#c5c8bd",
+                "on-background": "#1b1c19",
+                "on-primary": "#ffffff",
+                "tertiary-fixed": "#fbd9ef"
+        },
+        "borderRadius": {
+                "DEFAULT": "0.125rem",
+                "lg": "0.25rem",
+                "xl": "0.5rem",
+                "full": "0.75rem"
+        },
+        "spacing": {
+                "margin-mobile": "20px",
+                "gutter": "32px",
+                "unit": "8px",
+                "container-max": "1280px",
+                "margin-desktop": "64px",
+                "section-gap": "120px"
+        },
+        "fontFamily": {
+                "label-sm": [
+                        "Plus Jakarta Sans"
+                ],
+                "headline-xl": [
+                        "Noto Serif"
+                ],
+                "display-lg": [
+                        "Noto Serif"
+                ],
+                "body-md": [
+                        "Plus Jakarta Sans"
+                ],
+                "body-lg": [
+                        "Plus Jakarta Sans"
+                ],
+                "quote": [
+                        "Noto Serif"
+                ],
+                "headline-md": [
+                        "Noto Serif"
+                ]
+        },
+        "fontSize": {
+                "label-sm": [
+                        "12px",
+                        {
+                                "lineHeight": "1",
+                                "letterSpacing": "0.1em",
+                                "fontWeight": "600"
+                        }
+                ],
+                "headline-xl": [
+                        "48px",
+                        {
+                                "lineHeight": "1.2",
+                                "fontWeight": "600"
+                        }
+                ],
+                "display-lg": [
+                        "64px",
+                        {
+                                "lineHeight": "1.1",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "700"
+                        }
+                ],
+                "body-md": [
+                        "16px",
+                        {
+                                "lineHeight": "1.6",
+                                "fontWeight": "400"
+                        }
+                ],
+                "body-lg": [
+                        "18px",
+                        {
+                                "lineHeight": "1.6",
+                                "fontWeight": "400"
+                        }
+                ],
+                "quote": [
+                        "24px",
+                        {
+                                "lineHeight": "1.5",
+                                "fontWeight": "400"
+                        }
+                ],
+                "headline-md": [
+                        "32px",
+                        {
+                                "lineHeight": "1.3",
+                                "fontWeight": "600"
+                        }
+                ]
+        }
+},
+    },
+  }
+</script>
+</head>
+<body class="bg-background text-on-background font-body-md">
+<!-- TopNavBar -->
+<nav class="sticky top-0 w-full z-50 bg-surface border-b border-outline-variant/30 shadow-sm h-[140px] flex items-center">
+<div class="w-full max-w-screen-2xl mx-auto px-margin-desktop flex justify-between items-center h-full">
+<!-- Logo Area -->
+<a class="h-[75%] flex items-center gap-4 hover:opacity-90 transition-opacity" href="#">
+<img alt="Hippo Icon" class="h-full w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0uiombSEjmKFH2vYaeIaqx8SbQvZvBWWBuvablhMmw-Dixmo9LECofDNHjkKxu_Rbnj_65tZ4bs1a05jUuH9n1E_59el-F7RH5srQI9iOoGfE6g_WUVW8memLoqyu_VE2PIAmMycLOhyLpSxDbNpx6UlF9p1lrTzehzmS99lOWsK_VMhsuEDmSKQXA0yAw8mRw2cuj2ALarX7AzxoYmpez5kdNBMgnpA5Lu65wX0rH50bSGAr4v9Gj2oTP2cZJPPe2By486evujl"/>
+<div class="flex flex-col justify-center">
+<span class="font-serif text-3xl font-bold text-primary leading-none">Hippo Adventures</span>
+<span class="font-label-sm text-[10px] text-secondary uppercase tracking-[0.2em] mt-1 whitespace-nowrap">Service beyond expectation</span>
+</div>
+</a>
+<!-- Right-side Actions (Nav + Button) -->
+<div class="flex items-center gap-12">
+<!-- Navigation Links -->
+<div class="hidden md:flex items-center gap-8">
+<a class="font-serif text-lg text-secondary border-b-2 border-secondary pb-1 tracking-wide" href="#">Home</a>
+<a class="font-serif text-lg text-on-surface-variant font-medium hover:text-primary transition-all duration-300 tracking-wide" href="#">Packages</a>
+<a class="font-serif text-lg text-on-surface-variant font-medium hover:text-primary transition-all duration-300 tracking-wide" href="#">Day Tours</a>
+<a class="font-serif text-lg text-on-surface-variant font-medium hover:text-primary transition-all duration-300 tracking-wide" href="#">Our Story</a>
+<a class="font-serif text-lg text-on-surface-variant font-medium hover:text-primary transition-all duration-300 tracking-wide" href="#">Contact</a>
+</div>
+<!-- Primary Action -->
+<div class="flex items-center">
+<button class="bg-secondary text-on-secondary font-label-sm text-label-sm uppercase px-8 py-4 rounded hover:bg-secondary/90 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 hidden md:block">
+                Plan Your Journey
+            </button>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative w-full h-[90vh] min-h-[600px] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Hero Safari Landscape" class="w-full h-full object-cover" data-alt="A stunning sunset over the African savannah with silhouettes of an elephant, giraffes, and an acacia tree." src="https://lh3.googleusercontent.com/aida/ADBb0uidzS7Yw8l8CmHFAlpUFWNli6I_lyI6Bto6GKIWmJqKhxQlnX6V3vA9S7mkuo8ws7XejNXbZ1rUEtRJq5h2qSiuHbEvl4vAmfyMsJURudVh80uAjdYTKDmhCABW4QDO5fIbBTOlx9BmS8wjKyQTI3zlniUcszpwcYQ9MSz0c9ZDZbs529J4po3hH7lzaIwrpBX4XfEZtfn_v0UUXOCZckeTKbq8od0GJ41nwmM_1vrNac7JvTnnf6WwhgyGFb-Cjwgt5YjYxONJKg"/>
+<div class="absolute inset-0 bg-black/40 bg-gradient-to-t from-inverse-surface/90 via-inverse-surface/20 to-transparent"></div>
+</div>
+<div class="relative z-10 text-center px-6 max-w-4xl mx-auto flex flex-col items-center">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest mb-4 inline-block"></span>
+<h1 class="font-display-lg text-display-lg text-surface-container-lowest mb-8 uppercase">KENYA SAFARI ADVENTURES AWAITS</h1>
+<p class="font-body-lg text-body-lg text-surface-container-lowest max-w-2xl mb-10">Experience the raw beauty of Africa with our curated, luxury safari journeys. Expertly guided, deeply immersive, and unforgettably comfortable.</p>
+<div class="flex gap-4 flex-col sm:flex-row">
+<button class="bg-secondary text-on-secondary font-label-sm text-label-sm uppercase px-8 py-4 rounded hover:scale-105 transition-transform duration-300">
+                    Explore Safaris
+                </button>
+<button class="bg-transparent border border-primary text-surface-container-lowest font-label-sm text-label-sm uppercase px-8 py-4 rounded hover:bg-primary/20 transition-colors duration-300">
+                    View Day Tours
+                </button>
+</div>
+</div>
+</header>
+<!-- About Snippet -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface max-w-container-max mx-auto">
+<div class="grid md:grid-cols-2 gap-gutter items-center">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest mb-4 block">Our Heritage</span>
+<h2 class="font-headline-xl text-headline-xl text-primary mb-6">Crafting Extraordinary Journeys for Over a Decade</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-6">Welcome to <span class="hover:entity-accent entity-underline inline cursor-pointer align-baseline">Hippo Adventures Kenya</span> — your trusted safari partner with over 10 years of experience creating luxury and unforgettable adventures across Kenya. We specialize in tailor-made safaris, day trips, and wildlife experiences designed for comfort, excitement, and lasting memories. From Nairobi to the coast, we deliver seamless journeys, breathtaking encounters, and personalized service every step of the way.</p>
+<a class="inline-flex items-center gap-2 text-primary font-label-sm text-label-sm uppercase hover:text-secondary transition-colors" href="#">
+                    Read Our Story <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<div class="relative h-[500px]">
+<img alt="Professional guide at Kenya Wildlife Service Tsavo East National Park entrance" class="w-full h-full object-cover rounded-xl shadow-sm" src="https://lh3.googleusercontent.com/aida/ADBb0ugb9L8ze1rM3DFVdWW4YSCLXxZfOwlGZ1RI9QnwDb6f6-IiqX8aIMHtq811TPOl8kvG4ety37Jq8_s1Vo8mvVH8UKPFWpAze-yUkBeKNaukaRQrVAxn-pPlF8rMl1xIE_-9mExZsaXDtJCPauAvCnHbIWf59zrzOW9W5Ih-fxL8C4Qc4Sa1A5PMrTkOs3fjUdHAi2rPjzrAeSZRmUm8fY43PEZOmImWhwSlVnltlksHa4JkVmvUXouaNeYxTiWMGfGiATOiYB7pDg"/>
+<div class="absolute -bottom-8 -left-8 bg-surface-container p-6 rounded-lg shadow-sm hidden md:block">
+<p class="font-headline-md text-headline-md text-secondary mb-1">10+</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase">Years Experience</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Value Propositions -->
+<section class="py-section-gap bg-surface-container-low px-margin-mobile md:px-margin-desktop">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline-xl text-headline-xl text-primary mb-4">Why Choose Hippo Adventures</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">We elevate the traditional safari experience, ensuring every moment is steeped in comfort, expertise, and unforgettable wonder.</p>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<!-- Value 1 -->
+<div class="bg-surface p-8 rounded-xl border border-surface-container-highest hover:-translate-y-2 transition-transform duration-300">
+<div class="w-16 h-16 bg-surface-container rounded-full flex items-center justify-center mb-6 text-secondary">
+<span class="material-symbols-outlined text-3xl">king_bed</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-4 text-2xl">Luxury &amp; Comfort</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Retreat to world-class lodges and premium camps that offer unparalleled comfort amidst the untamed wilderness. Rest, rejuvenate, and prepare for the next day's adventure.</p>
+</div>
+<!-- Value 2 -->
+<div class="bg-surface p-8 rounded-xl border border-surface-container-highest hover:-translate-y-2 transition-transform duration-300">
+<div class="w-16 h-16 bg-surface-container rounded-full flex items-center justify-center mb-6 text-primary">
+<span class="material-symbols-outlined text-3xl">explore</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-4 text-2xl">Professional Guides</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Our certified local guides possess an intimate knowledge of the land, wildlife patterns, and cultural heritage, guaranteeing safe and deeply enriching encounters.</p>
+</div>
+<!-- Value 3 -->
+<div class="bg-surface p-8 rounded-xl border border-surface-container-highest hover:-translate-y-2 transition-transform duration-300">
+<div class="w-16 h-16 bg-surface-container rounded-full flex items-center justify-center mb-6 text-secondary">
+<span class="material-symbols-outlined text-3xl">photo_camera</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-4 text-2xl">Memorable Experiences</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">From heart-pounding predator sightings to serene sundowners overlooking the plains, we curate moments that turn into lifelong memories.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full pt-32 pb-16 bg-inverse-surface border-t border-outline">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
+<!-- Column 1: Brand & Social -->
+<div class="space-y-6">
+<a class="font-display-lg text-2xl text-inverse-on-surface block" href="#">Hippo Adventures Kenya</a>
+<p class="font-body-md text-inverse-on-surface/80 leading-relaxed max-w-xs">
+          Crafting extraordinary journeys with soul.
+        </p>
+<div class="flex gap-4 items-center text-inverse-on-surface/80">
+<a class="hover:text-secondary transition-colors duration-300" href="#">
+<span class="material-symbols-outlined text-2xl">photo_camera</span>
+</a>
+<a class="hover:text-secondary transition-colors duration-300" href="#">
+<span class="material-symbols-outlined text-2xl">public</span>
+</a>
+<a class="hover:text-secondary transition-colors duration-300" href="#">
+<span class="material-symbols-outlined text-2xl">play_circle</span>
+</a>
+</div>
+</div>
+<!-- Column 2: Explore -->
+<div>
+<h4 class="font-label-sm text-label-sm text-secondary uppercase tracking-widest mb-6">Explore</h4>
+<ul class="space-y-4 font-body-md text-inverse-on-surface/80">
+<li class=""><a class="hover:text-secondary transition-colors duration-300" href="#">Sustainability</a></li>
+<li class=""><a class="hover:text-secondary transition-colors duration-300" href="#">Travel Guides</a></li>
+<li class=""><a class="hover:text-secondary transition-colors duration-300" href="#">Partner With Us</a></li>
+<li class=""><a class="hover:text-secondary transition-colors duration-300" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+<!-- Column 3: Experiences -->
+<div>
+<h4 class="font-label-sm text-label-sm text-secondary uppercase tracking-widest mb-6">Experiences</h4>
+<ul class="space-y-4 font-body-md text-inverse-on-surface/80">
+<li class="">Packages</li>
+<li class=""><a class="hover:text-secondary transition-colors duration-300" href="#">Day Tours</a></li>
+<li class=""><a class="hover:text-secondary transition-colors duration-300" href="#">Our Story</a></li>
+<li class=""><a class="hover:text-secondary transition-colors duration-300" href="#">Contact</a></li>
+</ul>
+</div>
+<!-- Column 4: Contact -->
+<div>
+<h4 class="font-label-sm text-label-sm text-secondary uppercase tracking-widest mb-6">Contact</h4>
+<ul class="space-y-4 font-body-md text-inverse-on-surface/80">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-xl">call</span>
+<span class="">+254 720 899 402</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-xl">mail</span>
+<a class="hover:text-secondary" href="mailto:hello@hippoadventures.com">hippotransfer@gmail.com</a>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-xl">location_on</span>
+<span class=""><span class="" style="color: rgba(229, 211, 179, 0.7); font-family: plusJakartaSans; background-color: rgb(24, 35, 13);">Kwarandu business square Box 55 Kaloleni, Mombasa</span></span>
+</li>
+</ul>
+</div>
+</div>
+<div class="pt-8 border-t border-outline/50 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-body-md text-sm text-inverse-on-surface/60 text-center md:text-left">
+        © 2026  Hippo Adventures Kenya.  -All rights reserved.
+      </p>
+</div>
+</div>
+</footer>
+</body></html>

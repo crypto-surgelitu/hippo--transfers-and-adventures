@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Safari Packages &amp; Excursions - Hippo Transfers and Adventures</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&amp;family=Plus+Jakarta+Sans:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "tertiary": "#120310",
+                      "inverse-surface": "#30312e",
+                      "surface": "#fbf9f5",
+                      "error": "#ba1a1a",
+                      "surface-container": "#f0eee9",
+                      "surface-bright": "#fbf9f5",
+                      "on-tertiary-container": "#9b7f93",
+                      "surface-container-high": "#eae8e4",
+                      "secondary-container": "#fdb96a",
+                      "on-background": "#1b1c19",
+                      "primary-fixed-dim": "#bdcbaa",
+                      "on-surface": "#1b1c19",
+                      "primary-fixed": "#d9e8c5",
+                      "surface-dim": "#dcdad6",
+                      "surface-container-highest": "#e4e2de",
+                      "error-container": "#ffdad6",
+                      "on-tertiary": "#ffffff",
+                      "on-error": "#ffffff",
+                      "tertiary-fixed": "#fbd9ef",
+                      "on-secondary-container": "#774800",
+                      "background": "#fbf9f5",
+                      "on-tertiary-fixed": "#281525",
+                      "primary-container": "#18230d",
+                      "tertiary-container": "#2d1929",
+                      "outline": "#75786f",
+                      "inverse-on-surface": "#f3f0ec",
+                      "on-primary": "#ffffff",
+                      "on-error-container": "#93000a",
+                      "on-primary-fixed": "#141f09",
+                      "tertiary-fixed-dim": "#ddbdd3",
+                      "on-secondary-fixed-variant": "#673d00",
+                      "surface-variant": "#e4e2de",
+                      "inverse-primary": "#bdcbaa",
+                      "on-tertiary-fixed-variant": "#573f51",
+                      "outline-variant": "#c5c8bd",
+                      "secondary-fixed": "#ffddba",
+                      "primary": "#030a00",
+                      "on-surface-variant": "#454840",
+                      "on-secondary": "#ffffff",
+                      "secondary": "#865309",
+                      "on-primary-fixed-variant": "#3e4b31",
+                      "on-secondary-fixed": "#2b1700",
+                      "surface-tint": "#566347",
+                      "surface-container-lowest": "#ffffff",
+                      "surface-container-low": "#f6f3ef",
+                      "on-primary-container": "#7e8c6e",
+                      "secondary-fixed-dim": "#fdb96a"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "section-gap": "120px",
+                      "margin-desktop": "64px",
+                      "margin-mobile": "20px",
+                      "container-max": "1280px",
+                      "unit": "8px",
+                      "gutter": "32px"
+              },
+              "fontFamily": {
+                      "quote": [
+                              "Noto Serif"
+                      ],
+                      "headline-md": [
+                              "Noto Serif"
+                      ],
+                      "display-lg": [
+                              "Noto Serif"
+                      ],
+                      "body-lg": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "headline-xl": [
+                              "Noto Serif"
+                      ],
+                      "body-md": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "label-sm": [
+                              "Plus Jakarta Sans"
+                      ]
+              },
+              "fontSize": {
+                      "quote": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.5",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-md": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "display-lg": [
+                              "64px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-xl": [
+                              "48px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-sm": [
+                              "12px",
+                              {
+                                      "lineHeight": "1",
+                                      "letterSpacing": "0.1em",
+                                      "fontWeight": "600"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        .material-symbols-outlined {
+          font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+      </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/95 dark:bg-[#0D1208]/95 backdrop-blur-md shadow-sm border-b border-stone-100/50 dark:border-stone-800/50">
+<div class="flex justify-between items-center px-16 h-20 max-w-[1280px] mx-auto">
+<a class="flex items-center gap-4" href="#">
+<img alt="Hippo Transfers and Adventures Logo" class="h-[70px] w-auto rounded-full object-cover shadow-sm" data-alt="A stylized, modern, minimalist logo design of a hippopotamus head in profile, rendered in warm ochre and deep charcoal tones against a soft ivory background, embodying a luxury African safari aesthetic." src="https://lh3.googleusercontent.com/aida/ADBb0uiombSEjmKFH2vYaeIaqx8SbQvZvBWWBuvablhMmw-Dixmo9LECofDNHjkKxu_Rbnj_65tZ4bs1a05jUuH9n1E_59el-F7RH5srQI9iOoGfE6g_WUVW8memLoqyu_VE2PIAmMycLOhyLpSxDbNpx6UlF9p1lrTzehzmS99lOWsK_VMhsuEDmSKQXA0yAw8mRw2cuj2ALarX7AzxoYmpez5kdNBMgnpA5Lu65wX0rH50bSGAr4v9Gj2oTP2cZJPPe2By486evujl"/>
+<div class="flex flex-col">
+<span class="text-xl font-serif font-black tracking-tighter text-[#18230D] dark:text-stone-50">Hippo Adventures</span>
+<span class="text-[10px] uppercase tracking-widest text-secondary font-semibold">Service beyond expectation</span>
+</div>
+</a>
+<div class="hidden md:flex items-center gap-8 font-serif text-sm uppercase tracking-[0.1em]">
+<a class="text-stone-500 dark:text-stone-400 font-medium hover:text-[#C18841] transition-colors duration-300" href="#">Home</a>
+<a class="text-stone-500 dark:text-stone-400 font-medium hover:text-[#C18841] transition-colors duration-300" href="#">Safaris</a>
+<a class="text-[#C18841] border-b-2 border-[#C18841] pb-1 hover:text-[#C18841] transition-colors duration-300" href="#">Packages</a>
+<a class="text-stone-500 dark:text-stone-400 font-medium hover:text-[#C18841] transition-colors duration-300" href="#">Our Story</a>
+<a class="text-stone-500 dark:text-stone-400 font-medium hover:text-[#C18841] transition-colors duration-300" href="#">Contact</a>
+</div>
+<button class="bg-secondary text-on-secondary px-6 py-3 rounded-DEFAULT font-label-sm uppercase hover:scale-105 shadow-sm hover:shadow-md transition-all duration-300 flex items-center gap-2">
+                Plan Your Journey
+                <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="flex-grow pt-24 px-8 pb-12 flex flex-col items-center max-w-[1920px] mx-auto w-full">
+<!-- Header Section -->
+<header class="text-center mb-8 w-full max-w-[1280px]">
+<h1 class="font-headline-xl text-headline-xl text-on-surface mb-2">Safari Packages &amp; Excursions</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Discover the untamed beauty of Kenya with our meticulously crafted itineraries. From the vast plains of Tsavo to the vibrant coastlines, experience service beyond expectation.</p>
+</header>
+<!-- Section 1: Safari Experience Packages -->
+<section class="w-full mb-12">
+<div class="flex items-center justify-between mb-4 max-w-[1280px] mx-auto w-full px-4">
+<h2 class="font-headline-md text-headline-md text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">explore</span>
+                    Safari Experience Packages
+                </h2>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-5 grid-rows-2 gap-3 w-full h-[614px] min-h-[500px]">
+<!-- Safari 1 -->
+<div class="group relative overflow-hidden rounded-lg bg-surface-container-low border border-surface-variant flex flex-col hover:shadow-md transition-shadow">
+<div class="relative h-[45%] w-full overflow-hidden">
+<img alt="Tsavo East Safari" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A lone elephant walking gracefully across the dusty red plains of Tsavo East National Park under a bright, clear blue sky. The golden hour lighting casts long, dramatic shadows, emphasizing the vastness of the modern luxury African savanna landscape." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCs8sjCxI368OvH0MMDnW8_dClu4eMzwRBtFmwLBU57a4pKTqnsMoTcMoOhEyvxfRfFmRgvajWM_TrxZ2S13PUQPAmBgXakQY_ZqcpzzWUEJatf_fH1x9hHsqyIUS14VPGkOu02GhIgK76svMtoQsMdhn-VUgO341TQ928n031ZRvOq1iP2ddxHMPPc0Tsyf2ECkVKwjkW6KFDHh17nUVq2XhEaoEDtaWoQgZHX2duHl9eAB0B_0KJzZZsZ8devss7i9tr9dPHhqic"/>
+<span class="absolute top-2 right-2 bg-primary/80 backdrop-blur-sm text-on-primary font-label-sm text-[10px] px-2 py-1 rounded-sm">1 Day</span>
+</div>
+<div class="p-3 flex flex-col flex-grow">
+<h3 class="font-headline-md text-[14px] leading-tight text-on-surface mb-1 line-clamp-2">1 Day Private Safari to Tsavo East</h3>
+<p class="font-body-md text-[11px] text-on-surface-variant line-clamp-1 mb-auto flex items-center gap-1"><span class="material-symbols-outlined text-[12px] text-secondary">location_on</span> Tsavo East National Park</p>
+<a class="mt-2 text-secondary font-label-sm text-[10px] uppercase flex items-center gap-1 group-hover:gap-2 transition-all" href="#">View Details <span class="material-symbols-outlined text-[12px]">arrow_right_alt</span></a>
+</div>
+</div>
+<!-- Safari 2 -->
+<div class="group relative overflow-hidden rounded-lg bg-surface-container-low border border-surface-variant flex flex-col hover:shadow-md transition-shadow">
+<div class="relative h-[45%] w-full overflow-hidden">
+<img alt="Lion in Tsavo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A majestic lion resting in the golden grass of the African savanna. The scene is bathed in warm, soft sunlight, highlighting the intricate details of the lion's mane against a minimalist, natural background typical of a high-end editorial nature photograph." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFH5zlXNFZn-ZpBHqgShxbEdFkw4rRL0-0wkuCKV2Uane5dN3ToOzl6twhZUEUjN0wC7dhMDX59VrsZkPUFvA_4XuzjcOCNCLVB92m6WLuBJNHyUI2ISM2nsEr5uhEvIpc2ooTpAXbHnjVoG9R2C470lnPRH9-C_R-1aABvickE2glL1CqmMpl6wLayvkjkMzZLCqeA4IFn8cKfJlrIgVSVhStt3WoFwcSDVPTxoWVF7tv2xpwA1J08YA0U2egHHdgPSR2DapGD00"/>
+<span class="absolute top-2 right-2 bg-primary/80 backdrop-blur-sm text-on-primary font-label-sm text-[10px] px-2 py-1 rounded-sm">2 Days / 1 Night</span>
+</div>
+<div class="p-3 flex flex-col flex-grow">
+<h3 class="font-headline-md text-[14px] leading-tight text-on-surface mb-1 line-clamp-2">2 Days / 1 Night Safari to Tsavo East</h3>
+<p class="font-body-md text-[11px] text-on-surface-variant line-clamp-1 mb-auto flex items-center gap-1"><span class="material-symbols-outlined text-[12px] text-secondary">location_on</span> Tsavo East</p>
+<a class="mt-2 text-secondary font-label-sm text-[10px] uppercase flex items-center gap-1 group-hover:gap-2 transition-all" href="#">View Details <span class="material-symbols-outlined text-[12px]">arrow_right_alt</span></a>
+</div>
+</div>
+<!-- Safari 3 -->
+<div class="group relative overflow-hidden rounded-lg bg-surface-container-low border border-surface-variant flex flex-col hover:shadow-md transition-shadow">
+<div class="relative h-[45%] w-full overflow-hidden">
+<img alt="Zebras in Taita Hills" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A herd of zebras grazing peacefully in the lush green environment of the Taita Hills Sanctuary. The composition uses a low angle to capture the striking contrast of their stripes against the soft, muted sage greens of the surrounding foliage in a sophisticated, serene setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiGo2leyCNVj7C4O5f7F2Uaom49zTGPjCsH7GPQ63pGDMdIWixn_XX2z4xpsPmxc8xDxOptWQcPI43R7q5JQORPsH-itcVJy7rScbOxE8PLCcZ1vbfNvvuJptTnPTSfsBavQyUvN3T0-WmVdq0Dm2vbIkYx_qfJzQidbwFUjC8-LgohIPlwl4GIIKqyYte7qgnq68wva2yVMwYIDWYLz_XME6iZtlQnJtCf2kV_Z9OLoBTBRR3XeiqNqh787cOWp07ZBd_R7EFo-o"/>
+<span class="absolute top-2 right-2 bg-primary/80 backdrop-blur-sm text-on-primary font-label-sm text-[10px] px-2 py-1 rounded-sm">3 Days / 2 Nights</span>
+</div>
+<div class="p-3 flex flex-col flex-grow">
+<h3 class="font-headline-md text-[14px] leading-tight text-on-surface mb-1 line-clamp-2">3 Days / 2 Nights – Tsavo East &amp; Taita Hills</h3>
+<p class="font-body-md text-[11px] text-on-surface-variant line-clamp-2 mb-auto flex items-start gap-1"><span class="material-symbols-outlined text-[12px] text-secondary mt-0.5">location_on</span> Tsavo East, Taita Hills Sanctuary</p>
+<a class="mt-2 text-secondary font-label-sm text-[10px] uppercase flex items-center gap-1 group-hover:gap-2 transition-all" href="#">View Details <span class="material-symbols-outlined text-[12px]">arrow_right_alt</span></a>
+</div>
+</div>
+<!-- Safari 4 -->
+<div class="group relative overflow-hidden rounded-lg bg-surface-container-low border border-surface-variant flex flex-col hover:shadow-md transition-shadow">
+<div class="relative h-[45%] w-full overflow-hidden">
+<img alt="Mount Kilimanjaro view from Amboseli" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="The breathtaking snow-capped peak of Mount Kilimanjaro rising majestically above the plains of Amboseli National Park. Elephants are visible in the foreground, silhouetted against the bright, expansive sky, capturing a classic, high-impact minimalist African luxury scene." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6mdqzovuJ5WITic74TuSVQOARLdW1DGjrY1bkzZKgxQ1-HMG8NlVmWlNBH_tIT6l8h_AgmAYwzeYNci0SPdIqqiwsWN0yi8KFnc-3-uTz6slrOMv6qzLtd-44y944t8tqs9vWZ6fDmEyxPu_pYffP8QD7Ptc8VMRA5ckKJBWTB80t83TV1OSJzTBucubVHa1vTDsKldr4bI0CiNUZlHQ3kQr7ZY-Vw2UoiUB87HdSe96AJih8RhZnii6RU320Yy1JtPgmUKnjQxY"/>
+<span class="absolute top-2 right-2 bg-primary/80 backdrop-blur-sm text-on-primary font-label-sm text-[10px] px-2 py-1 rounded-sm">3 Days / 2 Nights</span>
+</div>
+<div class="p-3 flex flex-col flex-grow">
+<h3 class="font-headline-md text-[14px] leading-tight text-on-surface mb-1 line-clamp-2">3 Days / 2 Nights – Tsavo East &amp; Amboseli</h3>
+<p class="font-body-md text-[11px] text-on-surface-variant line-clamp-2 mb-auto flex items-start gap-1"><span class="material-symbols-outlined text-[12px] text-secondary mt-0.5">location_on</span> Tsavo East, Amboseli National Park</p>
+<a class="mt-2 text-secondary font-label-sm text-[10px] uppercase flex items-center gap-1 group-hover:gap-2 transition-all" href="#">View Details <span class="material-symbols-outlined text-[12px]">arrow_right_alt</span></a>
+</div>
+</div>
+<!-- Safari 5 -->
+<div class="group relative overflow-hidden rounded-lg bg-surface-container-low border border-surface-variant flex flex-col hover:shadow-md transition-shadow">
+<div class="relative h-[45%] w-full overflow-hidden">
+<img alt="Cheetah in Tsavo West" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A sleek cheetah observing its surroundings from a small termite mound in Tsavo West. The image is graded with warm ochre and subtle sage tones, emphasizing the raw elegance and stillness of the predator within a vast, uncluttered landscape." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-YwN3Tmmd1viDiJyGrEiD5mj4T-ZcP-T8xZlYj2rioNUUcH8YXIjGfBm0mkIeyBjkoSby5rCs99p5zeQ0vI77hoCrrazDscJJjP4vOEQL_Cn6Wihe2rk1gmMjZTsg1nuFoRDvy8TywUjD3CzdYUE44lYQHU4XorNMPh-EMSYahwaGJ_oVi9Ptc4xCLdSXxjPSNDlzGjZibgqdbg4T-hvmpMFUDMAv-eukWOfBvOQLM5kHccEAjrUu0PMh7hDAerWeJpWcMlX17GE"/>
+<span class="absolute top-2 right-2 bg-primary/80 backdrop-blur-sm text-on-primary font-label-sm text-[10px] px-2 py-1 rounded-sm">4 Days / 3 Nights</span>
+</div>
+<div class="p-3 flex flex-col flex-grow">
+<h3 class="font-headline-md text-[14px] leading-tight text-on-surface mb-1 line-clamp-2">4 Days / 3 Nights – Tsavo West, Amboseli &amp; Tsavo East</h3>
+<p class="font-body-md text-[11px] text-on-surface-variant line-clamp-2 mb-auto flex items-start gap-1"><span class="material-symbols-outlined text-[12px] text-secondary mt-0.5">location_on</span> Tsavo West, Amboseli, Tsavo East</p>
+<a class="mt-2 text-secondary font-label-sm text-[10px] uppercase flex items-center gap-1 group-hover:gap-2 transition-all" href="#">View Details <span class="material-symbols-outlined text-[12px]">arrow_right_alt</span></a>
+</div>
+</div>
+<!-- Safari 6 -->
+<div class="group relative overflow-hidden rounded-lg bg-surface-container-low border border-surface-variant flex flex-col hover:shadow-md transition-shadow">
+<div class="relative h-[45%] w-full overflow-hidden">
+<img alt="Giraffe in Amboseli" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A tall giraffe standing elegantly among acacia trees against a clear, bright sky. The scene is calm and majestic, utilizing an asymmetrical composition that highlights the animal's height and grace, fitting for a modern luxury safari portfolio." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDk-83c_jEV1fJ-dJym3tjRU_2aMKHNOR2zHfjHUFgtbt02eYSLQO-gnvPSBKZE8_8MANbqI9uME4vj4auwY3lpO1qOigyawAvLtH6NDMQCPzVNhT9LMyz705bZQmEeJ-eDxyWPdvjltd-0d32XEa2iceFjpenB7ZRpkM-3PD02ZM5mrB1Q085exYgpbYti3Mz4vKJ2kGLkkisXIg6QQ-DZhXYnn-h3Ka8_rUx8lmh37H7cU3sdAXnpxH9h3SFqynB8kpcxXkGrKvM"/>
+<span class="absolute top-2 right-2 bg-primary/80 backdrop-blur-sm text-on-primary font-label-sm text-[10px] px-2 py-1 rounded-sm">4 Days / 3 Nights</span>
+</div>
+<div class="p-3 flex flex-col flex-grow">
+<h3 class="font-headline-md text-[14px] leading-tight text-on-surface mb-1 line-clamp-2">4 Days / 3 Nights – Tsavo East, Amboseli &amp; Taita Hills</h3>
+<p class="font-body-md text-[11px] text-on-surface-variant line-clamp-2 mb-auto flex items-start gap-1"><span class="material-symbols-outlined text-[12px] text-secondary mt-0.5">location_on</span> Tsavo East, Amboseli, Taita Hills</p>
+<a class="mt-2 text-secondary font-label-sm text-[10px] uppercase flex items-center gap-1 group-hover:gap-2 transition-all" href="#">View Details <span class="material-symbols-outlined text-[12px]">arrow_right_alt</span></a>
+</div>
+</div>
+<!-- Safari 7 -->
+<div class="group relative overflow-hidden rounded-lg bg-surface-container-low border border-surface-variant flex flex-col hover:shadow-md transition-shadow">
+<div class="relative h-[45%] w-full overflow-hidden">
+<img alt="Safari vehicle at sunset" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A classic, rugged open-top safari vehicle parked on a dusty road at sunset. The sky is ablaze with deep oranges and purples, casting a dramatic silhouette. The image conveys a sense of high-end adventure and exclusive wilderness exploration." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCckRqCn5uKAD50HsH9VYMS4S_FjRcgA8b8iRzw1wDAqQshKYi054DXrac1IwoySq_MdD0iOXsiaC0v3VFVZX0MzjpmufVueAKG9B113dnXXE19tqHMzj3GRyTxW2ZqvSjj648fiPO7xysue3_GLZIRlSI5iIxiYHIe48D7Yep9m58Oc-OL9Po1uIcsCM2_iMKTYcFMo9dbW2KYEiojgf6bm56crX82jMmnp86aHETYhyCEkZf_G-4C2acjkKIFdyjKvj3MtzW_jKE"/>
+<span class="absolute top-2 right-2 bg-primary/80 backdrop-blur-sm text-on-primary font-label-sm text-[10px] px-2 py-1 rounded-sm">5 Days / 4 Nights</span>
+</div>
+<div class="p-3 flex flex-col flex-grow">
+<h3 class="font-headline-md text-[14px] leading-tight text-on-surface mb-1 line-clamp-2">5 Days / 4 Nights – Tsavo East to Taita Hills</h3>
+<p class="font-body-md text-[11px] text-on-surface-variant line-clamp-2 mb-auto flex items-start gap-1"><span class="material-symbols-outlined text-[12px] text-secondary mt-0.5">location_on</span> Tsavo East, Tsavo West, Amboseli, Taita Hills</p>
+<a class="mt-2 text-secondary font-label-sm text-[10px] uppercase flex items-center gap-1 group-hover:gap-2 transition-all" href="#">View Details <span class="material-symbols-outlined text-[12px]">arrow_right_alt</span></a>
+</div>
+</div>
+<!-- Safari 8 -->
+<div class="group relative overflow-hidden rounded-lg bg-surface-container-low border border-surface-variant flex flex-col hover:shadow-md transition-shadow">
+<div class="relative h-[45%] w-full overflow-hidden">
+<img alt="Flamingos at Lake Nakuru" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A massive flock of vibrant pink flamingos wading in the shallow waters of Lake Nakuru. The reflection of the birds creates a textured, abstract pattern on the water's surface, captured in a clean, minimalist style with soft, diffused daylight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuClQwLjSp--Va4DSYijlnE-zwZMk90bmcEhIDJLFoX3iOhGwU0rjGCvEHL_6RN2Ce7hUiIZZmjhHqV8Ztb3UPVrTkO0ObLAmF7Iotlo9g6HBQ2jT_x-CfQjZCzC7g0fqw_qSwzQhwKySZcjoPhHUkSL0xFu5A0zgv9JlzjaIwhDBJYssPwKUkwnOamTr92aQ2xXLr75lqxjsQ9y5ooCwp6G3Hl68pSfpG75KqIZAaLKzfd0VfI3rLgqFCZJX0NWQiO2QGbYt5L14AE"/>
+<span class="absolute top-2 right-2 bg-primary/80 backdrop-blur-sm text-on-primary font-label-sm text-[10px] px-2 py-1 rounded-sm">6 Days / 5 Nights</span>
+</div>
+<div class="p-3 flex flex-col flex-grow">
+<h3 class="font-headline-md text-[14px] leading-tight text-on-surface mb-1 line-clamp-2">6 Days / 5 Nights Safari from Nairobi</h3>
+<p class="font-body-md text-[11px] text-on-surface-variant line-clamp-2 mb-auto flex items-start gap-1"><span class="material-symbols-outlined text-[12px] text-secondary mt-0.5">location_on</span> Masai Mara, Lake Nakuru, Lake Naivasha, Amboseli</p>
+<a class="mt-2 text-secondary font-label-sm text-[10px] uppercase flex items-center gap-1 group-hover:gap-2 transition-all" href="#">View Details <span class="material-symbols-outlined text-[12px]">arrow_right_alt</span></a>
+</div>
+</div>
+<!-- Safari 9 -->
+<div class="group relative overflow-hidden rounded-lg bg-surface-container-low border border-surface-variant flex flex-col hover:shadow-md transition-shadow">
+<div class="relative h-[45%] w-full overflow-hidden">
+<img alt="Masai Mara Landscape" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A wide, sweeping panoramic view of the Masai Mara plains under an expansive, dramatic sky filled with billowy clouds. The golden grasses stretch to the horizon, dotted with isolated acacia trees, presenting a quintessential, high-impact editorial landscape." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLN9Y5w5a0a-nXtCtThiel0ufG79MGAZKeMsnfuoNFIJBkn2rCHGXtIuknH4P_RAd2c9Nfwk1J6BINDo5NNLLIDOvdRmLY3NgJDSqctFfuJdvUEFqnxxXvuaBACFzbUKdr-QJ7soozF6O7GqLq4hPBZzwyMeE-F8U0orMFMK0W0BYvqvyfkzbDYGGWJf2YPtTT7nSaYq8Fw8PFzYk1A0Et6BIpLjJ1xldk5n1HFJ_WPHaPKoTvhulVKjFt-5ilHmMVXBJAIWC-DNE"/>
+<span class="absolute top-2 right-2 bg-primary/80 backdrop-blur-sm text-on-primary font-label-sm text-[10px] px-2 py-1 rounded-sm">7 Days / 6 Nights</span>
+</div>
+<div class="p-3 flex flex-col flex-grow">
+<h3 class="font-headline-md text-[14px] leading-tight text-on-surface mb-1 line-clamp-2">7 Days / 6 Nights – Masai Mara to Tsavo East</h3>
+<p class="font-body-md text-[11px] text-on-surface-variant line-clamp-2 mb-auto flex items-start gap-1"><span class="material-symbols-outlined text-[12px] text-secondary mt-0.5">location_on</span> Masai Mara, Nakuru, Naivasha, Amboseli...</p>
+<a class="mt-2 text-secondary font-label-sm text-[10px] uppercase flex items-center gap-1 group-hover:gap-2 transition-all" href="#">View Details <span class="material-symbols-outlined text-[12px]">arrow_right_alt</span></a>
+</div>
+</div>
+<!-- Safari 10 -->
+<div class="group relative overflow-hidden rounded-lg bg-surface-container-low border border-surface-variant flex flex-col hover:shadow-md transition-shadow">
+<div class="relative h-[45%] w-full overflow-hidden">
+<img alt="Leopard resting in Samburu" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A magnificent leopard draped casually over the sturdy branch of an ancient tree in Samburu. The dappled sunlight filters through the leaves, creating a sophisticated play of light and shadow, highlighting the animal's striking rosettes in a luxurious, serene setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMiw5KhxDqsHz2UWntfoiY4I5RbEfRQf6GPfNZ4jbbP7_gaxZeDc6X9DtFYnP11lHrJKkS-1Dz2r4BBLrJJ0Zwpn_1uV4c1-kkXOWexMJ7IEjJanSZCyKtjB8Ha_HGbqNJ_XmbdYWzJXQQreXLKjNGTi4tyS2p_nxdUXk1a1ELPE6884DJgu9u98sVCUwn7h_Mq-WL6cl--QfBJiA6ZD9leemA-mrJHxoWDxrVUjzppShtl0Qij2DN8g4ZkSJiZ4wSlteNRk_f9Ic"/>
+<span class="absolute top-2 right-2 bg-primary/80 backdrop-blur-sm text-on-primary font-label-sm text-[10px] px-2 py-1 rounded-sm">10 Days</span>
+</div>
+<div class="p-3 flex flex-col flex-grow">
+<h3 class="font-headline-md text-[14px] leading-tight text-on-surface mb-1 line-clamp-2">10 Days – Samburu to Tsavo East</h3>
+<p class="font-body-md text-[11px] text-on-surface-variant line-clamp-2 mb-auto flex items-start gap-1"><span class="material-symbols-outlined text-[12px] text-secondary mt-0.5">location_on</span> Samburu, Ol Pejeta, Nakuru, Amboseli...</p>
+<a class="mt-2 text-secondary font-label-sm text-[10px] uppercase flex items-center gap-1 group-hover:gap-2 transition-all" href="#">View Details <span class="material-symbols-outlined text-[12px]">arrow_right_alt</span></a>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: Day Tours & Excursions -->
+<section class="w-full">
+<div class="flex items-center justify-between mb-4 max-w-[1280px] mx-auto w-full px-4">
+<h2 class="font-headline-md text-headline-md text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">sailing</span>
+                    Day Tours &amp; Excursions
+                </h2>
+</div>
+<div class="grid grid-rows-1 gap-3 w-full h-[256px] min-h-[220px] grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+<!-- Excursion 1 -->
+<div class="group relative overflow-hidden rounded-lg bg-surface-container-low border border-surface-variant flex flex-col hover:shadow-sm transition-shadow">
+<div class="relative h-[55%] w-full overflow-hidden">
+<img alt="Wasini Island" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Crystal clear turquoise waters surrounding Wasini Island, with a traditional wooden dhow boat sailing gently. The scene evokes a sense of tranquil coastal luxury, bathed in bright, inviting sunlight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAfhht_CJUUhZbmQZ-nkkaMFGP-JbP3uxPRGrCSU3CTD2WVGRwozEf62iwI55fcAbtueNdKSqybnagUmkNHxSlj_IHq5Ux0qZ9DvHomARbIDnBnNTHPJrsNQGD7LobSuhvZH09QYw2p_WOCSo9A9MHH4rA-3zXMdfJ4VhJSGif8DTTyddfyY2NMuCaUQguq-36_Z9cH5kEnOviP-90UeHywyed_H2Wu84QLAZoP1kHT8sphLF47DD1fG-9ioi5v2AhbJM5ZenVjjw"/>
+</div>
+<div class="p-2 flex flex-col flex-grow justify-between">
+<div>
+<h3 class="font-headline-md text-[12px] leading-tight text-on-surface mb-0.5 line-clamp-1">Wasini Island</h3>
+<p class="font-body-md text-[10px] text-on-surface-variant line-clamp-1">Snorkeling &amp; Dolphin Watching</p>
+</div>
+<a class="text-secondary font-label-sm text-[9px] uppercase flex items-center gap-1 group-hover:gap-2 transition-all mt-1" href="#">View Details <span class="material-symbols-outlined text-[10px]">arrow_right_alt</span></a>
+</div>
+</div>
+<!-- Excursion 2 -->
+<!-- Excursion 3 -->
+<div class="group relative overflow-hidden rounded-lg bg-surface-container-low border border-surface-variant flex flex-col hover:shadow-sm transition-shadow">
+<div class="relative h-[55%] w-full overflow-hidden">
+<img alt="Marafa Hell's Kitchen" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="The dramatic, jagged sandstone gorges of Marafa Hell's Kitchen illuminated by the fiery hues of a setting sun. The deep oranges and reds contrast sharply with deep shadows, creating a compelling, raw natural landscape." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6ZojdcuAPAVq3FbEawwWUhv6BVJV49dCjXWLuL4Y2B6tk-v9StSCBIgqYWNbebDHs3EH3ezQ9Vi3_8kf8Vei3_Z1l1KeKlThSrUvEd2AgREnJ3cCzjfiVZUmXh9yf1hCktDDKLuqmtNIG8X4PPWeq1vycGw_moYBUVXoo51wsyWArwHnl2DQ-WHSLZXINMkQ95Sz2_HHiJgq1gnFie7UURlMF3_j7s6oZu4fc2PhOSNpyPRcfGIcS5SJtKuj5NQC5ZnROydVYtgI"/>
+</div>
+<div class="p-2 flex flex-col flex-grow justify-between">
+<div>
+<h3 class="font-headline-md text-[12px] leading-tight text-on-surface mb-0.5 line-clamp-1">Marafa Hell's Kitchen</h3>
+<p class="font-body-md text-[10px] text-on-surface-variant line-clamp-1">Sunset Canyon Experience</p>
+</div>
+<a class="text-secondary font-label-sm text-[9px] uppercase flex items-center gap-1 group-hover:gap-2 transition-all mt-1" href="#">View Details <span class="material-symbols-outlined text-[10px]">arrow_right_alt</span></a>
+</div>
+</div>
+<!-- Excursion 4 -->
+<div class="group relative overflow-hidden rounded-lg bg-surface-container-low border border-surface-variant flex flex-col hover:shadow-sm transition-shadow">
+<div class="relative h-[55%] w-full overflow-hidden">
+<img alt="Sardegna 2 Island" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A luxurious spread of fresh seafood served on a rustic wooden table overlooking the sparkling blue waters of Sardegna 2 Island. The composition is bright and appetizing, embodying high-end coastal culinary experiences." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWGR2qfB-Sz3Xw_TXbx3x4lmEcRfvjRhGzqYxX5L06-WY8pdXmfoReZfyMDKlmc3vCyuDTde_vtEyd-_MpAqQR_IrFWuin4XAVvJG-BeWV_8Ybeutt5Hx1icPO7IMefFm8CCf73lOGghnbgJt3kljpkWv-SEoZnZKkEJgXL2Bhuj1Zi5aqQ5VGQ3ZetY-arqo839rmaONCpVKafJYPpua82WwWirbmKmPGn_dnxQ-Ju7AzW0C8aSijQBWunHn6RasuuO-01XExgNQ"/>
+</div>
+<div class="p-2 flex flex-col flex-grow justify-between">
+<div>
+<h3 class="font-headline-md text-[12px] leading-tight text-on-surface mb-0.5 line-clamp-1">Sardegna 2 Island</h3>
+<p class="font-body-md text-[10px] text-on-surface-variant line-clamp-1">Snorkeling &amp; Seafood Lunch</p>
+</div>
+<a class="text-secondary font-label-sm text-[9px] uppercase flex items-center gap-1 group-hover:gap-2 transition-all mt-1" href="#">View Details <span class="material-symbols-outlined text-[10px]">arrow_right_alt</span></a>
+</div>
+</div>
+<!-- Excursion 5 -->
+<!-- Excursion 6 -->
+<div class="group relative overflow-hidden rounded-lg bg-surface-container-low border border-surface-variant flex flex-col hover:shadow-sm transition-shadow">
+<div class="relative h-[55%] w-full overflow-hidden">
+<img alt="Mida Creek" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A tranquil, winding waterway through dense mangrove forests at Mida Creek. The water perfectly reflects the intricate roots and vibrant green canopy above, presenting a serene, untouched natural ecosystem." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbAniJ6GM0CvfJrRY2P_pA4ubLOMNG5dr5rJN_sbjByM7plDyIsWpJxy8gchoKT9hNEW6DTKLF4bz7zB6LWUSiyIc9_qQ0UBAxIfdCftFGaJe5whnWK3gWOpmNe-hNbsZQoymvgr4YGCW_I3aQk381LFrvjFYyqWPbayjZzQIAxU5gi7wr8iMjJoZnL6BAUVzy4HHy1oP1gjArB80gJbmvYnMkD1fpFpxcT_P_oyZio9fUvWo67JOwd38Bqu6uEmt95bGYcfd2nGY"/>
+</div>
+<div class="p-2 flex flex-col flex-grow justify-between">
+<div>
+<h3 class="font-headline-md text-[12px] leading-tight text-on-surface mb-0.5 line-clamp-1">Mida Creek</h3>
+<p class="font-body-md text-[10px] text-on-surface-variant line-clamp-1">Mangroves &amp; Snorkeling</p>
+</div>
+<a class="text-secondary font-label-sm text-[9px] uppercase flex items-center gap-1 group-hover:gap-2 transition-all mt-1" href="#">View Details <span class="material-symbols-outlined text-[10px]">arrow_right_alt</span></a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- SideNavBar (Floating WhatsApp) -->
+<a aria-label="WhatsApp Contact" class="rounded-full w-14 h-14 fixed bottom-8 right-8 z-50 bg-[#25D366] text-white shadow-xl hover:scale-110 transition-transform duration-300 flex items-center justify-center group" href="#">
+<span class="material-symbols-outlined text-3xl group-hover:scale-110 transition-transform">chat</span>
+</a>
+<!-- Footer -->
+<footer class="w-full bg-[#18230D] text-surface-variant mt-auto border-t border-white/5">
+<div class="max-w-[1280px] mx-auto px-16 pt-24 pb-12 grid grid-cols-1 md:grid-cols-4 gap-12"><div class="col-span-1 md:col-span-2">
+<h2 class="text-2xl font-headline-md text-surface-bright mb-8 block">Hippo Adventures</h2>
+<p class="max-w-md text-surface-variant font-body-md mb-6">Experience the modern African safari. We blend raw wilderness with high-end luxury to create unforgettable journeys across Kenya's most breathtaking landscapes.</p>
+<p class="text-surface-dim font-label-sm uppercase tracking-widest mt-12">© 2026 HIPPO ADVENTURES KENYA. ALL RIGHTS RESERVED.</p>
+</div>
+<div>
+<h4 class="text-surface-bright font-headline-md font-bold mb-6 tracking-wider uppercase text-xs">EXPLORE</h4>
+<ul class="space-y-4 font-body-md">
+<li><a class="text-surface-variant hover:text-secondary-fixed transition-all duration-200" href="#">Safaris</a></li>
+<li><a class="text-surface-variant hover:text-secondary-fixed transition-all duration-200" href="#">Our Story</a></li>
+<li><a class="text-surface-variant hover:text-secondary-fixed transition-all duration-200" href="#">Home</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-surface-bright font-headline-md font-bold mb-6 tracking-wider uppercase text-xs">INFORMATION</h4>
+<ul class="space-y-4 font-body-md">
+<li><a class="text-surface-variant hover:text-secondary-fixed transition-all duration-200" href="#">Contact Us</a></li>
+</ul>
+</div></div>
+</footer>
+</body></html>
