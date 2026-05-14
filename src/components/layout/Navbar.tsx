@@ -17,20 +17,20 @@ export function Navbar() {
 
   return (
     <>
-      <nav className="sticky top-0 w-full z-50 bg-surface/95 backdrop-blur-sm border-b border-outline-variant/20 h-[120px] flex items-center">
-        <div className="w-full max-w-container-max mx-auto pl-2 md:pl-4 pr-margin-mobile md:pr-gutter flex justify-between items-center h-full">
+      <nav className="sticky top-0 w-full z-50 bg-surface/95 backdrop-blur-sm border-b border-outline-variant/20 h-[148px] flex items-center">
+        <div className="w-full max-w-[1440px] mx-auto pl-0 md:pl-2 pr-margin-mobile md:pr-gutter flex justify-between items-center h-full">
 
           {/* Logo — flush left, blends with background */}
           <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity duration-150 shrink-0">
             <Image
               src="/logo-transparent.png"
               alt="Hippo Adventures Logo"
-              width={220}
-              height={120}
-              className="h-[108px] md:h-[116px] w-auto object-contain"
+              width={260}
+              height={142}
+              className="h-[128px] lg:h-[140px] w-auto object-contain"
             />
-            <div className="flex flex-col leading-tight">
-              <span className="font-serif text-2xl md:text-3xl font-bold text-primary tracking-tight">
+            <div className="hidden xl:flex flex-col leading-tight">
+              <span className="font-serif text-[2rem] font-medium text-primary uppercase tracking-[0.08em] leading-none">
                 Hippo Adventures
               </span>
               <span className="font-label-sm text-[9px] md:text-[11px] text-secondary uppercase tracking-[0.25em] mt-0.5">
@@ -85,7 +85,7 @@ export function Navbar() {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="fixed inset-0 top-[100px] z-40 bg-surface md:hidden flex flex-col px-8 pt-6 border-t border-outline-variant/20 overflow-y-auto">
+        <div className="fixed inset-0 top-[148px] z-40 bg-surface md:hidden flex flex-col px-8 pt-6 border-t border-outline-variant/20 overflow-y-auto">
           {[
             { href: '/', label: 'Home' },
             { href: '/packages', label: 'Packages' },
