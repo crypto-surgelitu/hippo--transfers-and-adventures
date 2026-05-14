@@ -9,6 +9,7 @@ A modern safari and tourism marketing website focused on safari package discover
 - **Animation**: Framer Motion
 - **Email Service**: Resend
 - **Messaging**: WhatsApp Click-to-Chat
+- **Maps**: Google Maps JavaScript API
 - **Hosting**: Vercel
 
 ## Getting Started
