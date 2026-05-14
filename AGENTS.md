@@ -42,6 +42,9 @@ Agents must faithfully implement the approved UI without redesigning layouts.
 ## Hosting
 - Vercel
 
+## Maps
+- Google Maps JavaScript API
+
 ## Version Control
 - Git + GitHub
 
