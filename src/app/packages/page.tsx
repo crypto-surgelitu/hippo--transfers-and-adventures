@@ -104,7 +104,7 @@ export default function PackagesPage() {
   ];
 
   return (
-    <div className="pt-24 px-8 pb-12 flex flex-col items-center max-w-container-max mx-auto w-full">
+    <div className="pt-24 px-margin-mobile md:px-gutter pb-12 flex flex-col items-center max-w-container-max mx-auto w-full">
       {/* Header Section */}
       <header className="text-center mb-16 w-full max-w-[800px]">
         <h1 className="font-headline-xl text-headline-xl text-on-surface mb-6">Safari Packages & Excursions</h1>

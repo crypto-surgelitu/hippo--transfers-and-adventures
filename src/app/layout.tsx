@@ -17,12 +17,48 @@ const notoSerif = Noto_Serif({
 })
 
 export const metadata: Metadata = {
-  title: 'Hippo Transfers and Adventures',
-  description: 'Experience unforgettable safari adventures and transfers. Discover our safari packages and excursions.',
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://hippoadventureskenya.com'),
+  title: {
+    default: 'Hippo Transfers and Adventures | Kenya Safari Packages',
+    template: '%s | Hippo Adventures Kenya',
+  },
+  description: 'Experience unforgettable safari adventures and transfers in Kenya. Discover luxury safari packages, day tours, and excursions to Tsavo, Amboseli, Masai Mara and more.',
+  keywords: ['kenya safari', 'tsavo safari', 'masai mara', 'amboseli', 'safari tours', 'kenya tours', 'luxury safari', 'day tours kenya'],
+  authors: [{ name: 'Hippo Adventures Kenya' }],
+  creator: 'Hippo Adventures Kenya',
+  publisher: 'Hippo Adventures Kenya',
   openGraph: {
-    title: 'Hippo Transfers and Adventures',
-    description: 'Experience unforgettable safari adventures and transfers.',
     type: 'website',
+    locale: 'en_US',
+    url: '/',
+    siteName: 'Hippo Adventures Kenya',
+    title: 'Hippo Transfers and Adventures | Kenya Safari Packages',
+    description: 'Experience unforgettable safari adventures and transfers in Kenya. Discover luxury safari packages, day tours, and excursions.',
+    images: [
+      {
+        url: '/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Safari landscape with wildlife in Kenya',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Hippo Transfers and Adventures | Kenya Safari Packages',
+    description: 'Experience unforgettable safari adventures and transfers in Kenya.',
+    images: ['/og-image.jpg'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
 }
 
@@ -33,7 +69,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`light ${plusJakartaSans.variable} ${notoSerif.variable}`}>
-      <body className="bg-background text-on-background font-body-md antialiased min-h-screen flex flex-col">
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
+      </head>
+      <body className="bg-background text-on-background font-body antialiased min-h-screen flex flex-col">
         <Navbar />
         <main className="flex-grow">
           {children}

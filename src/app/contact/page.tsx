@@ -49,7 +49,7 @@ export default function ContactPage() {
   return (
     <main className="w-full pb-24">
       {/* Hero Section */}
-      <section className="relative w-full h-[70vh] min-h-[500px] flex items-center justify-center overflow-hidden">
+      <section className="relative w-full h-[64svh] min-h-[520px] md:h-[68vh] lg:h-[72vh] 2xl:h-[760px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image 
             src={masaiMaraBg}
@@ -58,14 +58,15 @@ export default function ContactPage() {
             quality={90}
             fill
             sizes="100vw"
-            className="object-cover object-[24%_center] md:object-[40%_center] lg:object-center"
+            className="object-cover object-[28%_center] sm:object-[34%_center] md:object-[42%_center] lg:object-center"
             priority
           />
           {/* Matches approved contact design with a natural safari-green wash */}
-          <div className="absolute inset-0 bg-[#2D3921]/45 mix-blend-multiply"></div>
-          <div className="absolute inset-0 bg-gradient-to-t from-background/70 via-black/20 to-black/10"></div>
+          <div className="absolute inset-0 bg-[#2D3921]/50 mix-blend-multiply"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/10 to-background/75"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-black/25 via-transparent to-black/10"></div>
           {/* Seamless bottom fade into page background */}
-          <div className="absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-t from-background via-background/70 to-transparent"></div>
+          <div className="absolute bottom-0 left-0 right-0 h-56 md:h-64 bg-gradient-to-t from-background via-background/80 to-transparent"></div>
         </div>
         <div className="relative z-10 text-center px-6 max-w-4xl mx-auto flex flex-col items-center">
           <h1 className="font-display-lg text-4xl md:text-display-lg text-surface-container-lowest mb-6 uppercase">

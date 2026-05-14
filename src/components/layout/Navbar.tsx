@@ -18,7 +18,7 @@ export function Navbar() {
   return (
     <>
       <nav className="sticky top-0 w-full z-50 bg-surface/95 backdrop-blur-sm border-b border-outline-variant/20 h-[148px] flex items-center">
-        <div className="w-full max-w-[1440px] mx-auto pl-0 md:pl-2 pr-margin-mobile md:pr-gutter flex justify-between items-center h-full">
+        <div className="w-full max-w-[1440px] mx-auto pl-margin-mobile md:pl-gutter pr-margin-mobile md:pr-gutter flex justify-between items-center h-full">
 
           {/* Logo — flush left, blends with background */}
           <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity duration-150 shrink-0">

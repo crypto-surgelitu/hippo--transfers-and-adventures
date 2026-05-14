@@ -12,14 +12,15 @@ interface PackageCardProps {
 
 export function PackageCard({ title, duration, location, imageSrc, slug }: PackageCardProps) {
   return (
-    <div className="group relative overflow-hidden rounded-lg bg-surface-container-low border border-surface-variant flex flex-col hover:shadow-md transition-shadow h-full min-h-[300px]">
-      <div className="relative h-[45%] min-h-[140px] w-full overflow-hidden">
+    <div className="group relative overflow-hidden rounded-lg bg-surface-container-low border border-surface-variant flex flex-col hover:shadow-md transition-shadow h-full">
+      <div className="relative aspect-[4/3] w-full overflow-hidden">
         <Image 
           src={imageSrc} 
-          alt={title} 
+          alt={`${title} - ${duration} safari to ${location}`} 
           fill
-          sizes="(max-width: 768px) 50vw, 20vw"
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 20vw"
           className="object-cover group-hover:scale-105 transition-transform duration-300"
+          loading="lazy"
         />
         <span className="absolute top-2 right-2 bg-primary/80 backdrop-blur-sm text-on-primary font-label-sm text-[10px] px-2 py-1 rounded-sm">
           {duration}

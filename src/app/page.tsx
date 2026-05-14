@@ -8,7 +8,7 @@ export default function HomePage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative w-full h-[90vh] min-h-[600px] flex items-center justify-center overflow-hidden">
+      <section className="relative w-full h-[90vh] min-h-[500px] md:min-h-[600px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image 
             src={heroBg} 
@@ -22,16 +22,16 @@ export default function HomePage() {
           />
           <div className="absolute inset-0 bg-black/40 bg-gradient-to-t from-inverse-surface/90 via-inverse-surface/20 to-transparent"></div>
         </div>
-        <div className="relative z-10 text-center px-6 max-w-4xl mx-auto flex flex-col items-center">
-          <h1 className="font-display-lg text-4xl md:text-display-lg text-surface-container-lowest mb-8 uppercase">KENYA SAFARI ADVENTURES AWAITS</h1>
-          <p className="font-body-lg text-body-lg text-surface-container-lowest max-w-2xl mb-10">
+        <div className="relative z-10 text-center px-margin-mobile md:px-gutter max-w-4xl mx-auto flex flex-col items-center">
+          <h1 className="font-display-lg text-3xl md:text-5xl lg:text-display-lg text-surface-container-lowest mb-6 md:mb-8 uppercase tracking-wide">Kenya Safari Adventures Await</h1>
+          <p className="font-body-lg text-base md:text-lg lg:text-body-lg text-surface-container-lowest max-w-2xl mb-8 md:mb-10">
             Experience the raw beauty of Africa with our curated, luxury safari journeys. Expertly guided, deeply immersive, and unforgettably comfortable.
           </p>
           <div className="flex gap-4 flex-col sm:flex-row">
-            <Link href="/packages" className="bg-secondary text-on-secondary font-label-sm text-label-sm uppercase px-8 py-4 rounded hover:scale-105 transition-transform duration-150">
+              <Link href="/packages" className="bg-secondary text-on-secondary font-label-sm text-label-sm uppercase px-6 md:px-8 py-3 md:py-4 rounded hover:scale-105 transition-transform duration-150">
               Explore Safaris
             </Link>
-            <Link href="/packages" className="bg-transparent border border-surface-container-lowest text-surface-container-lowest font-label-sm text-label-sm uppercase px-8 py-4 rounded hover:bg-surface-container-lowest/20 transition-colors duration-150">
+              <Link href="/packages" className="bg-transparent border border-surface-container-lowest text-surface-container-lowest font-label-sm text-label-sm uppercase px-6 md:px-8 py-3 md:py-4 rounded hover:bg-surface-container-lowest/20 transition-colors duration-150">
               View Day Tours
             </Link>
           </div>
@@ -51,13 +51,14 @@ export default function HomePage() {
               Read Our Story <ArrowRight size={18} />
             </Link>
           </div>
-          <div className="relative h-[500px] mt-8 md:mt-0">
+          <div className="relative h-[300px] sm:h-[400px] md:h-[500px] mt-8 md:mt-0">
             <Image 
               src={aboutImg} 
-              alt="Professional guide" 
+              alt="Professional safari guide representing Hippo Adventures Kenya" 
               fill
               className="object-cover rounded-xl shadow-sm"
               sizes="(max-width: 768px) 100vw, 50vw"
+              priority
             />
             <div className="absolute -bottom-8 -left-8 bg-surface-container p-6 rounded-lg shadow-sm hidden md:block border border-outline-variant/30">
               <p className="font-headline-md text-headline-md text-secondary mb-1">10+</p>
@@ -68,7 +69,7 @@ export default function HomePage() {
       </section>
 
       {/* Value Propositions */}
-      <section className="py-section-gap bg-surface-container-low px-margin-mobile md:px-margin-desktop">
+      <section className="py-section-gap px-margin-mobile md:px-gutter bg-surface-container-low">
         <div className="max-w-container-max mx-auto">
           <div className="text-center mb-16">
             <h2 className="font-headline-xl text-headline-xl text-primary mb-4">Why Choose Hippo Adventures</h2>
@@ -76,9 +77,9 @@ export default function HomePage() {
               We elevate the traditional safari experience, ensuring every moment is steeped in comfort, expertise, and unforgettable wonder.
             </p>
           </div>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
             {/* Value 1 */}
-            <div className="bg-surface p-8 rounded-xl border border-surface-container-highest hover:-translate-y-2 transition-transform duration-150">
+            <div className="bg-surface p-6 md:p-8 rounded-xl border border-surface-container-highest hover:-translate-y-1 transition-transform duration-150">
               <div className="w-16 h-16 bg-surface-container rounded-full flex items-center justify-center mb-6 text-secondary">
                 <BedDouble size={32} />
               </div>
@@ -88,8 +89,8 @@ export default function HomePage() {
               </p>
             </div>
             {/* Value 2 */}
-            <div className="bg-surface p-8 rounded-xl border border-surface-container-highest hover:-translate-y-2 transition-transform duration-150">
-              <div className="w-16 h-16 bg-surface-container rounded-full flex items-center justify-center mb-6 text-primary">
+            <div className="bg-surface p-6 md:p-8 rounded-xl border border-surface-container-highest hover:-translate-y-1 transition-transform duration-150">
+              <div className="w-14 h-14 md:w-16 md:h-16 bg-surface-container rounded-full flex items-center justify-center mb-4 md:mb-6 text-primary">
                 <Compass size={32} />
               </div>
               <h3 className="font-headline-md text-headline-md text-primary mb-4 text-2xl">Professional Guides</h3>
@@ -98,8 +99,8 @@ export default function HomePage() {
               </p>
             </div>
             {/* Value 3 */}
-            <div className="bg-surface p-8 rounded-xl border border-surface-container-highest hover:-translate-y-2 transition-transform duration-150">
-              <div className="w-16 h-16 bg-surface-container rounded-full flex items-center justify-center mb-6 text-secondary">
+            <div className="bg-surface p-6 md:p-8 rounded-xl border border-surface-container-highest hover:-translate-y-1 transition-transform duration-150">
+              <div className="w-14 h-14 md:w-16 md:h-16 bg-surface-container rounded-full flex items-center justify-center mb-4 md:mb-6 text-secondary">
                 <Camera size={32} />
               </div>
               <h3 className="font-headline-md text-headline-md text-primary mb-4 text-2xl">Memorable Experiences</h3>
