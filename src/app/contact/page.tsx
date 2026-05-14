@@ -110,7 +110,14 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-label-sm text-xs text-stone-500 uppercase tracking-widest mb-1 font-semibold">Call or WhatsApp</h3>
-                    <p className="font-body-md text-[#2D3921] font-medium">+254 720 899 402</p>
+                    <a 
+                      href="https://wa.me/254720899402" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="font-body-md text-[#2D3921] font-medium hover:text-[#C6893F] transition-colors duration-200 block"
+                    >
+                      +254 720 899 402
+                    </a>
                   </div>
                 </div>
                 
@@ -120,21 +127,32 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-label-sm text-xs text-stone-500 uppercase tracking-widest mb-1 font-semibold">Email</h3>
-                    <p className="font-body-md text-[#2D3921] font-medium break-all">hippotransfer@gmail.com</p>
+                    <a 
+                      href="mailto:hippotransfer@gmail.com" 
+                      className="font-body-md text-[#2D3921] font-medium break-all hover:text-[#C6893F] transition-colors duration-200 block"
+                    >
+                      hippotransfer@gmail.com
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* Map Card */}
-            <div className="bg-surface-container-low h-64 rounded-xl overflow-hidden border border-surface-variant shadow-sm relative">
-              <div className="absolute inset-0 bg-[#f0eee9] flex flex-col items-center justify-center">
-                <Image 
-                  src="https://lh3.googleusercontent.com/aida/ADBb0uhdoUuZO2HVWvK0m5alzMkzWVAIPjYVpZEZeeDY9vwS5YXTVVILviyZec2dhE2_JWPhgJYQjExCi7LK7h9ca8W-jjw4VxuaRFWyzYQus497IpGWcFNnMB-i40TR_Nzip9idZo91zhcaOYl8T-guvKsSOTe_DLsXXkbPJhE9cTNuyddQH-r_fLnEZ3yT-ZdOe2y2Q5jYnoh0pi06OJhoSZxchv6dRsgcHluPh6QFubYzaboT2dCEk033JDITyTzOVSZTR2JqyqlcbA"
-                  alt="Map of Mombasa County"
-                  fill
-                  className="object-cover"
-                />
+            {/* Map Card - Interactive */}
+            <div className="bg-surface-container-low h-[400px] lg:flex-1 rounded-xl overflow-hidden border border-surface-variant shadow-md relative group">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127357.54353880453!2d39.60334812239454!3d-4.03518596657934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x184012e78ecd02ad%3A0x23a1378f898124!2sMombasa%2C%20Kenya!5e0!3m2!1sen!2ske!4v1715712000000!5m2!1sen!2ske"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Hippo Adventures Location"
+                className="w-full h-full grayscale-[0.2] contrast-[1.1] brightness-[0.95] group-hover:grayscale-0 group-hover:brightness-100 transition-all duration-700 ease-in-out"
+              ></iframe>
+              <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded shadow-sm border border-stone-200 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <span className="text-[10px] font-bold uppercase tracking-wider text-stone-600">Interactive Map</span>
               </div>
             </div>
           </div>
