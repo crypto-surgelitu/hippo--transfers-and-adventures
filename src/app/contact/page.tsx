@@ -68,11 +68,11 @@ export default function ContactPage() {
           {/* Seamless bottom fade into page background */}
           <div className="absolute bottom-0 left-0 right-0 h-56 md:h-64 bg-gradient-to-t from-background via-background/80 to-transparent"></div>
         </div>
-        <div className="relative z-10 text-center px-6 max-w-4xl mx-auto flex flex-col items-center">
-          <h1 className="font-display-lg text-4xl md:text-display-lg text-surface-container-lowest mb-6 uppercase">
+        <div className="relative z-10 text-center px-6 w-full max-w-4xl mx-auto flex flex-col items-center">
+          <h1 className="font-display-lg text-3xl sm:text-4xl md:text-display-lg leading-tight text-surface-container-lowest mb-6 uppercase w-full max-w-[20rem] sm:max-w-none">
             Your Journey Begins Here
           </h1>
-          <p className="font-body-lg text-body-lg text-surface-container-lowest/90 max-w-2xl mx-auto">
+          <p className="font-body-lg text-body-lg text-surface-container-lowest/90 w-full max-w-2xl mx-auto">
             Connect with our safari specialists to craft a personalized, luxury expedition into the heart of wild Kenya.
           </p>
         </div>
