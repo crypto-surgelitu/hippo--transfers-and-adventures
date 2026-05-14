@@ -1,5 +1,9 @@
 # AGENTS.md
 
+**MANDATORY RULE:** Before starting any work in a session, you MUST read AGENTS.md completely. This file is the absolute authority for all development decisions. No work should begin without reviewing these guidelines first.
+
+---
+
 # PROJECT OVERVIEW
 
 Hippo Transfers and Adventures is a modern safari and tourism marketing website focused on:
@@ -80,6 +84,7 @@ Avoid overengineering at all costs.
 - replace working implementations unnecessarily
 - invent unsupported integrations
 - generate pseudo-production code
+- run random/unspecified tests (only run tests when explicitly requested by user)
 
 ---
 
