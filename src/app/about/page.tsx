@@ -1,26 +1,30 @@
 import Image from 'next/image';
 import { Compass, Eye } from 'lucide-react';
+import lionsHero from '@/assets/Golden Hour Safari_ Lions Awaken in Masai Mara.jpg';
+import safariStory from '@/assets/picture 3 of safari.png';
+import founderPortrait from '@/assets/picture 1 of safari .jpeg';
 
 export default function AboutPage() {
   return (
-    <main className="min-h-screen flex flex-col pt-20">
+    <main className="min-h-screen flex flex-col">
       {/* Hero Section */}
-      <section className="relative h-[60vh] min-h-[500px] w-full flex items-center justify-center overflow-hidden">
+      <section className="relative h-[55vh] min-h-[480px] w-full flex items-end justify-center overflow-hidden pb-16">
         <div className="absolute inset-0 z-0">
           <Image 
-            src="https://lh3.googleusercontent.com/aida/ADBb0uhUs-mROTv-qAtAbiF_8_ijOP9JHORx8Av0FyWIwIdnnGlf9jI8YouX2xbMprS9DjNT3GACO_obnhfJ6JmaxAhDviDPzHMKICnA5baCQ1d1m6MSuGFc57SSqYUUtQR7VcEUwEMN5tsBmRWOd2MH7wSj2onbVHWMX0zS_i7KCJqbW_AwieO4iYoPyaUAuN9c7Hj6ME2BFgZyuZyw7LEw2lbJnhyK2j9CxJipg3c7Fd4aD5FlcdsRH1yxnrml2xB470p0JwoxRkSG"
-            alt="Three lions sitting in the tall grass of the savannah at sunset"
+            src={lionsHero}
+            alt="Lions in Masai Mara during Golden Hour"
             fill
-            className="object-cover"
+            sizes="100vw"
+            className="object-cover object-top"
             priority
           />
-          <div className="absolute inset-0 bg-primary/40 mix-blend-multiply"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/30 to-black/60"></div>
         </div>
-        <div className="relative z-10 text-center px-4 max-w-4xl mx-auto mt-12">
-          <h1 className="font-display-lg text-5xl md:text-6xl lg:text-7xl font-bold text-on-primary mb-6 drop-shadow-lg text-white">
+        <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
+          <h1 className="font-display-lg text-5xl md:text-7xl font-bold text-white mb-6 drop-shadow-xl">
             A Legacy of Discovery
           </h1>
-          <p className="font-quote text-xl md:text-2xl text-on-primary max-w-2xl mx-auto font-light drop-shadow-md text-white">
+          <p className="font-quote text-xl md:text-2xl text-white/90 max-w-2xl mx-auto font-light drop-shadow-lg">
             Crafting extraordinary journeys with soul. Over a decade of passion, deep-rooted local expertise, and an unwavering commitment to the wild.
           </p>
         </div>
@@ -30,16 +34,17 @@ export default function AboutPage() {
       <section className="py-24 px-5 md:px-16 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
           <div className="lg:col-span-5 lg:col-start-1 relative">
-            <div className="aspect-[3/4] relative rounded-lg overflow-hidden shadow-lg z-10">
+            <div className="aspect-[4/5] relative rounded-lg overflow-hidden shadow-2xl z-10">
               <Image 
-                src="https://lh3.googleusercontent.com/aida/ADBb0uhy6LqABXSwvJt38P844FIiyVnnbwkOxYOJzK2-1Ir31Y5SKe1pRypZLbbdPcT2uQN4ovJZGY3ytsY91pT78twJn9QgOzGNVX31VbOidV1w25DWrzdDS5n_ySPulAezjp4SWRWhL_JfGzRY7Eu5e5DYYSAmRJsvwxP-unJC9aHgeQPrFS1nVp3EVDbFlrY4SnBHAjwypEWXk0O44f7Ix5FqYqfV6K4HKsHWIYu4OMeAtkJtfjVs02zTinscFFqPJB1kvZr4Jqit"
-                alt="Emmanuel AMANI K, Founder of Hippo Adventures"
+                src={safariStory}
+                alt="Safari Experience in Kenya"
                 fill
+                sizes="(max-width: 1024px) 100vw, 40vw"
                 className="object-cover"
               />
             </div>
             {/* Decorative element */}
-            <div className="absolute -bottom-8 -right-8 w-48 h-48 bg-surface-container-low -z-10 rounded"></div>
+            <div className="absolute -bottom-10 -right-10 w-64 h-64 bg-surface-container -z-10 rounded-xl opacity-50 hidden md:block"></div>
           </div>
           
           <div className="lg:col-span-6 lg:col-start-7 pt-12 lg:pt-0">
@@ -70,10 +75,10 @@ export default function AboutPage() {
             <div className="mt-12 flex items-center gap-4">
               <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-secondary-container relative">
                 <Image 
-                  src="https://lh3.googleusercontent.com/aida/ADBb0uh3vTmuHIC1AxHjFyk8L-Dp-5LocV3sgC5lqO69TDNCx9_d1EMr19A1ReiS_GUruhMFIqCVWoxHfR-w7W997pk6LHW_X3rvVT03fMgWWitXDeZQ4GCv4y8w6E26qsFu6nfHjLSd2EdVW3C6SsQNqc4JxM4D80EadK8QDYAwaz4a1QHNXgWWrm2V481MG73M3oJJMJW-yOaqIkJB2K0VpBoqSbGUzvZn-pX1Sv-s8XQqT3mh-vorjd742lYiv0AgR7jdqYRDrZMVcQ"
+                  src={founderPortrait}
                   alt="Founder Portrait"
                   fill
-                  className="object-cover"
+                  className="object-cover object-top"
                 />
               </div>
               <div>
@@ -103,7 +108,7 @@ export default function AboutPage() {
             {/* Mission Card */}
             <div className="bg-white rounded-xl p-12 relative overflow-hidden group shadow-sm hover:shadow-md transition-shadow">
               <div className="absolute top-0 right-0 w-32 h-32 bg-[#18230D]/10 rounded-bl-full -z-10 transition-transform group-hover:scale-110"></div>
-              <div className="w-16 h-16 rounded-full bg-secondary/10 flex items-center justify-center mb-6 text-secondary group-hover:scale-110 transition-transform duration-300">
+              <div className="w-16 h-16 rounded-full bg-secondary/10 flex items-center justify-center mb-6 text-secondary group-hover:scale-110 transition-transform duration-150">
                 <Compass size={32} />
               </div>
               <h3 className="font-headline-md text-2xl font-bold text-primary mb-4">Our Mission</h3>
@@ -115,7 +120,7 @@ export default function AboutPage() {
             {/* Vision Card */}
             <div className="bg-white rounded-xl p-12 relative overflow-hidden group shadow-sm hover:shadow-md transition-shadow">
               <div className="absolute top-0 right-0 w-32 h-32 bg-secondary/10 rounded-bl-full -z-10 transition-transform group-hover:scale-110"></div>
-              <div className="w-16 h-16 rounded-full bg-secondary/10 flex items-center justify-center mb-6 text-secondary group-hover:scale-110 transition-transform duration-300">
+              <div className="w-16 h-16 rounded-full bg-secondary/10 flex items-center justify-center mb-6 text-secondary group-hover:scale-110 transition-transform duration-150">
                 <Eye size={32} />
               </div>
               <h3 className="font-headline-md text-2xl font-bold text-primary mb-4">Our Vision</h3>

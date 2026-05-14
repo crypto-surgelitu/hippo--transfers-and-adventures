@@ -2,11 +2,18 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
 
 export function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const pathname = usePathname();
+
+  const isActive = (path: string) => {
+    if (path === '/') return pathname === '/';
+    return pathname?.startsWith(path);
+  };
 
   return (
     <>
@@ -31,15 +38,15 @@ export function Navbar() {
           <div className="flex items-center gap-12">
             {/* Navigation Links */}
             <div className="hidden md:flex items-center gap-8">
-              <Link href="/" className="font-serif text-lg text-secondary border-b-2 border-secondary pb-1 tracking-wide">Home</Link>
-              <Link href="/packages" className="font-serif text-lg text-on-surface-variant font-medium hover:text-primary transition-all duration-300 tracking-wide">Packages</Link>
-              <Link href="/about" className="font-serif text-lg text-on-surface-variant font-medium hover:text-primary transition-all duration-300 tracking-wide">Our Story</Link>
-              <Link href="/contact" className="font-serif text-lg text-on-surface-variant font-medium hover:text-primary transition-all duration-300 tracking-wide">Contact</Link>
+              <Link href="/" className={`font-serif text-lg tracking-wide transition-all duration-150 ${isActive('/') ? 'text-secondary border-b-2 border-secondary pb-1' : 'text-on-surface-variant font-medium hover:text-primary'}`}>Home</Link>
+              <Link href="/packages" className={`font-serif text-lg tracking-wide transition-all duration-150 ${isActive('/packages') ? 'text-secondary border-b-2 border-secondary pb-1' : 'text-on-surface-variant font-medium hover:text-primary'}`}>Packages</Link>
+              <Link href="/about" className={`font-serif text-lg tracking-wide transition-all duration-150 ${isActive('/about') ? 'text-secondary border-b-2 border-secondary pb-1' : 'text-on-surface-variant font-medium hover:text-primary'}`}>Our Story</Link>
+              <Link href="/contact" className={`font-serif text-lg tracking-wide transition-all duration-150 ${isActive('/contact') ? 'text-secondary border-b-2 border-secondary pb-1' : 'text-on-surface-variant font-medium hover:text-primary'}`}>Contact</Link>
             </div>
             
             {/* Primary Action */}
             <div className="flex items-center">
-              <Link href="/packages" className="bg-secondary text-on-secondary font-label-sm text-label-sm uppercase px-8 py-4 rounded hover:bg-secondary/90 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 hidden lg:block">
+              <Link href="/packages" className="bg-secondary text-on-secondary font-label-sm text-label-sm uppercase px-8 py-4 rounded hover:bg-secondary/90 hover:scale-[1.02] active:scale-[0.98] transition-all duration-150 hidden lg:block">
                 Plan Your Journey
               </Link>
               <button 
@@ -57,10 +64,10 @@ export function Navbar() {
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <div className="fixed inset-0 top-[140px] z-40 bg-surface md:hidden flex flex-col p-8 border-t border-outline-variant/30 overflow-y-auto">
-          <Link href="/" onClick={() => setIsMobileMenuOpen(false)} className="py-4 font-serif text-2xl text-on-surface border-b border-outline-variant/30">Home</Link>
-          <Link href="/packages" onClick={() => setIsMobileMenuOpen(false)} className="py-4 font-serif text-2xl text-on-surface border-b border-outline-variant/30">Packages</Link>
-          <Link href="/about" onClick={() => setIsMobileMenuOpen(false)} className="py-4 font-serif text-2xl text-on-surface border-b border-outline-variant/30">Our Story</Link>
-          <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)} className="py-4 font-serif text-2xl text-on-surface border-b border-outline-variant/30">Contact</Link>
+          <Link href="/" onClick={() => setIsMobileMenuOpen(false)} className={`py-4 font-serif text-2xl border-b border-outline-variant/30 ${isActive('/') ? 'text-secondary font-bold' : 'text-on-surface'}`}>Home</Link>
+          <Link href="/packages" onClick={() => setIsMobileMenuOpen(false)} className={`py-4 font-serif text-2xl border-b border-outline-variant/30 ${isActive('/packages') ? 'text-secondary font-bold' : 'text-on-surface'}`}>Packages</Link>
+          <Link href="/about" onClick={() => setIsMobileMenuOpen(false)} className={`py-4 font-serif text-2xl border-b border-outline-variant/30 ${isActive('/about') ? 'text-secondary font-bold' : 'text-on-surface'}`}>Our Story</Link>
+          <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)} className={`py-4 font-serif text-2xl border-b border-outline-variant/30 ${isActive('/contact') ? 'text-secondary font-bold' : 'text-on-surface'}`}>Contact</Link>
           <Link href="/packages" onClick={() => setIsMobileMenuOpen(false)} className="mt-8 bg-secondary text-on-secondary font-label-sm text-center uppercase px-8 py-4 rounded">
             Plan Your Journey
           </Link>

@@ -16,13 +16,13 @@ export function Footer() {
               Crafting extraordinary journeys with soul.
             </p>
             <div className="flex gap-4 items-center text-inverse-on-surface/80">
-              <a href="#" className="hover:text-secondary transition-colors duration-300">
+              <a href="#" className="hover:text-secondary transition-colors duration-150">
                 <Camera size={24} />
               </a>
-              <a href="#" className="hover:text-secondary transition-colors duration-300">
+              <a href="#" className="hover:text-secondary transition-colors duration-150">
                 <Globe size={24} />
               </a>
-              <a href="#" className="hover:text-secondary transition-colors duration-300">
+              <a href="#" className="hover:text-secondary transition-colors duration-150">
                 <PlayCircle size={24} />
               </a>
             </div>
@@ -32,10 +32,10 @@ export function Footer() {
           <div>
             <h4 className="font-label-sm text-label-sm text-secondary uppercase tracking-widest mb-6">Explore</h4>
             <ul className="space-y-4 font-body-md text-inverse-on-surface/80">
-              <li><Link href="/about" className="hover:text-secondary transition-colors duration-300">Sustainability</Link></li>
-              <li><Link href="/packages" className="hover:text-secondary transition-colors duration-300">Travel Guides</Link></li>
-              <li><Link href="/contact" className="hover:text-secondary transition-colors duration-300">Partner With Us</Link></li>
-              <li><Link href="/about" className="hover:text-secondary transition-colors duration-300">Privacy Policy</Link></li>
+              <li><Link href="/about" className="hover:text-secondary transition-colors duration-150">Sustainability</Link></li>
+              <li><Link href="/packages" className="hover:text-secondary transition-colors duration-150">Travel Guides</Link></li>
+              <li><Link href="/contact" className="hover:text-secondary transition-colors duration-150">Partner With Us</Link></li>
+              <li><Link href="/about" className="hover:text-secondary transition-colors duration-150">Privacy Policy</Link></li>
             </ul>
           </div>
           
@@ -43,10 +43,10 @@ export function Footer() {
           <div>
             <h4 className="font-label-sm text-label-sm text-secondary uppercase tracking-widest mb-6">Experiences</h4>
             <ul className="space-y-4 font-body-md text-inverse-on-surface/80">
-              <li><Link href="/packages" className="hover:text-secondary transition-colors duration-300">Packages</Link></li>
-              <li><Link href="/packages" className="hover:text-secondary transition-colors duration-300">Day Tours</Link></li>
-              <li><Link href="/about" className="hover:text-secondary transition-colors duration-300">Our Story</Link></li>
-              <li><Link href="/contact" className="hover:text-secondary transition-colors duration-300">Contact</Link></li>
+              <li><Link href="/packages" className="hover:text-secondary transition-colors duration-150">Packages</Link></li>
+              <li><Link href="/packages" className="hover:text-secondary transition-colors duration-150">Day Tours</Link></li>
+              <li><Link href="/about" className="hover:text-secondary transition-colors duration-150">Our Story</Link></li>
+              <li><Link href="/contact" className="hover:text-secondary transition-colors duration-150">Contact</Link></li>
             </ul>
           </div>
           

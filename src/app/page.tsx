@@ -28,10 +28,10 @@ export default function HomePage() {
             Experience the raw beauty of Africa with our curated, luxury safari journeys. Expertly guided, deeply immersive, and unforgettably comfortable.
           </p>
           <div className="flex gap-4 flex-col sm:flex-row">
-            <Link href="/packages" className="bg-secondary text-on-secondary font-label-sm text-label-sm uppercase px-8 py-4 rounded hover:scale-105 transition-transform duration-300">
+            <Link href="/packages" className="bg-secondary text-on-secondary font-label-sm text-label-sm uppercase px-8 py-4 rounded hover:scale-105 transition-transform duration-150">
               Explore Safaris
             </Link>
-            <Link href="/packages" className="bg-transparent border border-surface-container-lowest text-surface-container-lowest font-label-sm text-label-sm uppercase px-8 py-4 rounded hover:bg-surface-container-lowest/20 transition-colors duration-300">
+            <Link href="/packages" className="bg-transparent border border-surface-container-lowest text-surface-container-lowest font-label-sm text-label-sm uppercase px-8 py-4 rounded hover:bg-surface-container-lowest/20 transition-colors duration-150">
               View Day Tours
             </Link>
           </div>
@@ -78,7 +78,7 @@ export default function HomePage() {
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             {/* Value 1 */}
-            <div className="bg-surface p-8 rounded-xl border border-surface-container-highest hover:-translate-y-2 transition-transform duration-300">
+            <div className="bg-surface p-8 rounded-xl border border-surface-container-highest hover:-translate-y-2 transition-transform duration-150">
               <div className="w-16 h-16 bg-surface-container rounded-full flex items-center justify-center mb-6 text-secondary">
                 <BedDouble size={32} />
               </div>
@@ -88,7 +88,7 @@ export default function HomePage() {
               </p>
             </div>
             {/* Value 2 */}
-            <div className="bg-surface p-8 rounded-xl border border-surface-container-highest hover:-translate-y-2 transition-transform duration-300">
+            <div className="bg-surface p-8 rounded-xl border border-surface-container-highest hover:-translate-y-2 transition-transform duration-150">
               <div className="w-16 h-16 bg-surface-container rounded-full flex items-center justify-center mb-6 text-primary">
                 <Compass size={32} />
               </div>
@@ -98,7 +98,7 @@ export default function HomePage() {
               </p>
             </div>
             {/* Value 3 */}
-            <div className="bg-surface p-8 rounded-xl border border-surface-container-highest hover:-translate-y-2 transition-transform duration-300">
+            <div className="bg-surface p-8 rounded-xl border border-surface-container-highest hover:-translate-y-2 transition-transform duration-150">
               <div className="w-16 h-16 bg-surface-container rounded-full flex items-center justify-center mb-6 text-secondary">
                 <Camera size={32} />
               </div>

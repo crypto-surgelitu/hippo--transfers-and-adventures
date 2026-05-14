@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import { MapPin, Phone, Mail, Send } from 'lucide-react';
 import { useState } from 'react';
+import masaiMaraBg from '@/assets/Masai Mara National Reserve, Kenya_ The Complete Guide.jpg';
 
 export default function ContactPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -48,23 +49,26 @@ export default function ContactPage() {
   return (
     <main className="w-full pb-24">
       {/* Hero Section */}
-      <section className="relative w-full h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 z-0 bg-surface-container">
+      <section className="relative w-full h-[50vh] md:h-[60vh] min-h-[400px] flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0 z-0">
           <Image 
-            src="https://lh3.googleusercontent.com/aida/ADBb0ugf-pJCdvhQpx9xG_21XS8syGP5qeXatCMPN3x1Jzixb0FojMRmroHbBm14Ae5yqJPQnfgX1hmbgw_WGbjpactshBw4QIdtcEwFJsmMb87zvbUw8BGmJzqUTk4xjMl1VvyTGUtPTF8bqTleTzNrLJlETpwRUTatUIR-t7DVQm5caBVfea6MFRp6Ct4LeXZXNZiFUEJg1JwF3dG6Jl1JaKpUx2pazPO1j8O5Mw1NUniDS7SJJuqpakR0iyB1Uf7o_hzHuNIs3Mnzow"
-            alt="Safari Landscape"
+            src={masaiMaraBg}
+            alt="Masai Mara Landscape"
             fill
-            className="object-cover object-center"
+            sizes="100vw"
+            className="object-cover object-[center_35%] priority"
             priority
           />
-          <div className="absolute inset-0 bg-[#2D3921]/60 mix-blend-multiply"></div>
-          <div className="absolute inset-0 bg-gradient-to-t from-surface/80 via-transparent to-transparent"></div>
+          {/* Dark Overlay for Text Readability */}
+          <div className="absolute inset-0 bg-black/40"></div>
+          {/* Bottom Gradient to blend with content */}
+          <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-90"></div>
         </div>
         <div className="relative z-10 text-center px-6 max-w-4xl mx-auto mt-20">
-          <h1 className="font-display-lg text-5xl md:text-6xl font-bold text-[#FDFCF8] mb-6 drop-shadow-lg">
+          <h1 className="font-display-lg text-5xl md:text-7xl font-bold text-white mb-6 drop-shadow-[0_4px_4px_rgba(0,0,0,0.5)]">
             Your Journey Begins Here
           </h1>
-          <p className="font-body-lg text-lg text-[#E5D3B3] max-w-2xl mx-auto drop-shadow-md">
+          <p className="font-body-lg text-lg md:text-xl text-white/90 max-w-2xl mx-auto drop-shadow-md">
             Connect with our safari specialists to craft a personalized, luxury expedition into the heart of wild Kenya.
           </p>
         </div>

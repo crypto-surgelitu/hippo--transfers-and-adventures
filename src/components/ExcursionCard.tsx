@@ -18,7 +18,7 @@ export function ExcursionCard({ title, description, imageSrc, slug }: ExcursionC
           alt={title}
           fill
           sizes="(max-width: 768px) 100vw, 25vw"
-          className="object-cover group-hover:scale-105 transition-transform duration-700" 
+          className="object-cover group-hover:scale-105 transition-transform duration-300" 
         />
       </div>
       <div className="p-3 flex flex-col flex-grow justify-between">

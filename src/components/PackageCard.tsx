@@ -19,7 +19,7 @@ export function PackageCard({ title, duration, location, imageSrc, slug }: Packa
           alt={title} 
           fill
           sizes="(max-width: 768px) 50vw, 20vw"
-          className="object-cover group-hover:scale-105 transition-transform duration-700"
+          className="object-cover group-hover:scale-105 transition-transform duration-300"
         />
         <span className="absolute top-2 right-2 bg-primary/80 backdrop-blur-sm text-on-primary font-label-sm text-[10px] px-2 py-1 rounded-sm">
           {duration}

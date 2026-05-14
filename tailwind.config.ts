@@ -102,6 +102,9 @@ const config: Config = {
         "margin-desktop": "64px",
         "section-gap": "120px"
       },
+      maxWidth: {
+        "container-max": "1280px",
+      },
       fontFamily: {
         "label-sm": ["var(--font-plus-jakarta-sans)"],
         "headline-xl": ["var(--font-noto-serif)"],

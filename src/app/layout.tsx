@@ -32,7 +32,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${plusJakartaSans.variable} ${notoSerif.variable}`}>
+    <html lang="en" className={`light ${plusJakartaSans.variable} ${notoSerif.variable}`}>
       <body className="bg-background text-on-background font-body-md antialiased min-h-screen flex flex-col">
         <Navbar />
         <main className="flex-grow">

@@ -89,7 +89,7 @@ export default function PackageItineraryPage({ params }: { params: { slug: strin
                   src="https://lh3.googleusercontent.com/aida/ADBb0uhqYmWe9lDZPa-s3Q0XIcLD8fofviPqBTrBYgXBTVqqOze1bXLP_IjFMiYfnuzgBjOKrgWvAeAAUP1_ts-p9_6bZw_UlG51ysGNhLnSsLPH9fD3vq6GuVHOijDGORGaGy_mN-1xC-RdD31XZMSqhZDZWgSFvH-hlhQqABp7DT-ipQH42iutJM1ooumr1Zd62HEZ9CH53cAd4qiRs5OFIWlBxIUEXsUhHMOx4LzJ_UeXvkwwTDKKdF3VCODfqbZ6-2rpiNJPaola"
                   alt="Luxury Tented Camp in Masai Mara"
                   fill
-                  className="object-cover transition-transform duration-700 group-hover:scale-105"
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
                 />
               </div>
             </div>
@@ -106,7 +106,7 @@ export default function PackageItineraryPage({ params }: { params: { slug: strin
                   src="https://lh3.googleusercontent.com/aida/ADBb0ug75IAbUbi3TVSZy4KcJnpKnF9PH1zNtVxGLmJFH5vAsRgCEJPfPXWIbSsr8jcK6pA6gtd3DdI4rBSECSgneU5Va17IGTso8Pgc2q8l68W8sZQJzirlLiR0eZ6-1s6MrkSpLPRW3j-oX7pERtGvRKtAlT8OR9etNxOjBT-CIxI8F5MsTj23QMoVbb1sxlDs8sKqqOugkViu3aNLr4Pw-o1V2GPfyQOqVvkTos20XoagC5u_iPJHJg9_soagH-42SC5cOh170uHx"
                   alt="Great Migration river crossing"
                   fill
-                  className="object-cover transition-transform duration-700 group-hover:scale-105"
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
                 />
               </div>
               <div className="md:col-span-5 md:pl-12 pt-1 md:order-2 order-1">
@@ -145,7 +145,7 @@ export default function PackageItineraryPage({ params }: { params: { slug: strin
                   src="https://lh3.googleusercontent.com/aida/ADBb0ujspqqaCCAUjZ4Imuvm2XrV3yaAvs1hL2omDniJhzyQJMt19EzuuZ-glWkMpdO3s_KEYcGRC47CnH9o-Gld5lLkCW-UXZ_CoocCif-JU2rCfTvNyd24tIqr4HxF16DjQG18b6jbgrjPIIo-crrA6FZEPYsZOR3C63TOYr2sSOwzJ7ZDGvOw0QQlQP5oFlGY9PQK1x5WAdIZ09hy0ozgX_VI5p1PVwtttbNQtejpMsyF1gWAySY9V_09eSiEbVLkKoAQWdqQTZ9LUQ"
                   alt="Flamingos at Lake Nakuru"
                   fill
-                  className="object-cover transition-transform duration-700 group-hover:scale-105"
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
                 />
               </div>
             </div>
