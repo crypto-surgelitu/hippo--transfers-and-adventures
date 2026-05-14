@@ -7,24 +7,26 @@ import founderPortrait from '@/assets/picture 1 of safari .jpeg';
 export default function AboutPage() {
   return (
     <main className="min-h-screen flex flex-col">
-      {/* Hero Section */}
-      <section className="relative h-[55vh] min-h-[480px] w-full flex items-end justify-center overflow-hidden pb-16">
+      {/* Hero Section - matches home page style */}
+      <section className="relative w-full h-[90vh] min-h-[600px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image 
             src={lionsHero}
             alt="Lions in Masai Mara during Golden Hour"
+            placeholder="blur"
+            quality={90}
             fill
             sizes="100vw"
-            className="object-cover object-top"
+            className="object-cover object-bottom"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/30 to-black/60"></div>
+          <div className="absolute inset-0 bg-black/40 bg-gradient-to-t from-inverse-surface/90 via-inverse-surface/20 to-transparent"></div>
         </div>
-        <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
-          <h1 className="font-display-lg text-5xl md:text-7xl font-bold text-white mb-6 drop-shadow-xl">
+        <div className="relative z-10 text-center px-4 max-w-4xl mx-auto flex flex-col items-center">
+          <h1 className="font-display-lg text-4xl md:text-display-lg text-surface-container-lowest mb-6 uppercase">
             A Legacy of Discovery
           </h1>
-          <p className="font-quote text-xl md:text-2xl text-white/90 max-w-2xl mx-auto font-light drop-shadow-lg">
+          <p className="font-quote text-xl md:text-2xl text-surface-container-lowest/90 max-w-2xl mx-auto font-light">
             Crafting extraordinary journeys with soul. Over a decade of passion, deep-rooted local expertise, and an unwavering commitment to the wild.
           </p>
         </div>

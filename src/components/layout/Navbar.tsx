@@ -17,58 +17,97 @@ export function Navbar() {
 
   return (
     <>
-      <nav className="sticky top-0 w-full z-50 bg-surface border-b border-outline-variant/30 shadow-sm h-[140px] flex items-center">
-        <div className="w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex justify-between items-center h-full">
-          {/* Logo Area */}
-          <Link href="/" className="h-[75%] flex items-center gap-4 hover:opacity-90 transition-opacity">
-            <Image 
-              src="/logo.png" 
-              alt="Hippo Adventures Logo" 
-              width={80} 
-              height={80} 
-              className="h-[80px] w-auto object-contain rounded-full shadow-sm" 
+      <nav className="sticky top-0 w-full z-50 bg-surface/95 backdrop-blur-sm border-b border-outline-variant/20 h-[120px] flex items-center">
+        <div className="w-full max-w-container-max mx-auto pl-4 md:pl-8 pr-margin-mobile md:pr-gutter flex justify-between items-center h-full">
+
+          {/* Logo — flush left, blends with background */}
+          <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity duration-150 shrink-0">
+            <Image
+              src="/logo-transparent.png"
+              alt="Hippo Adventures Logo"
+              width={180}
+              height={100}
+              className="h-[100px] w-auto object-contain"
             />
-            <div className="flex flex-col justify-center">
-              <span className="font-serif text-3xl md:text-4xl font-bold text-primary leading-none">Hippo Adventures</span>
-              <span className="font-label-sm text-[10px] md:text-[12px] text-secondary uppercase tracking-[0.2em] mt-1 whitespace-nowrap">Service beyond expectation</span>
+            <div className="flex flex-col leading-tight">
+              <span className="font-serif text-2xl md:text-3xl font-bold text-primary tracking-tight">
+                Hippo Adventures
+              </span>
+              <span className="font-label-sm text-[9px] md:text-[11px] text-secondary uppercase tracking-[0.25em] mt-0.5">
+                Service beyond expectation
+              </span>
             </div>
           </Link>
-          
-          {/* Right-side Actions (Nav + Button) */}
-          <div className="flex items-center gap-12">
-            {/* Navigation Links */}
-            <div className="hidden md:flex items-center gap-8">
-              <Link href="/" className={`font-serif text-lg tracking-wide transition-all duration-150 ${isActive('/') ? 'text-secondary border-b-2 border-secondary pb-1' : 'text-on-surface-variant font-medium hover:text-primary'}`}>Home</Link>
-              <Link href="/packages" className={`font-serif text-lg tracking-wide transition-all duration-150 ${isActive('/packages') ? 'text-secondary border-b-2 border-secondary pb-1' : 'text-on-surface-variant font-medium hover:text-primary'}`}>Packages</Link>
-              <Link href="/about" className={`font-serif text-lg tracking-wide transition-all duration-150 ${isActive('/about') ? 'text-secondary border-b-2 border-secondary pb-1' : 'text-on-surface-variant font-medium hover:text-primary'}`}>Our Story</Link>
-              <Link href="/contact" className={`font-serif text-lg tracking-wide transition-all duration-150 ${isActive('/contact') ? 'text-secondary border-b-2 border-secondary pb-1' : 'text-on-surface-variant font-medium hover:text-primary'}`}>Contact</Link>
+
+          {/* Right-side: Nav links + CTA */}
+          <div className="flex items-center gap-10">
+            {/* Desktop Nav Links */}
+            <div className="hidden md:flex items-center gap-7">
+              {[
+                { href: '/', label: 'Home' },
+                { href: '/packages', label: 'Packages' },
+                { href: '/about', label: 'Our Story' },
+                { href: '/contact', label: 'Contact' },
+              ].map(({ href, label }) => (
+                <Link
+                  key={href}
+                  href={href}
+                  className={`font-serif text-base tracking-wide transition-all duration-150 ${
+                    isActive(href)
+                      ? 'text-secondary border-b border-secondary pb-0.5'
+                      : 'text-on-surface-variant hover:text-primary'
+                  }`}
+                >
+                  {label}
+                </Link>
+              ))}
             </div>
-            
-            {/* Primary Action */}
-            <div className="flex items-center">
-              <Link href="/packages" className="bg-secondary text-on-secondary font-label-sm text-label-sm uppercase px-8 py-4 rounded hover:bg-secondary/90 hover:scale-[1.02] active:scale-[0.98] transition-all duration-150 hidden lg:block">
-                Plan Your Journey
-              </Link>
-              <button 
-                className="md:hidden text-primary p-2"
-                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                aria-label="Toggle menu"
-              >
-                {isMobileMenuOpen ? <X size={32} /> : <Menu size={32} />}
-              </button>
-            </div>
+
+            {/* CTA Button */}
+            <Link
+              href="/packages"
+              className="bg-secondary text-on-secondary font-label-sm text-[11px] uppercase tracking-[0.15em] px-6 py-3 rounded hover:bg-secondary/90 hover:scale-[1.02] active:scale-[0.98] transition-all duration-150 hidden lg:block whitespace-nowrap"
+            >
+              Plan Your Journey
+            </Link>
+
+            {/* Mobile Hamburger */}
+            <button
+              className="md:hidden text-primary p-2"
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              aria-label="Toggle menu"
+            >
+              {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
+            </button>
           </div>
         </div>
       </nav>
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="fixed inset-0 top-[140px] z-40 bg-surface md:hidden flex flex-col p-8 border-t border-outline-variant/30 overflow-y-auto">
-          <Link href="/" onClick={() => setIsMobileMenuOpen(false)} className={`py-4 font-serif text-2xl border-b border-outline-variant/30 ${isActive('/') ? 'text-secondary font-bold' : 'text-on-surface'}`}>Home</Link>
-          <Link href="/packages" onClick={() => setIsMobileMenuOpen(false)} className={`py-4 font-serif text-2xl border-b border-outline-variant/30 ${isActive('/packages') ? 'text-secondary font-bold' : 'text-on-surface'}`}>Packages</Link>
-          <Link href="/about" onClick={() => setIsMobileMenuOpen(false)} className={`py-4 font-serif text-2xl border-b border-outline-variant/30 ${isActive('/about') ? 'text-secondary font-bold' : 'text-on-surface'}`}>Our Story</Link>
-          <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)} className={`py-4 font-serif text-2xl border-b border-outline-variant/30 ${isActive('/contact') ? 'text-secondary font-bold' : 'text-on-surface'}`}>Contact</Link>
-          <Link href="/packages" onClick={() => setIsMobileMenuOpen(false)} className="mt-8 bg-secondary text-on-secondary font-label-sm text-center uppercase px-8 py-4 rounded">
+        <div className="fixed inset-0 top-[100px] z-40 bg-surface md:hidden flex flex-col px-8 pt-6 border-t border-outline-variant/20 overflow-y-auto">
+          {[
+            { href: '/', label: 'Home' },
+            { href: '/packages', label: 'Packages' },
+            { href: '/about', label: 'Our Story' },
+            { href: '/contact', label: 'Contact' },
+          ].map(({ href, label }) => (
+            <Link
+              key={href}
+              href={href}
+              onClick={() => setIsMobileMenuOpen(false)}
+              className={`py-5 font-serif text-xl border-b border-outline-variant/20 ${
+                isActive(href) ? 'text-secondary font-semibold' : 'text-on-surface'
+              }`}
+            >
+              {label}
+            </Link>
+          ))}
+          <Link
+            href="/packages"
+            onClick={() => setIsMobileMenuOpen(false)}
+            className="mt-8 bg-secondary text-on-secondary font-label-sm text-center uppercase tracking-[0.15em] px-8 py-4 rounded"
+          >
             Plan Your Journey
           </Link>
         </div>

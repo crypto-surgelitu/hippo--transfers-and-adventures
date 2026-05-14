@@ -49,26 +49,28 @@ export default function ContactPage() {
   return (
     <main className="w-full pb-24">
       {/* Hero Section */}
-      <section className="relative w-full h-[50vh] md:h-[60vh] min-h-[400px] flex items-center justify-center overflow-hidden">
+      <section className="relative w-full h-[70vh] min-h-[500px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image 
             src={masaiMaraBg}
             alt="Masai Mara Landscape"
+            placeholder="blur"
+            quality={90}
             fill
             sizes="100vw"
-            className="object-cover object-[center_35%] priority"
+            className="object-cover object-center"
             priority
           />
-          {/* Dark Overlay for Text Readability */}
-          <div className="absolute inset-0 bg-black/40"></div>
-          {/* Bottom Gradient to blend with content */}
-          <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-90"></div>
+          {/* Matches home/about overlay style */}
+          <div className="absolute inset-0 bg-black/40 bg-gradient-to-t from-inverse-surface/90 via-inverse-surface/20 to-transparent"></div>
+          {/* Seamless bottom fade into page background */}
+          <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-background to-transparent"></div>
         </div>
-        <div className="relative z-10 text-center px-6 max-w-4xl mx-auto mt-20">
-          <h1 className="font-display-lg text-5xl md:text-7xl font-bold text-white mb-6 drop-shadow-[0_4px_4px_rgba(0,0,0,0.5)]">
+        <div className="relative z-10 text-center px-6 max-w-4xl mx-auto flex flex-col items-center">
+          <h1 className="font-display-lg text-4xl md:text-display-lg text-surface-container-lowest mb-6 uppercase">
             Your Journey Begins Here
           </h1>
-          <p className="font-body-lg text-lg md:text-xl text-white/90 max-w-2xl mx-auto drop-shadow-md">
+          <p className="font-body-lg text-body-lg text-surface-container-lowest/90 max-w-2xl mx-auto">
             Connect with our safari specialists to craft a personalized, luxury expedition into the heart of wild Kenya.
           </p>
         </div>

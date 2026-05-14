@@ -17,7 +17,7 @@ export default function HomePage() {
             quality={90}
             fill
             sizes="100vw"
-            className="object-cover"
+            className="object-cover object-bottom"
             priority
           />
           <div className="absolute inset-0 bg-black/40 bg-gradient-to-t from-inverse-surface/90 via-inverse-surface/20 to-transparent"></div>
