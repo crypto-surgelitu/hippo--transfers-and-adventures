@@ -18,16 +18,16 @@ export function Navbar() {
   return (
     <>
       <nav className="sticky top-0 w-full z-50 bg-surface/95 backdrop-blur-sm border-b border-outline-variant/20 h-[120px] flex items-center">
-        <div className="w-full max-w-container-max mx-auto pl-4 md:pl-8 pr-margin-mobile md:pr-gutter flex justify-between items-center h-full">
+        <div className="w-full max-w-container-max mx-auto pl-2 md:pl-4 pr-margin-mobile md:pr-gutter flex justify-between items-center h-full">
 
           {/* Logo — flush left, blends with background */}
           <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity duration-150 shrink-0">
             <Image
               src="/logo-transparent.png"
               alt="Hippo Adventures Logo"
-              width={180}
-              height={100}
-              className="h-[100px] w-auto object-contain"
+              width={220}
+              height={120}
+              className="h-[108px] md:h-[116px] w-auto object-contain"
             />
             <div className="flex flex-col leading-tight">
               <span className="font-serif text-2xl md:text-3xl font-bold text-primary tracking-tight">
