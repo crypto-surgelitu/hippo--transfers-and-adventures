@@ -58,13 +58,14 @@ export default function ContactPage() {
             quality={90}
             fill
             sizes="100vw"
-            className="object-cover object-center"
+            className="object-cover object-[24%_center] md:object-[40%_center] lg:object-center"
             priority
           />
-          {/* Matches home/about overlay style */}
-          <div className="absolute inset-0 bg-black/40 bg-gradient-to-t from-inverse-surface/90 via-inverse-surface/20 to-transparent"></div>
+          {/* Matches approved contact design with a natural safari-green wash */}
+          <div className="absolute inset-0 bg-[#2D3921]/45 mix-blend-multiply"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-background/70 via-black/20 to-black/10"></div>
           {/* Seamless bottom fade into page background */}
-          <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-background to-transparent"></div>
+          <div className="absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-t from-background via-background/70 to-transparent"></div>
         </div>
         <div className="relative z-10 text-center px-6 max-w-4xl mx-auto flex flex-col items-center">
           <h1 className="font-display-lg text-4xl md:text-display-lg text-surface-container-lowest mb-6 uppercase">
