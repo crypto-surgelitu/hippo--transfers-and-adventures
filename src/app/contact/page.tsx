@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import { MapPin, Phone, Mail, Send } from 'lucide-react';
 import { useState } from 'react';
-import masaiMaraBg from '@/assets/Masai Mara National Reserve, Kenya_ The Complete Guide.jpg';
+import masaiMaraBg from '@/assets/Masai Mara National Reserve, Kenya_ The Complete Guide.webp';
 
 export default function ContactPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -79,15 +79,15 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Layout (Bento-style Split) */}
-      <section className="max-w-7xl mx-auto px-5 md:px-16 -mt-24 relative z-20">
+      <section className="max-w-7xl mx-auto px-margin-mobile md:px-16 -mt-24 relative z-20">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           
           {/* Contact Information & Map Area */}
           <div className="lg:col-span-5 flex flex-col gap-8">
             {/* Direct Contact Card */}
-            <div className="bg-[#FDFCF8] p-10 shadow-lg border border-surface-variant rounded-xl relative overflow-hidden">
+            <div className="bg-[#FDFCF8] p-6 sm:p-10 shadow-lg border border-surface-variant rounded-xl relative overflow-hidden">
               <div className="absolute top-0 right-0 w-32 h-32 opacity-10 bg-[radial-gradient(circle_at_2px_2px,#2D3921_1px,transparent_0)] bg-[length:24px_24px] -mr-16 -mt-16 rounded-full"></div>
-              <h2 className="font-headline-md text-3xl font-bold text-[#2D3921] mb-8">Get in Touch</h2>
+              <h2 className="font-headline-md text-2xl md:text-3xl font-bold text-[#2D3921] mb-8">Get in Touch</h2>
               
               <div className="space-y-8">
                 <div className="flex items-start gap-4">
@@ -158,8 +158,8 @@ export default function ContactPage() {
           </div>
 
           {/* Inquiry Form */}
-          <div className="lg:col-span-7 bg-[#FDFCF8] p-10 md:p-14 shadow-lg border border-surface-variant rounded-xl relative">
-            <h2 className="font-headline-md text-3xl font-bold text-[#2D3921] mb-2">Send an Inquiry</h2>
+          <div className="lg:col-span-7 bg-[#FDFCF8] p-6 sm:p-10 md:p-14 shadow-lg border border-surface-variant rounded-xl relative">
+            <h2 className="font-headline-md text-2xl md:text-3xl font-bold text-[#2D3921] mb-2">Send an Inquiry</h2>
             <p className="font-body-md text-stone-600 mb-10">
               Please provide details about your desired experience, and our concierges will return with a bespoke proposal.
             </p>

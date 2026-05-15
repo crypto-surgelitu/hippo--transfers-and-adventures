@@ -1,19 +1,42 @@
 import Image from 'next/image';
 import { Clock, Map, PlaneTakeoff, CheckCircle2, XCircle, Bed, Compass, Camera } from 'lucide-react';
 import Link from 'next/link';
+import { safariPackages } from '@/data/packages';
+import { notFound } from 'next/navigation';
 
 export default function PackageItineraryPage({ params }: { params: { slug: string } }) {
-  // In a real app, we would fetch the package details based on the slug.
-  // For now, we'll hardcode the 7-day safari data based on the Stitch design.
+  const pkg = safariPackages.find(p => p.slug === params.slug);
+
+  if (!pkg) {
+    notFound();
+  }
+
+  const getIcon = (iconName: string) => {
+    switch (iconName) {
+      case 'bed': return <Bed size={20} />;
+      case 'compass': return <Compass size={20} />;
+      case 'camera': return <Camera size={20} />;
+      default: return <Compass size={20} />;
+    }
+  };
+
+  const getBigIcon = (iconName: string) => {
+    switch (iconName) {
+      case 'bed': return <Bed size={24} />;
+      case 'compass': return <Compass size={24} />;
+      case 'camera': return <Camera size={24} />;
+      default: return <Compass size={24} />;
+    }
+  };
   
   return (
-    <main className="pt-20 pb-24 md:pt-[100px]">
+    <main className="pt-0 pb-24">
       {/* Hero Section */}
       <section className="relative h-[80vh] min-h-[600px] w-full flex flex-col justify-end pb-16 px-5 md:px-16 bg-cover bg-center">
         <div className="absolute inset-0 z-0">
           <Image 
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvN2wVWxhFnnh5WZMqNUW8vgoYmCiBuBGH0y67lF-eutd0iBLJuvtFmoPxBoNZRWda7ZiXQKWAP_-Fu0bbI3FODNeDU1jeheIiIz7QOm9T7vde7UEAQabmZi38SRiP0e6uycUFBG_XAd04ywVykIn4xXMq0li6VKdnFzprsu90wpo8kaS2gq2pNZwKDD421W_5HIy4VGlKa67iN4eTLYNQV7-52DQKSF0XxOKT2JY22PvAsRA2npVn089ilvS_x80tr1tqhIrOcXU"
-            alt="Golden hour sunset over the vast African savanna"
+            src={pkg.heroImage}
+            alt={pkg.title}
             fill
             className="object-cover"
             priority
@@ -25,11 +48,11 @@ export default function PackageItineraryPage({ params }: { params: { slug: strin
           <span className="block font-label-sm text-xs uppercase tracking-widest text-secondary-container mb-4 font-semibold">
             Premium Safari Itinerary
           </span>
-          <h1 className="font-display-lg text-5xl md:text-6xl lg:text-7xl font-bold mb-6 max-w-4xl">
-            7 Days: Masai Mara to Tsavo East
+          <h1 className="font-display-lg text-3xl md:text-5xl lg:text-7xl font-bold mb-6 max-w-4xl">
+            {pkg.title}
           </h1>
-          <p className="font-quote text-xl md:text-2xl mb-10 max-w-2xl text-stone-200">
-            A grand tour across Kenya&apos;s most famous landscapes, curated for the discerning traveler.
+          <p className="font-quote text-base md:text-2xl mb-10 max-w-2xl text-stone-200">
+            {pkg.description}
           </p>
           
           <div className="flex flex-wrap gap-8 items-center border-t border-white/20 pt-6">
@@ -37,21 +60,21 @@ export default function PackageItineraryPage({ params }: { params: { slug: strin
               <Clock className="text-secondary-container" size={24} />
               <div>
                 <p className="font-label-sm text-xs text-stone-300 uppercase tracking-widest font-semibold">Duration</p>
-                <p className="font-body-lg text-lg">7 Days</p>
+                <p className="font-body-lg text-base md:text-lg">{pkg.duration}</p>
               </div>
             </div>
             <div className="flex items-center gap-3">
               <Map className="text-secondary-container" size={24} />
               <div>
                 <p className="font-label-sm text-xs text-stone-300 uppercase tracking-widest font-semibold">Destinations</p>
-                <p className="font-body-lg text-lg">6 Locations</p>
+                <p className="font-body-lg text-base md:text-lg">{pkg.destinations}</p>
               </div>
             </div>
             <div className="flex items-center gap-3">
               <PlaneTakeoff className="text-secondary-container" size={24} />
               <div>
                 <p className="font-label-sm text-xs text-stone-300 uppercase tracking-widest font-semibold">Starts</p>
-                <p className="font-body-lg text-lg">Mombasa</p>
+                <p className="font-body-lg text-base md:text-lg">{pkg.starts}</p>
               </div>
             </div>
           </div>
@@ -59,136 +82,83 @@ export default function PackageItineraryPage({ params }: { params: { slug: strin
       </section>
 
       {/* Itinerary Flow */}
-      <section className="max-w-7xl mx-auto px-5 md:px-16 py-24">
-        <div className="flex items-center gap-4 mb-16">
-          <h2 className="font-headline-xl text-4xl md:text-5xl font-bold text-primary">The Journey</h2>
+      <section className="max-w-7xl mx-auto px-margin-mobile md:px-16 py-16 md:py-24">
+        <div className="flex items-center gap-4 mb-12 md:mb-16">
+          <h2 className="font-headline-xl text-3xl md:text-5xl font-bold text-primary">The Journey</h2>
           <div className="h-px bg-surface-variant flex-1"></div>
         </div>
         
         <div className="relative pl-4 md:pl-12 border-l border-surface-variant space-y-24">
           
-          {/* Day 1 */}
-          <div className="relative group">
-            <div className="absolute -left-[21px] md:-left-[53px] top-0 w-10 h-10 rounded-full bg-surface-container-high border-4 border-background flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-white transition-colors">
-              <span className="font-label-sm text-xs font-bold">01</span>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
-              <div className="md:col-span-5 md:pr-12 pt-1">
-                <span className="font-label-sm text-xs text-secondary tracking-widest uppercase mb-2 block font-semibold">Day 1</span>
-                <h3 className="font-headline-md text-3xl font-bold text-primary mb-4">Mombasa to Masai Mara</h3>
-                <p className="font-body-md text-stone-600 mb-6">
-                  Begin your adventure with a scenic flight or drive from Mombasa into the heart of the Masai Mara. Arrive in time for an afternoon game drive, settling into your luxury tented camp as the sun sets over the plains.
-                </p>
-                <div className="flex items-center gap-2 text-surface-tint font-semibold">
-                  <Bed size={20} />
-                  <span className="font-label-sm text-sm">Luxury Tented Camp</span>
+          {pkg.itinerary.map((item, idx) => (
+            <div key={idx} className="relative group">
+              <div className="absolute -left-[21px] md:-left-[53px] top-0 w-10 h-10 rounded-full bg-surface-container-high border-4 border-background flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-white transition-colors">
+                <span className="font-label-sm text-xs font-bold">{item.day.padStart(2, '0')}</span>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+                <div className={`md:col-span-5 pt-1 ${idx % 2 === 0 ? 'md:pr-12' : 'md:pl-12 md:order-2'}`}>
+                  <span className="font-label-sm text-xs text-secondary tracking-widest uppercase mb-2 block font-semibold">Day {item.day}</span>
+                  <h3 className="font-headline-md text-xl md:text-3xl font-bold text-primary mb-4">{item.title}</h3>
+                  <p className="font-body-md text-sm md:text-base text-stone-600 mb-6">
+                    {item.description}
+                  </p>
+                  {item.accommodation && (
+                    <div className="flex items-center gap-2 text-surface-tint font-semibold">
+                      {getIcon(item.icon)}
+                      <span className="font-label-sm text-sm">{item.accommodation}</span>
+                    </div>
+                  )}
                 </div>
-              </div>
-              <div className="md:col-span-7 h-80 md:h-[400px] w-full overflow-hidden rounded-lg relative">
-                <Image 
-                  src="https://lh3.googleusercontent.com/aida/ADBb0uhqYmWe9lDZPa-s3Q0XIcLD8fofviPqBTrBYgXBTVqqOze1bXLP_IjFMiYfnuzgBjOKrgWvAeAAUP1_ts-p9_6bZw_UlG51ysGNhLnSsLPH9fD3vq6GuVHOijDGORGaGy_mN-1xC-RdD31XZMSqhZDZWgSFvH-hlhQqABp7DT-ipQH42iutJM1ooumr1Zd62HEZ9CH53cAd4qiRs5OFIWlBxIUEXsUhHMOx4LzJ_UeXvkwwTDKKdF3VCODfqbZ6-2rpiNJPaola"
-                  alt="Luxury Tented Camp in Masai Mara"
-                  fill
-                  className="object-cover transition-transform duration-300 group-hover:scale-105"
-                />
-              </div>
-            </div>
-          </div>
-
-          {/* Days 2-3 */}
-          <div className="relative group">
-            <div className="absolute -left-[21px] md:-left-[53px] top-0 w-10 h-10 rounded-full bg-surface-container-high border-4 border-background flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-white transition-colors">
-              <span className="font-label-sm text-xs font-bold">2-3</span>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
-              <div className="md:col-span-7 h-80 md:h-[400px] w-full overflow-hidden rounded-lg relative md:order-1 order-2">
-                <Image 
-                  src="https://lh3.googleusercontent.com/aida/ADBb0ug75IAbUbi3TVSZy4KcJnpKnF9PH1zNtVxGLmJFH5vAsRgCEJPfPXWIbSsr8jcK6pA6gtd3DdI4rBSECSgneU5Va17IGTso8Pgc2q8l68W8sZQJzirlLiR0eZ6-1s6MrkSpLPRW3j-oX7pERtGvRKtAlT8OR9etNxOjBT-CIxI8F5MsTj23QMoVbb1sxlDs8sKqqOugkViu3aNLr4Pw-o1V2GPfyQOqVvkTos20XoagC5u_iPJHJg9_soagH-42SC5cOh170uHx"
-                  alt="Great Migration river crossing"
-                  fill
-                  className="object-cover transition-transform duration-300 group-hover:scale-105"
-                />
-              </div>
-              <div className="md:col-span-5 md:pl-12 pt-1 md:order-2 order-1">
-                <span className="font-label-sm text-xs text-secondary tracking-widest uppercase mb-2 block font-semibold">Days 2-3</span>
-                <h3 className="font-headline-md text-3xl font-bold text-primary mb-4">The Great Migration</h3>
-                <p className="font-body-md text-stone-600 mb-6">
-                  Spend two full days immersed in the greatest wildlife spectacle on earth. Track predators across the rolling savannah and witness dramatic river crossings as herds brave the crocodile-infested waters.
-                </p>
-                <div className="flex items-center gap-2 text-surface-tint font-semibold">
-                  <Compass size={20} />
-                  <span className="font-label-sm text-sm">Predator tracking & river crossings</span>
+                <div className={`md:col-span-7 h-64 md:h-[400px] w-full overflow-hidden rounded-lg relative ${idx % 2 === 0 ? '' : 'md:order-1'}`}>
+                  <Image 
+                    src={item.image}
+                    alt={item.title}
+                    fill
+                    className="object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
                 </div>
               </div>
             </div>
-          </div>
-
-          {/* Day 4 */}
-          <div className="relative group">
-            <div className="absolute -left-[21px] md:-left-[53px] top-0 w-10 h-10 rounded-full bg-surface-container-high border-4 border-background flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-white transition-colors">
-              <span className="font-label-sm text-xs font-bold">04</span>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
-              <div className="md:col-span-5 md:pr-12 pt-1">
-                <span className="font-label-sm text-xs text-secondary tracking-widest uppercase mb-2 block font-semibold">Day 4</span>
-                <h3 className="font-headline-md text-3xl font-bold text-primary mb-4">Lake Nakuru & Naivasha</h3>
-                <p className="font-body-md text-stone-600 mb-6">
-                  Journey to the Great Rift Valley lakes. Observe endangered rhinos in Lake Nakuru National Park and take a serene boat ride on Lake Naivasha amidst a vibrant array of birdlife, including iconic flamingos.
-                </p>
-                <div className="flex items-center gap-2 text-surface-tint font-semibold">
-                  <Camera size={20} />
-                  <span className="font-label-sm text-sm">Rhinos and flamingos</span>
-                </div>
-              </div>
-              <div className="md:col-span-7 h-80 md:h-[400px] w-full overflow-hidden rounded-lg relative">
-                <Image 
-                  src="https://lh3.googleusercontent.com/aida/ADBb0ujspqqaCCAUjZ4Imuvm2XrV3yaAvs1hL2omDniJhzyQJMt19EzuuZ-glWkMpdO3s_KEYcGRC47CnH9o-Gld5lLkCW-UXZ_CoocCif-JU2rCfTvNyd24tIqr4HxF16DjQG18b6jbgrjPIIo-crrA6FZEPYsZOR3C63TOYr2sSOwzJ7ZDGvOw0QQlQP5oFlGY9PQK1x5WAdIZ09hy0ozgX_VI5p1PVwtttbNQtejpMsyF1gWAySY9V_09eSiEbVLkKoAQWdqQTZ9LUQ"
-                  alt="Flamingos at Lake Nakuru"
-                  fill
-                  className="object-cover transition-transform duration-300 group-hover:scale-105"
-                />
-              </div>
-            </div>
-          </div>
+          ))}
           
         </div>
       </section>
 
       {/* Inclusions/Exclusions Bento */}
-      <section className="bg-surface-container-low py-24">
-        <div className="max-w-7xl mx-auto px-5 md:px-16">
+      <section className="bg-surface-container-low py-16 md:py-24">
+        <div className="max-w-7xl mx-auto px-margin-mobile md:px-16">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Inclusions */}
-            <div className="bg-white p-12 rounded-xl shadow-sm border border-surface-variant/50">
+            <div className="bg-white p-8 md:p-12 rounded-xl shadow-sm border border-surface-variant/50">
               <div className="flex items-center gap-4 mb-8">
                 <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
                   <CheckCircle2 className="text-primary" size={24} />
                 </div>
-                <h3 className="font-headline-md text-3xl font-bold text-primary">Inclusions</h3>
+                <h3 className="font-headline-md text-2xl md:text-3xl font-bold text-primary">Inclusions</h3>
               </div>
               <ul className="space-y-4">
-                {['Professional Guide', '4x4 Safari Vehicle', 'Park Fees', 'All Meals', 'Luxury Lodging'].map((item, idx) => (
+                {pkg.inclusions.map((item, idx) => (
                   <li key={idx} className="flex items-start gap-3">
-                    <CheckCircle2 className="text-secondary mt-1" size={20} />
-                    <span className="font-body-lg text-lg text-stone-600">{item}</span>
+                    <CheckCircle2 className="text-secondary mt-1 flex-shrink-0" size={18} />
+                    <span className="font-body-lg text-base md:text-lg text-stone-600">{item}</span>
                   </li>
                 ))}
               </ul>
             </div>
 
             {/* Exclusions */}
-            <div className="bg-stone-50 p-12 rounded-xl border border-surface-variant/50">
+            <div className="bg-stone-50 p-8 md:p-12 rounded-xl border border-surface-variant/50">
               <div className="flex items-center gap-4 mb-8">
                 <div className="w-12 h-12 bg-surface-variant rounded-full flex items-center justify-center">
                   <XCircle className="text-stone-500" size={24} />
                 </div>
-                <h3 className="font-headline-md text-3xl font-bold text-primary">Exclusions</h3>
+                <h3 className="font-headline-md text-2xl md:text-3xl font-bold text-primary">Exclusions</h3>
               </div>
               <ul className="space-y-4">
-                {['International flights', 'Tips', 'Personal expenses'].map((item, idx) => (
+                {pkg.exclusions.map((item, idx) => (
                   <li key={idx} className="flex items-start gap-3 opacity-70">
-                    <XCircle className="text-stone-500 mt-1" size={20} />
-                    <span className="font-body-lg text-lg text-stone-600">{item}</span>
+                    <XCircle className="text-stone-500 mt-1 flex-shrink-0" size={18} />
+                    <span className="font-body-lg text-base md:text-lg text-stone-600">{item}</span>
                   </li>
                 ))}
               </ul>
@@ -199,12 +169,12 @@ export default function PackageItineraryPage({ params }: { params: { slug: strin
 
       {/* CTA Section */}
       <section className="max-w-4xl mx-auto px-5 text-center py-24">
-        <h2 className="font-headline-md text-4xl font-bold text-primary mb-6">Ready to Experience the Wild?</h2>
+        <h2 className="font-headline-md text-3xl md:text-4xl font-bold text-primary mb-6">Ready to Experience the Wild?</h2>
         <p className="font-body-lg text-lg text-stone-600 mb-10 max-w-2xl mx-auto">
           Connect with our safari experts directly via WhatsApp to customize your journey or secure your dates.
         </p>
         <Link 
-          href="https://wa.me/254786868977" 
+          href="https://wa.me/254720899402" 
           className="inline-flex items-center gap-3 bg-[#25D366] text-white px-8 py-4 rounded-full text-lg font-bold hover:scale-105 transition-transform shadow-lg"
           target="_blank"
           rel="noopener noreferrer"

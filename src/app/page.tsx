@@ -4,8 +4,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { BedDouble, Compass, Camera, ArrowRight } from 'lucide-react';
 import { motion } from 'framer-motion';
-import heroBg from '@/assets/Golden Hour Safari_ Lions Awaken in Masai Mara.jpg';
-import aboutImg from '@/assets/picture 1 of safari .jpeg';
+import heroBg from '@/assets/Golden Hour Safari_ Lions Awaken in Masai Mara.webp';
+import aboutImg from '@/assets/picture 1 of safari .webp';
 
 export default function HomePage() {
   return (
@@ -42,12 +42,12 @@ export default function HomePage() {
       </section>
 
       {/* About Snippet */}
-      <section className="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface max-w-container-max mx-auto">
+      <section className="py-16 md:py-section-gap px-margin-mobile md:px-margin-desktop bg-surface max-w-container-max mx-auto">
         <div className="grid md:grid-cols-2 gap-gutter items-center">
           <div>
             <span className="font-label-sm text-label-sm text-secondary uppercase tracking-widest mb-4 block">Our Heritage</span>
-            <h2 className="font-headline-xl text-headline-xl text-primary mb-6">Crafting Extraordinary Journeys for Over a Decade</h2>
-            <p className="font-body-lg text-body-lg text-on-surface-variant mb-6">
+            <h2 className="font-headline-xl text-3xl md:text-headline-xl text-primary mb-6">Crafting Extraordinary Journeys for Over a Decade</h2>
+            <p className="font-body-lg text-base md:text-body-lg text-on-surface-variant mb-6">
               Welcome to <span className="hover:text-secondary underline underline-offset-4 cursor-pointer align-baseline">Hippo Adventures Kenya</span> — your trusted safari partner with over 10 years of experience creating luxury and unforgettable adventures across Kenya. We specialize in tailor-made safaris, day trips, and wildlife experiences designed for comfort, excitement, and lasting memories. From Nairobi to the coast, we deliver seamless journeys, breathtaking encounters, and personalized service every step of the way.
             </p>
             <Link href="/about" className="inline-flex items-center gap-2 text-primary font-label-sm text-label-sm uppercase hover:text-secondary transition-colors">
@@ -82,11 +82,11 @@ export default function HomePage() {
       </section>
 
       {/* Value Propositions */}
-      <section className="py-section-gap px-margin-mobile md:px-gutter bg-surface-container-low">
+      <section className="py-16 md:py-section-gap px-margin-mobile md:px-gutter bg-surface-container-low">
         <div className="max-w-container-max mx-auto">
           <div className="text-center mb-16">
-            <h2 className="font-headline-xl text-headline-xl text-primary mb-4">Why Choose Hippo Adventures</h2>
-            <p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+            <h2 className="font-headline-xl text-3xl md:text-headline-xl text-primary mb-4">Why Choose Hippo Adventures</h2>
+            <p className="font-body-lg text-base md:text-body-lg text-on-surface-variant max-w-2xl mx-auto">
               We elevate the traditional safari experience, ensuring every moment is steeped in comfort, expertise, and unforgettable wonder.
             </p>
           </div>

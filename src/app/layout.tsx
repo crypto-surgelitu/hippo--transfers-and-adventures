@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     description: 'Experience unforgettable safari adventures and transfers in Kenya. Discover luxury safari packages, day tours, and excursions.',
     images: [
       {
-        url: '/og-image.jpg',
+        url: '/og-image.webp',
         width: 1200,
         height: 630,
         alt: 'Safari landscape with wildlife in Kenya',
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Hippo Transfers and Adventures | Kenya Safari Packages',
     description: 'Experience unforgettable safari adventures and transfers in Kenya.',
-    images: ['/og-image.jpg'],
+    images: ['/og-image.webp'],
   },
   robots: {
     index: true,

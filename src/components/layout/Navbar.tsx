@@ -17,17 +17,17 @@ export function Navbar() {
 
   return (
     <>
-      <nav className="sticky top-0 w-full z-50 bg-surface/95 backdrop-blur-sm border-b border-outline-variant/20 h-[148px] flex items-center">
+      <nav className="sticky top-0 w-full z-50 bg-surface/95 backdrop-blur-sm border-b border-outline-variant/20 h-[80px] lg:h-[148px] flex items-center transition-[height] duration-200">
         <div className="w-full max-w-[1440px] mx-auto pl-margin-mobile md:pl-gutter pr-margin-mobile md:pr-gutter flex justify-between items-center h-full">
 
           {/* Logo — flush left, blends with background */}
           <Link href="/" className="flex items-center gap-3 hover:opacity-80 active:opacity-70 transition-opacity duration-100 shrink-0">
             <Image
-              src="/logo-transparent.png"
+              src="/logo-transparent.webp"
               alt="Hippo Adventures Logo"
               width={140}
               height={140}
-              className="h-[100px] lg:h-[120px] w-auto object-contain"
+              className="h-[60px] lg:h-[120px] w-auto object-contain"
             />
             <div className="hidden xl:flex flex-col leading-tight">
               <span className="font-serif text-[2rem] font-medium text-primary uppercase tracking-[0.08em] leading-none">
@@ -85,7 +85,7 @@ export function Navbar() {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="fixed inset-0 top-[148px] z-40 bg-surface md:hidden flex flex-col px-8 pt-6 border-t border-outline-variant/20 overflow-y-auto">
+        <div className="fixed inset-0 top-[80px] lg:top-[148px] z-40 bg-surface md:hidden flex flex-col px-8 pt-6 border-t border-outline-variant/20 overflow-y-auto">
           {[
             { href: '/', label: 'Home' },
             { href: '/packages', label: 'Packages' },
