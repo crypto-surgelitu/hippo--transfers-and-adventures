@@ -1,6 +1,9 @@
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
 import { BedDouble, Compass, Camera, ArrowRight } from 'lucide-react';
+import { motion } from 'framer-motion';
 import heroBg from '@/assets/Golden Hour Safari_ Lions Awaken in Masai Mara.jpg';
 import aboutImg from '@/assets/picture 1 of safari .jpeg';
 
@@ -60,10 +63,20 @@ export default function HomePage() {
               sizes="(max-width: 768px) 100vw, 50vw"
               priority
             />
-            <div className="absolute -bottom-8 -left-8 bg-surface-container p-6 rounded-lg shadow-sm hidden md:block border border-outline-variant/30">
+            <motion.div 
+              className="absolute -bottom-8 -left-8 bg-surface-container p-6 rounded-lg shadow-sm hidden md:block border border-outline-variant/30"
+              animate={{
+                y: [0, -15, 0],
+              }}
+              transition={{
+                duration: 4,
+                repeat: Infinity,
+                ease: "easeInOut"
+              }}
+            >
               <p className="font-headline-md text-headline-md text-secondary mb-1">10+</p>
               <p className="font-label-sm text-label-sm text-on-surface-variant uppercase">Years Experience</p>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
