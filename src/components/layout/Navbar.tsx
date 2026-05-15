@@ -21,13 +21,13 @@ export function Navbar() {
         <div className="w-full max-w-[1440px] mx-auto pl-margin-mobile md:pl-gutter pr-margin-mobile md:pr-gutter flex justify-between items-center h-full">
 
           {/* Logo — flush left, blends with background */}
-          <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity duration-150 shrink-0">
+          <Link href="/" className="flex items-center gap-3 hover:opacity-80 active:opacity-70 transition-opacity duration-100 shrink-0">
             <Image
               src="/logo-transparent.png"
               alt="Hippo Adventures Logo"
-              width={260}
-              height={142}
-              className="h-[128px] lg:h-[140px] w-auto object-contain"
+              width={140}
+              height={140}
+              className="h-[100px] lg:h-[120px] w-auto object-contain"
             />
             <div className="hidden xl:flex flex-col leading-tight">
               <span className="font-serif text-[2rem] font-medium text-primary uppercase tracking-[0.08em] leading-none">
@@ -52,10 +52,10 @@ export function Navbar() {
                 <Link
                   key={href}
                   href={href}
-                  className={`font-serif text-base tracking-wide transition-all duration-150 ${
+                  className={`font-serif text-base tracking-wide border-b-2 pb-1 transition-colors duration-100 active:opacity-70 ${
                     isActive(href)
-                      ? 'text-secondary border-b border-secondary pb-0.5'
-                      : 'text-on-surface-variant hover:text-primary'
+                      ? 'text-secondary border-secondary'
+                      : 'text-on-surface-variant border-transparent hover:text-primary'
                   }`}
                 >
                   {label}
@@ -66,14 +66,14 @@ export function Navbar() {
             {/* CTA Button */}
             <Link
               href="/packages"
-              className="bg-secondary text-on-secondary font-label-sm text-[11px] uppercase tracking-[0.15em] px-6 py-3 rounded hover:bg-secondary/90 hover:scale-[1.02] active:scale-[0.98] transition-all duration-150 hidden lg:block whitespace-nowrap"
+              className="bg-secondary text-on-secondary font-label-sm text-[11px] uppercase tracking-[0.15em] px-6 py-3 rounded hover:bg-secondary/90 hover:scale-[1.02] active:scale-[0.98] active:opacity-90 transition-[transform,background-color,opacity] duration-100 hidden lg:block whitespace-nowrap"
             >
               Plan Your Journey
             </Link>
 
             {/* Mobile Hamburger */}
             <button
-              className="md:hidden text-primary p-2"
+              className="md:hidden text-primary p-2 active:scale-90 transition-transform duration-75"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               aria-label="Toggle menu"
             >
@@ -96,7 +96,7 @@ export function Navbar() {
               key={href}
               href={href}
               onClick={() => setIsMobileMenuOpen(false)}
-              className={`py-5 font-serif text-xl border-b border-outline-variant/20 ${
+              className={`py-5 font-serif text-xl border-b border-outline-variant/20 active:bg-surface-variant/30 transition-colors duration-75 ${
                 isActive(href) ? 'text-secondary font-semibold' : 'text-on-surface'
               }`}
             >
@@ -106,7 +106,7 @@ export function Navbar() {
           <Link
             href="/packages"
             onClick={() => setIsMobileMenuOpen(false)}
-            className="mt-8 bg-secondary text-on-secondary font-label-sm text-center uppercase tracking-[0.15em] px-8 py-4 rounded"
+            className="mt-8 bg-secondary text-on-secondary font-label-sm text-center uppercase tracking-[0.15em] px-8 py-4 rounded active:scale-[0.98] transition-transform duration-75"
           >
             Plan Your Journey
           </Link>
