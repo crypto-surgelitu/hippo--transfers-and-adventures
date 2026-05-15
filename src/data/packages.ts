@@ -30,7 +30,7 @@ export const safariPackages: SafariPackage[] = [
     location: "Masai Mara, Nakuru, Naivasha, Amboseli",
     starts: "Mombasa",
     destinations: "6 Locations",
-    imageSrc: "https://lh3.googleusercontent.com/aida-public/AB6AXuDLN9Y5w5a0a-nXtCtThiel0ufG79MGAZKeMsnfuoNFIJBkn2rCHGXtIuknH4P_RAd2c9Nfwk1J6BINDo5NNLLIDOvdRmLY3NgJDSqctFfuJdvUEFqnxxXvuaBACFzbUKdr-QJ7soozF6O7GqLq4hPBZzwyMeE-F8U0orMFMK0W0BYvqvyfkzbDYGGWJf2YPtTT7nSaYq8Fw8PFzYk1A0Et6BIpLjJ1xldk5n1HFJ_WPHaPKoTvhulVKjFt-5ilHmMVXBJAIWC-DNE",
+    imageSrc: "/assets/safaris/masai_mara_hero_hq.webp",
     heroImage: "/assets/safaris/masai_mara_hero_hq.webp",
     description: "A grand tour across Kenya's most famous landscapes, curated for the discerning traveler.",
     itinerary: [
@@ -40,7 +40,7 @@ export const safariPackages: SafariPackage[] = [
         description: "Begin your adventure with a scenic flight or drive from Mombasa into the heart of the Masai Mara. Arrive in time for an afternoon game drive, settling into your luxury tented camp as the sun sets over the plains.",
         icon: "bed",
         accommodation: "Luxury Tented Camp",
-        image: "https://lh3.googleusercontent.com/aida/ADBb0uhqYmWe9lDZPa-s3Q0XIcLD8fofviPqBTrBYgXBTVqqOze1bXLP_IjFMiYfnuzgBjOKrgWvAeAAUP1_ts-p9_6bZw_UlG51ysGNhLnSsLPH9fD3vq6GuVHOijDGORGaGy_mN-1xC-RdD31XZMSqhZDZWgSFvH-hlhQqABp7DT-ipQH42iutJM1ooumr1Zd62HEZ9CH53cAd4qiRs5OFIWlBxIUEXsUhHMOx4LzJ_UeXvkwwTDKKdF3VCODfqbZ6-2rpiNJPaola"
+        image: "/assets/safaris/picture 1 of safari .webp"
       },
       {
         day: "2-3",
@@ -67,7 +67,7 @@ export const safariPackages: SafariPackage[] = [
     location: "Tsavo East National Park",
     starts: "Mombasa / Diani",
     destinations: "1 Location",
-    imageSrc: "https://lh3.googleusercontent.com/aida-public/AB6AXuCs8sjCxI368OvH0MMDnW8_dClu4eMzwRBtFmwLBU57a4pKTqnsMoTcMoOhEyvxfRfFmRgvajWM_TrxZ2S13PUQPAmBgXakQY_ZqcpzzWUEJatf_fH1x9hHsqyIUS14VPGkOu02GhIgK76svMtoQsMdhn-VUgO341TQ928n031ZRvOq1iP2ddxHMPPc0Tsyf2ECkVKwjkW6KFDHh17nUVq2XhEaoEDtaWoQgZHX2duHl9eAB0B_0KJzZZsZ8devss7i9tr9dPHhqic",
+    imageSrc: "/assets/safaris/picture 3 of safari.webp",
     heroImage: "/assets/safaris/picture 3 of safari.webp",
     description: "An intensive day trip to Kenya's largest national park, famous for its red-skinned elephants and man-eating lions.",
     itinerary: [
@@ -89,7 +89,7 @@ export const safariPackages: SafariPackage[] = [
     location: "Tsavo East",
     starts: "Mombasa / Diani",
     destinations: "1 Location",
-    imageSrc: "https://lh3.googleusercontent.com/aida-public/AB6AXuDFH5zlXNFZn-ZpBHqgShxbEdFkw4rRL0-0wkuCKV2Uane5dN3ToOzl6twhZUEUjN0wC7dhMDX59VrsZkPUFvA_4XuzjcOCNCLVB92m6WLuBJNHyUI2ISM2nsEr5uhEvIpc2ooTpAXbHnjVoG9R2C470lnPRH9-C_R-1aABvickE2glL1CqmMpl6wLayvkjkMzZLCqeA4IFn8cKfJlrIgVSVhStt3WoFwcSDVPTxoWVF7tv2xpwA1J08YA0U2egHHdgPSR2DapGD00",
+    imageSrc: "/assets/safaris/Why Does The Great Migration Occur In East Africa_.webp",
     heroImage: "/assets/safaris/Our Readers' Favorite 10 African Safari Tours in 2021.webp",
     description: "Experience the magic of Tsavo East under the stars, with extended game drives and a night in the wild.",
     itinerary: [
@@ -119,7 +119,7 @@ export const safariPackages: SafariPackage[] = [
     location: "Tsavo East, Taita Hills Sanctuary",
     starts: "Mombasa",
     destinations: "2 Locations",
-    imageSrc: "https://lh3.googleusercontent.com/aida-public/AB6AXuCiGo2leyCNVj7C4O5f7F2Uaom49zTGPjCsH7GPQ63pGDMdIWixn_XX2z4xpsPmxc8xDxOptWQcPI43R7q5JQORPsH-itcVJy7rScbOxE8PLCcZ1vbfNvvuJptTnPTSfsBavQyUvN3T0-WmVdq0Dm2vbIkYx_qfJzQidbwFUjC8-LgohIPlwl4GIIKqyYte7qgnq68wva2yVMwYIDWYLz_XME6iZtlQnJtCf2kV_Z9OLoBTBRR3XeiqNqh787cOWp07ZBd_R7EFo-o",
+    imageSrc: "/assets/safaris/picture 1 of safari .webp",
     heroImage: "/assets/safaris/picture 1 of safari .webp",
     description: "Combine the vastness of Tsavo East with the unique stilted lodges of Taita Hills Sanctuary.",
     itinerary: [
@@ -157,7 +157,7 @@ export const safariPackages: SafariPackage[] = [
     location: "Tsavo East, Amboseli National Park",
     starts: "Mombasa",
     destinations: "2 Locations",
-    imageSrc: "https://lh3.googleusercontent.com/aida-public/AB6AXuA6mdqzovuJ5WITic74TuSVQOARLdW1DGjrY1bkzZKgxQ1-HMG8NlVmWlNBH_tIT6l8h_AgmAYwzeYNci0SPdIqqiwsWN0yi8KFnc-3-uTz6slrOMv6qzLtd-44y944t8tqs9vWZ6fDmEyxPu_pYffP8QD7Ptc8VMRA5ckKJBWTB80t83TV1OSJzTBucubVHa1vTDsKldr4bI0CiNUZlHQ3kQr7ZY-Vw2UoiUB87HdSe96AJih8RhZnii6RU320Yy1JtPgmUKnjQxY",
+    imageSrc: "/assets/safaris/Masai Mara National Reserve, Kenya_ The Complete Guide.webp",
     heroImage: "/assets/safaris/picture 3 of safari.webp",
     description: "Journey from the rugged Tsavo to the foot of Mt. Kilimanjaro in Amboseli.",
     itinerary: [
@@ -195,7 +195,7 @@ export const safariPackages: SafariPackage[] = [
     location: "Tsavo West, Amboseli, Tsavo East",
     starts: "Mombasa",
     destinations: "3 Locations",
-    imageSrc: "https://lh3.googleusercontent.com/aida-public/AB6AXuC-YwN3Tmmd1viDiJyGrEiD5mj4T-ZcP-T8xZlYj2rioNUUcH8YXIjGfBm0mkIeyBjkoSby5rCs99p5zeQ0vI77hoCrrazDscJJjP4vOEQL_Cn6Wihe2rk1gmMjZTsg1nuFoRDvy8TywUjD3CzdYUE44lYQHU4XorNMPh-EMSYahwaGJ_oVi9Ptc4xCLdSXxjPSNDlzGjZibgqdbg4T-hvmpMFUDMAv-eukWOfBvOQLM5kHccEAjrUu0PMh7hDAerWeJpWcMlX17GE",
+    imageSrc: "/assets/safaris/picture 3 of safari.webp",
     heroImage: "/assets/safaris/picture 1 of safari .webp",
     description: "The complete southern circuit tour, covering the diverse landscapes of both Tsavos and Amboseli.",
     itinerary: [
@@ -241,7 +241,7 @@ export const safariPackages: SafariPackage[] = [
     location: "Tsavo East, Amboseli, Taita Hills",
     starts: "Mombasa",
     destinations: "3 Locations",
-    imageSrc: "https://lh3.googleusercontent.com/aida-public/AB6AXuDk-83c_jEV1fJ-dJym3tjRU_2aMKHNOR2zHfjHUFgtbt02eYSLQO-gnvPSBKZE8_8MANbqI9uME4vj4auwY3lpO1qOigyawAvLtH6NDMQCPzVNhT9LMyz705bZQmEeJ-eDxyWPdvjltd-0d32XEa2iceFjpenB7ZRpkM-3PD02ZM5mrB1Q085exYgpbYti3Mz4vKJ2kGLkkisXIg6QQ-DZhXYnn-h3Ka8_rUx8lmh37H7cU3sdAXnpxH9h3SFqynB8kpcxXkGrKvM",
+    imageSrc: "/assets/safaris/Our Readers' Favorite 10 African Safari Tours in 2021.webp",
     heroImage: "/assets/safaris/Our Readers' Favorite 10 African Safari Tours in 2021.webp",
     description: "A varied itinerary featuring the red elephants of Tsavo, the heights of Amboseli, and the hills of Taita.",
     itinerary: [
@@ -287,7 +287,7 @@ export const safariPackages: SafariPackage[] = [
     location: "Tsavo East, Tsavo West, Amboseli, Taita Hills",
     starts: "Mombasa",
     destinations: "4 Locations",
-    imageSrc: "https://lh3.googleusercontent.com/aida-public/AB6AXuCckRqCn5uKAD50HsH9VYMS4S_FjRcgA8b8iRzw1wDAqQshKYi054DXrac1IwoySq_MdD0iOXsiaC0v3VFVZX0MzjpmufVueAKG9B113dnXXE19tqHMzj3GRyTxW2ZqvSjj648fiPO7xysue3_GLZIRlSI5iIxiYHIe48D7Yep9m58Oc-OL9Po1uIcsCM2_iMKTYcFMo9dbW2KYEiojgf6bm56crX82jMmnp86aHETYhyCEkZf_G-4C2acjkKIFdyjKvj3MtzW_jKE",
+    imageSrc: "/assets/safaris/picture 1 of safari .webp",
     heroImage: "/assets/safaris/picture 3 of safari.webp",
     description: "An extended southern circuit safari for those who want to see it all without the rush.",
     itinerary: [
@@ -341,7 +341,7 @@ export const safariPackages: SafariPackage[] = [
     location: "Masai Mara, Lake Nakuru, Lake Naivasha, Amboseli",
     starts: "Nairobi",
     destinations: "4 Locations",
-    imageSrc: "https://lh3.googleusercontent.com/aida-public/AB6AXuClQwLjSp--Va4DSYijlnE-zwZMk90bmcEhIDJLFoX3iOhGwU0rjGCvEHL_6RN2Ce7hUiIZZmjhHqV8Ztb3UPVrTkO0ObLAmF7Iotlo9g6HBQ2jT_x-CfQjZCzC7g0fqw_qSwzQhwKySZcjoPhHUkSL0xFu5A0zgv9JlzjaIwhDBJYssPwKUkwnOamTr92aQ2xXLr75lqxjsQ9y5ooCwp6G3Hl68pSfpG75KqIZAaLKzfd0VfI3rLgqFCZJX0NWQiO2QGbYt5L14AE",
+    imageSrc: "/assets/safaris/Golden Hour Safari_ Lions Awaken in Masai Mara.webp",
     heroImage: "/assets/safaris/Golden Hour Safari_ Lions Awaken in Masai Mara.webp",
     description: "The classic Kenyan loop starting from the capital, including the Mara and Rift Valley lakes.",
     itinerary: [
@@ -388,7 +388,7 @@ export const safariPackages: SafariPackage[] = [
     location: "Samburu, Ol Pejeta, Nakuru, Amboseli...",
     starts: "Nairobi",
     destinations: "8 Locations",
-    imageSrc: "https://lh3.googleusercontent.com/aida-public/AB6AXuDMiw5KhxDqsHz2UWntfoiY4I5RbEfRQf6GPfNZ4jbbP7_gaxZeDc6X9DtFYnP11lHrJKkS-1Dz2r4BBLrJJ0Zwpn_1uV4c1-kkXOWexMJ7IEjJanSZCyKtjB8Ha_HGbqNJ_XmbdYWzJXQQreXLKjNGTi4tyS2p_nxdUXk1a1ELPE6884DJgu9u98sVCUwn7h_Mq-WL6cl--QfBJiA6ZD9leemA-mrJHxoWDxrVUjzppShtl0Qij2DN8g4ZkSJiZ4wSlteNRk_f9Ic",
+    imageSrc: "/assets/safaris/picture 3 of safari.webp",
     heroImage: "/assets/safaris/picture 3 of safari.webp",
     description: "The ultimate Kenyan odyssey, traversing the country from the northern dry lands to the southern plains.",
     itinerary: [

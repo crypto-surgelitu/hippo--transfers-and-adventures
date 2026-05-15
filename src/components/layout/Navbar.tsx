@@ -28,6 +28,7 @@ export function Navbar() {
               width={140}
               height={140}
               className="h-[60px] lg:h-[120px] w-auto object-contain"
+              priority
             />
             <div className="hidden xl:flex flex-col leading-tight">
               <span className="font-serif text-[2rem] font-medium text-primary uppercase tracking-[0.08em] leading-none">

@@ -43,7 +43,7 @@ const WhatsAppFloat = () => {
           type: "spring",
           stiffness: 260,
           damping: 20,
-          delay: 1.5,
+          delay: 0.5,
         }}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }}
