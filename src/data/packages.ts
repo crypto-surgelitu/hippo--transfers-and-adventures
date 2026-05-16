@@ -67,8 +67,8 @@ export const safariPackages: SafariPackage[] = [
     location: "Tsavo East National Park",
     starts: "Mombasa / Diani",
     destinations: "1 Location",
-    imageSrc: "/assets/safaris/picture 3 of safari.webp",
-    heroImage: "/assets/safaris/picture 3 of safari.webp",
+    imageSrc: "/images/packages/1-day-tsavo-east/card.webp",
+    heroImage: "/images/packages/1-day-tsavo-east/hero.webp",
     description: "An intensive day trip to Kenya's largest national park, famous for its red-skinned elephants and man-eating lions.",
     itinerary: [
       {
