@@ -2,6 +2,8 @@
 
 **MANDATORY RULE:** Before starting any work in a session, you MUST read AGENTS.md completely. This file is the absolute authority for all development decisions. No work should begin without reviewing these guidelines first.
 
+**IMAGE RULE:** Before making any image-related changes, you MUST read [IMAGE_RULES.md](file:///c:/Users/ANTONY/Desktop/hippo--transfers-and-adventures/IMAGE_RULES.md) to ensure consistency and performance. For manual image management workflow, see [IMAGE_MANAGEMENT.md](file:///c:/Users/ANTONY/Desktop/hippo--transfers-and-adventures/IMAGE_MANAGEMENT.md).
+
 ---
 
 # PROJECT OVERVIEW
@@ -108,6 +110,19 @@ Avoid overengineering at all costs.
 - add unnecessary visual effects
 - add random gradients/animations
 - overcomplicate UI systems
+
+---
+
+# IMAGE RULES
+
+All image implementations must follow the standards defined in [IMAGE_RULES.md](file:///c:/Users/ANTONY/Desktop/hippo--transfers-and-adventures/IMAGE_RULES.md).
+
+## KEY PRINCIPLES:
+- Use WebP format
+- Use Next.js `<Image />` component
+- Follow standard folder structure in `public/images/`
+- Maintain cinematic, premium aesthetic
+- Ensure responsive scaling and object-fit
 
 ---
 

@@ -30,7 +30,7 @@ export const safariPackages: SafariPackage[] = [
     location: "Masai Mara, Nakuru, Naivasha, Amboseli",
     starts: "Mombasa",
     destinations: "6 Locations",
-    imageSrc: "/assets/safaris/masai_mara_hero_hq.webp",
+    imageSrc: "/images/packages/7-day-safari-itinerary/card.webp",
     heroImage: "/assets/safaris/masai_mara_hero_hq.webp",
     description: "A grand tour across Kenya's most famous landscapes, curated for the discerning traveler.",
     itinerary: [
@@ -40,7 +40,7 @@ export const safariPackages: SafariPackage[] = [
         description: "Begin your adventure with a scenic flight or drive from Mombasa into the heart of the Masai Mara. Arrive in time for an afternoon game drive, settling into your luxury tented camp as the sun sets over the plains.",
         icon: "bed",
         accommodation: "Luxury Tented Camp",
-        image: "/assets/safaris/picture 1 of safari .webp"
+        image: "/images/packages/7-day-safari-itinerary/day-1.webp"
       },
       {
         day: "2-3",

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Image from 'next/image';
 import { Compass, Eye } from 'lucide-react';
-import lionsHero from '@/assets/Golden Hour Safari_ Lions Awaken in Masai Mara.webp';
+import { HeroSlideshow } from '@/components/layout/HeroSlideshow';
 import safariStory from '@/assets/picture 3 of safari.webp';
 import founderPortrait from '@/assets/picture 1 of safari .webp';
 
@@ -15,24 +15,21 @@ export const metadata: Metadata = {
   },
 }
 
+const aboutSlideshowImages = [
+  '/images/slideshow/our-story/giraffes.webp',
+  '/images/slideshow/our-story/leopard.webp',
+  '/images/slideshow/our-story/lioness.webp',
+  '/images/slideshow/our-story/lions.webp',
+  '/images/slideshow/our-story/elephant.webp',
+  '/images/slideshow/our-story/rhino.webp',
+];
+
 export default function AboutPage() {
   return (
     <main className="min-h-screen flex flex-col">
       {/* Hero Section - matches home page style */}
       <section className="relative w-full h-[90vh] min-h-[600px] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <Image 
-            src={lionsHero}
-            alt="Lions in Masai Mara during Golden Hour"
-            placeholder="blur"
-            quality={90}
-            fill
-            sizes="100vw"
-            className="object-cover object-bottom"
-            priority
-          />
-          <div className="absolute inset-0 bg-black/40 bg-gradient-to-t from-inverse-surface/90 via-inverse-surface/20 to-transparent"></div>
-        </div>
+        <HeroSlideshow images={aboutSlideshowImages} />
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto flex flex-col items-center">
           <h1 className="font-display-lg text-4xl md:text-display-lg text-surface-container-lowest mb-6 uppercase">
             A Legacy of Discovery

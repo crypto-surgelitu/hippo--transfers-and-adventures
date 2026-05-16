@@ -2,9 +2,9 @@ import type { Metadata } from 'next'
 import Image from 'next/image';
 import Link from 'next/link';
 import { BedDouble, Compass, Camera, ArrowRight } from 'lucide-react';
-import heroBg from '@/assets/Golden Hour Safari_ Lions Awaken in Masai Mara.webp';
 import aboutImg from '@/assets/picture 1 of safari .webp';
 import ExperienceBadge from '@/components/ExperienceBadge';
+import { HeroSlideshow } from '@/components/layout/HeroSlideshow';
 
 export const metadata: Metadata = {
   title: 'Hippo Adventures Kenya | Luxury Safari Experiences',
@@ -12,24 +12,21 @@ export const metadata: Metadata = {
   keywords: ['kenya safari', 'luxury safari', 'masai mara safari', 'tsavo east safari', 'hippo adventures'],
 }
 
+const homeSlideshowImages = [
+  '/images/slideshow/home/lions.webp',
+  '/images/slideshow/home/elephant.webp',
+  '/images/slideshow/home/rhino.webp',
+  '/images/slideshow/home/leopard.webp',
+  '/images/slideshow/home/giraffes.webp',
+  '/images/slideshow/home/lioness.webp',
+];
+
 export default function HomePage() {
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
       <section className="relative w-full h-[90vh] min-h-[500px] md:min-h-[600px] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <Image 
-            src={heroBg} 
-            alt="Hero Safari Landscape" 
-            placeholder="blur"
-            quality={90}
-            fill
-            sizes="100vw"
-            className="object-cover object-bottom"
-            priority
-          />
-          <div className="absolute inset-0 bg-black/40 bg-gradient-to-t from-inverse-surface/90 via-inverse-surface/20 to-transparent"></div>
-        </div>
+        <HeroSlideshow images={homeSlideshowImages} />
         <div className="relative z-10 text-center px-margin-mobile md:px-gutter max-w-4xl mx-auto flex flex-col items-center">
           <h1 className="font-display-lg text-3xl md:text-5xl lg:text-display-lg text-surface-container-lowest mb-6 md:mb-8 uppercase tracking-wide">Kenya Safari Adventures Await</h1>
           <p className="font-body-lg text-base md:text-lg lg:text-body-lg text-surface-container-lowest max-w-2xl mb-8 md:mb-10">
