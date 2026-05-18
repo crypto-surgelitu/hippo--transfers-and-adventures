@@ -6,10 +6,12 @@ import aboutImg from '@/assets/picture 1 of safari .webp';
 import ExperienceBadge from '@/components/ExperienceBadge';
 import { HeroSlideshow } from '@/components/layout/HeroSlideshow';
 
+import { BRAND_NAME } from '@/lib/constants';
+
 export const metadata: Metadata = {
-  title: 'Hippo Adventures Kenya | Luxury Safari Experiences',
+  title: `${BRAND_NAME} | Luxury Safari Experiences`,
   description: 'Experience the raw beauty of Africa with our curated, luxury safari journeys. Expertly guided, deeply immersive, and unforgettably comfortable.',
-  keywords: ['kenya safari', 'luxury safari', 'masai mara safari', 'tsavo east safari', 'hippo adventures'],
+  keywords: ['kenya safari', 'luxury safari', 'masai mara safari', 'tsavo east safari', 'hippo adventures', 'hippo transfers and adventures'],
 }
 
 const homeSlideshowImages = [
@@ -50,7 +52,7 @@ export default function HomePage() {
             <span className="font-label-sm text-label-sm text-secondary uppercase tracking-widest mb-4 block">Our Heritage</span>
             <h2 className="font-headline-xl text-3xl md:text-headline-xl text-primary mb-6">Crafting Extraordinary Journeys for Over a Decade</h2>
             <p className="font-body-lg text-base md:text-lg text-on-surface-variant mb-6 leading-relaxed">
-              Welcome to <span className="text-secondary font-semibold">Hippo Adventures Kenya</span> — your trusted safari partner with over 10 years of experience creating luxury and unforgettable adventures across Kenya. We specialize in tailor-made safaris, day trips, and wildlife experiences designed for comfort, excitement, and lasting memories.
+              Welcome to <span className="text-secondary font-semibold">{BRAND_NAME}</span> — your trusted safari partner with over 10 years of experience creating luxury and unforgettable adventures across Kenya. We specialize in tailor-made safaris, day trips, and wildlife experiences designed for comfort, excitement, and lasting memories.
             </p>
             <Link href="/about" className="inline-flex items-center gap-2 text-primary font-label-sm text-label-sm uppercase hover:text-secondary transition-colors font-bold">
               Read Our Story <ArrowRight size={18} />
@@ -59,7 +61,7 @@ export default function HomePage() {
           <div className="relative h-[350px] sm:h-[450px] md:h-[550px] mt-8 md:mt-0">
             <Image 
               src={aboutImg} 
-              alt="Professional safari guide representing Hippo Adventures Kenya" 
+              alt={`Professional safari guide representing ${BRAND_NAME}`} 
               fill
               className="object-cover rounded-xl shadow-lg"
               sizes="(max-width: 768px) 100vw, 50vw"
@@ -74,7 +76,7 @@ export default function HomePage() {
       <section className="py-16 md:py-section-gap px-margin-mobile md:px-gutter bg-surface-container-low">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="font-headline-xl text-3xl md:text-headline-xl text-primary mb-4">Why Choose Hippo Adventures</h2>
+            <h2 className="font-headline-xl text-3xl md:text-headline-xl text-primary mb-4">Why Choose {BRAND_NAME}</h2>
             <p className="font-body-lg text-base md:text-lg text-on-surface-variant max-w-2xl mx-auto">
               We elevate the traditional safari experience, ensuring every moment is steeped in comfort, expertise, and unforgettable wonder.
             </p>

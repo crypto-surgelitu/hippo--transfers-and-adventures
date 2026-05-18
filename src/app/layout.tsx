@@ -21,18 +21,18 @@ export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://hippoadventureskenya.com'),
   title: {
     default: 'Hippo Transfers and Adventures | Kenya Safari Packages',
-    template: '%s | Hippo Adventures Kenya',
+    template: '%s | Hippo Transfers and Adventures',
   },
   description: 'Experience unforgettable safari adventures and transfers in Kenya. Discover luxury safari packages, day tours, and excursions to Tsavo, Amboseli, Masai Mara and more.',
   keywords: ['kenya safari', 'tsavo safari', 'masai mara', 'amboseli', 'safari tours', 'kenya tours', 'luxury safari', 'day tours kenya'],
-  authors: [{ name: 'Hippo Adventures Kenya' }],
-  creator: 'Hippo Adventures Kenya',
-  publisher: 'Hippo Adventures Kenya',
+  authors: [{ name: 'Hippo Transfers and Adventures' }],
+  creator: 'Hippo Transfers and Adventures',
+  publisher: 'Hippo Transfers and Adventures',
   openGraph: {
     type: 'website',
     locale: 'en_US',
     url: '/',
-    siteName: 'Hippo Adventures Kenya',
+    siteName: 'Hippo Transfers and Adventures',
     title: 'Hippo Transfers and Adventures | Kenya Safari Packages',
     description: 'Experience unforgettable safari adventures and transfers in Kenya. Discover luxury safari packages, day tours, and excursions.',
     images: [

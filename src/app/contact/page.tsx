@@ -4,12 +4,14 @@ import { MapPin, Phone, Mail } from 'lucide-react';
 import masaiMaraBg from '@/assets/Masai Mara National Reserve, Kenya_ The Complete Guide.webp';
 import ContactForm from '@/components/forms/ContactForm';
 
+import { BRAND_NAME } from '@/lib/constants';
+
 export const metadata: Metadata = {
-  title: 'Contact Us | Hippo Adventures Kenya',
+  title: `Contact Us | ${BRAND_NAME}`,
   description: 'Connect with our safari specialists to craft a personalized, luxury expedition into the heart of wild Kenya. Reach out via form, email, or WhatsApp.',
-  keywords: ['contact hippo adventures', 'kenya safari inquiry', 'book safari kenya', 'safari contact'],
+  keywords: ['contact hippo adventures', 'kenya safari inquiry', 'book safari kenya', 'safari contact', 'hippo transfers and adventures'],
   openGraph: {
-    title: 'Contact Us | Hippo Adventures Kenya',
+    title: `Contact Us | ${BRAND_NAME}`,
     description: 'Connect with our safari specialists to craft a personalized, luxury expedition into the heart of wild Kenya.',
   },
 }
@@ -113,7 +115,7 @@ export default function ContactPage() {
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Hippo Adventures Location"
+                title={`${BRAND_NAME} Location`}
                 className="w-full h-full grayscale-[0.2] contrast-[1.1] brightness-[0.95] group-hover:grayscale-0 group-hover:brightness-100 transition-all duration-700 ease-in-out"
               ></iframe>
               <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded shadow-sm border border-stone-200 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-300">

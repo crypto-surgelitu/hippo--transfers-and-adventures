@@ -6,6 +6,8 @@ import { usePathname } from 'next/navigation';
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
 
+import { BRAND_NAME, BRAND_TAGLINE } from '@/lib/constants';
+
 export function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const pathname = usePathname();
@@ -18,32 +20,32 @@ export function Navbar() {
   return (
     <>
       <nav className="sticky top-0 w-full z-50 bg-surface/95 backdrop-blur-sm border-b border-outline-variant/20 h-[80px] lg:h-[148px] flex items-center transition-[height] duration-200">
-        <div className="w-full max-w-[1440px] mx-auto pl-margin-mobile md:pl-gutter pr-margin-mobile md:pr-gutter flex justify-between items-center h-full">
+        <div className="w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex justify-between lg:grid lg:grid-cols-[1fr_auto_1fr] items-center h-full gap-4">
 
-          {/* Logo — flush left, blends with background */}
-          <Link href="/" className="flex items-center gap-3 hover:opacity-80 active:opacity-70 transition-opacity duration-100 shrink-0">
-            <Image
-              src="/logo-transparent.webp"
-              alt="Hippo Adventures Logo"
-              width={140}
-              height={140}
-              className="h-[60px] lg:h-[120px] w-auto object-contain"
-              priority
-            />
-            <div className="hidden xl:flex flex-col leading-tight">
-              <span className="font-serif text-[2rem] font-medium text-primary uppercase tracking-[0.08em] leading-none">
-                Hippo Adventures
+          {/* Logo Section — Balanced Premium Branding */}
+          <Link href="/" className="flex items-center gap-4 lg:gap-6 hover:opacity-90 active:opacity-80 transition-opacity duration-200 shrink-0">
+            <div className="relative w-[80px] h-[80px] sm:w-[100px] sm:h-[100px] lg:w-[140px] lg:h-[140px]">
+              <Image
+                src="/brand/hippo-icon.svg"
+                alt={BRAND_NAME}
+                fill
+                className="object-contain"
+                priority
+              />
+            </div>
+            <div className="flex flex-col justify-center leading-tight">
+              <span className="font-serif text-lg sm:text-xl lg:text-[1.5rem] font-bold text-primary uppercase tracking-[0.05em] leading-none">
+                {BRAND_NAME}
               </span>
-              <span className="font-label-sm text-[9px] md:text-[11px] text-secondary uppercase tracking-[0.25em] mt-0.5">
-                Service beyond expectation
+              <span className="font-label-sm text-[8px] sm:text-[9px] lg:text-[10px] text-secondary uppercase tracking-[0.3em] mt-1.5 lg:mt-2.5 font-semibold opacity-80">
+                {BRAND_TAGLINE}
               </span>
             </div>
           </Link>
 
-          {/* Right-side: Nav links + CTA */}
-          <div className="flex items-center gap-10">
-            {/* Desktop Nav Links */}
-            <div className="hidden md:flex items-center gap-7">
+          {/* Zone 2: Navigation (Center) */}
+          <div className="hidden lg:flex justify-center items-center h-full">
+            <div className="flex items-center gap-7 xl:gap-9">
               {[
                 { href: '/', label: 'Home' },
                 { href: '/packages', label: 'Packages' },
@@ -53,9 +55,9 @@ export function Navbar() {
                 <Link
                   key={href}
                   href={href}
-                  className={`font-serif text-base tracking-wide border-b-2 pb-1 transition-colors duration-100 active:opacity-70 ${
+                  className={`font-serif text-base tracking-wide border-b-2 pb-1 transition-colors duration-100 active:opacity-70 whitespace-nowrap ${
                     isActive(href)
-                      ? 'text-secondary border-secondary'
+                      ? 'text-secondary border-secondary font-semibold'
                       : 'text-on-surface-variant border-transparent hover:text-primary'
                   }`}
                 >
@@ -63,22 +65,23 @@ export function Navbar() {
                 </Link>
               ))}
             </div>
+          </div>
 
-            {/* CTA Button */}
+          {/* Zone 3: Actions (Right) */}
+          <div className="flex justify-end items-center gap-2 lg:gap-6 shrink-0">
             <Link
               href="/packages"
-              className="bg-secondary text-on-secondary font-label-sm text-[11px] uppercase tracking-[0.15em] px-6 py-3 rounded hover:bg-secondary/90 hover:scale-[1.02] active:scale-[0.98] active:opacity-90 transition-[transform,background-color,opacity] duration-100 hidden lg:block whitespace-nowrap"
+              className="bg-secondary text-on-secondary font-label-sm text-[9px] sm:text-[10px] lg:text-[11px] uppercase tracking-[0.1em] lg:tracking-[0.15em] px-3 py-2 sm:px-5 sm:py-2.5 lg:px-8 lg:py-4 rounded hover:bg-secondary/90 hover:scale-[1.02] active:scale-[0.98] active:opacity-90 transition-[transform,background-color,opacity] duration-100 whitespace-nowrap font-bold shadow-md"
             >
               Plan Your Journey
             </Link>
 
-            {/* Mobile Hamburger */}
             <button
-              className="md:hidden text-primary p-2 active:scale-90 transition-transform duration-75"
+              className="lg:hidden text-primary p-1 sm:p-2 active:scale-90 transition-transform duration-75 shrink-0"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               aria-label="Toggle menu"
             >
-              {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
+              {isMobileMenuOpen ? <X size={24} className="sm:w-[28px] sm:h-[28px]" /> : <Menu size={24} className="sm:w-[28px] sm:h-[28px]" />}
             </button>
           </div>
         </div>
@@ -86,7 +89,7 @@ export function Navbar() {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="fixed inset-0 top-[80px] lg:top-[148px] z-40 bg-surface md:hidden flex flex-col px-8 pt-6 border-t border-outline-variant/20 overflow-y-auto">
+        <div className="fixed inset-0 top-[80px] lg:top-[148px] z-40 bg-surface lg:hidden flex flex-col px-8 pt-6 border-t border-outline-variant/20 overflow-y-auto">
           {[
             { href: '/', label: 'Home' },
             { href: '/packages', label: 'Packages' },

@@ -1,5 +1,8 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Camera, Globe, PlayCircle, Phone, Mail, MapPin } from 'lucide-react';
+
+import { BRAND_NAME, BRAND_TAGLINE } from '@/lib/constants';
 
 export function Footer() {
   return (
@@ -8,10 +11,25 @@ export function Footer() {
       <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
           
-          {/* Column 1: Brand & Social */}
+          {/* Column 1: Brand & Social — Balanced Identity */}
           <div className="space-y-6">
-              <Link href="/" className="font-serif text-2xl font-bold text-amber-100 block tracking-wide">
-              Hippo Adventures Kenya
+            <Link href="/" className="flex items-center gap-4 hover:opacity-90 transition-opacity group">
+              <div className="relative w-[100px] h-[100px]">
+                <Image
+                  src="/brand/hippo-icon-white.svg"
+                  alt={BRAND_NAME}
+                  fill
+                  className="object-contain"
+                />
+              </div>
+              <div className="flex flex-col leading-tight">
+                <span className="font-serif text-[1.4rem] font-bold text-amber-100 uppercase tracking-[0.05em] leading-none">
+                  {BRAND_NAME}
+                </span>
+                <span className="font-label-sm text-[10px] text-amber-100/60 uppercase tracking-[0.2em] mt-2">
+                  {BRAND_TAGLINE}
+                </span>
+              </div>
             </Link>
             <p className="font-sans text-base text-amber-100/80 leading-relaxed max-w-xs italic">
               Crafting extraordinary journeys with soul.
@@ -76,7 +94,7 @@ export function Footer() {
         
         <div className="pt-8 border-t border-[#4a6741]/50 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="font-sans text-sm text-amber-100/60 text-center md:text-left tracking-wider">
-            © {new Date().getFullYear()} Hippo Adventures Kenya. All rights reserved.
+            © {new Date().getFullYear()} {BRAND_NAME}. All rights reserved.
           </p>
         </div>
       </div>

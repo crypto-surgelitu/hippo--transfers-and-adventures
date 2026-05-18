@@ -5,13 +5,15 @@ import { HeroSlideshow } from '@/components/layout/HeroSlideshow';
 import safariStory from '@/assets/picture 3 of safari.webp';
 import founderPortrait from '@/assets/picture 1 of safari .webp';
 
+import { BRAND_NAME } from '@/lib/constants';
+
 export const metadata: Metadata = {
-  title: 'Our Story | Hippo Adventures Kenya',
-  description: 'Discover the story behind Hippo Adventures Kenya. Over a decade of crafting extraordinary safari journeys with passion, expertise, and commitment to the wild.',
-  keywords: ['hippo adventures kenya', 'safari company kenya', 'kenya safari history', 'sustainable tourism kenya'],
+  title: `Our Story | ${BRAND_NAME}`,
+  description: `Discover the story behind ${BRAND_NAME}. Over a decade of crafting extraordinary safari journeys with passion, expertise, and commitment to the wild.`,
+  keywords: ['hippo adventures kenya', 'safari company kenya', 'kenya safari history', 'sustainable tourism kenya', 'hippo transfers and adventures'],
   openGraph: {
-    title: 'Our Story | Hippo Adventures Kenya',
-    description: 'Discover the story behind Hippo Adventures Kenya. Over a decade of crafting extraordinary safari journeys.',
+    title: `Our Story | ${BRAND_NAME}`,
+    description: `Discover the story behind ${BRAND_NAME}. Over a decade of crafting extraordinary safari journeys.`,
   },
 }
 
@@ -66,7 +68,7 @@ export default function AboutPage() {
             </h2>
             <div className="space-y-6 font-body-lg text-base md:text-lg text-on-surface-variant text-stone-600">
               <p>
-                Hippo Adventures Kenya didn&apos;t start in a boardroom; it began around a campfire over ten years ago. Our founders, driven by an insatiable passion for the untamed beauty of East Africa, sought to share a more authentic, profound connection to the wild.
+                {BRAND_NAME} didn&apos;t start in a boardroom; it began around a campfire over ten years ago. Our founders, driven by an insatiable passion for the untamed beauty of East Africa, sought to share a more authentic, profound connection to the wild.
               </p>
               <p>
                 We believe that a true safari is not just a tour, but an immersion. It&apos;s the rhythm of the Great Migration, the silence of a desert morning, and the stories shared beneath a canopy of stars. We pair this raw experience with the pinnacle of luxury hospitality, ensuring every journey is as comfortable as it is thrilling.

@@ -6,12 +6,14 @@ import { Compass, Sailboat } from 'lucide-react';
 import { safariPackages } from '@/data/packages';
 import { excursions } from '@/data/excursions';
 
+import { BRAND_NAME } from '@/lib/constants';
+
 export const metadata: Metadata = {
-  title: 'Safari Packages & Excursions | Hippo Adventures Kenya',
+  title: `Safari Packages & Excursions | ${BRAND_NAME}`,
   description: 'Explore our curated safari packages and day excursions in Kenya. From 1-day Tsavo trips to 10-day national park tours. Luxury safaris for every traveler.',
-  keywords: ['kenya safari packages', 'tsavo safari', 'masai mara tours', 'amboseli safari', 'kenya day tours', 'kenya excursions'],
+  keywords: ['kenya safari packages', 'tsavo safari', 'masai mara tours', 'amboseli safari', 'kenya day tours', 'kenya excursions', 'hippo transfers and adventures'],
   openGraph: {
-    title: 'Safari Packages & Excursions | Hippo Adventures Kenya',
+    title: `Safari Packages & Excursions | ${BRAND_NAME}`,
     description: 'Explore our curated safari packages and day excursions in Kenya.',
   },
 }

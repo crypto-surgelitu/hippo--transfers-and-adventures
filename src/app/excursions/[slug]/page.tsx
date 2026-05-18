@@ -5,12 +5,14 @@ import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import { WhatsAppCTA } from '@/components/WhatsAppCTA';
 
+import { BRAND_NAME } from '@/lib/constants';
+
 export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
   const excursion = excursions.find(e => e.slug === params.slug);
   if (!excursion) return {};
 
   return {
-    title: `${excursion.title} | Hippo Adventures Kenya`,
+    title: `${excursion.title} | ${BRAND_NAME}`,
     description: excursion.description,
   };
 }

@@ -24,7 +24,7 @@ export async function POST(request: Request) {
     const toEmail = process.env.CONTACT_EMAIL_TO || 'delivered@resend.dev';
 
     const { data, error } = await resend.emails.send({
-      from: 'Hippo Adventures <onboarding@resend.dev>', // Update with your verified domain in production
+      from: 'Hippo Transfers and Adventures <onboarding@resend.dev>', // Update with your verified domain in production
       to: [toEmail],
       subject: `New Inquiry: ${subject || 'General'} from ${fullName}`,
       html: `

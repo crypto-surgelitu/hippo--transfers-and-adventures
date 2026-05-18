@@ -1,30 +1,6 @@
-<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">Hippo Transfers and Adventures refined hippo icon</title>
-  <desc id="desc">A premium standalone side-profile hippo icon facing right.</desc>
-  <g fill="#2B1A0F">
-    <path d="M118 307L108 362C104 385 120 402 144 402H168C191 402 207 385 203 362L193 318L118 307Z"/>
-    <path d="M222 324L215 363C211 385 227 402 250 402H274C297 402 313 385 309 363L301 324H222Z"/>
-    <path d="M332 314L351 365C359 387 376 402 400 402H421C444 402 453 385 442 365L413 314H332Z"/>
-    <path d="M83 286C78 246 93 205 126 177C162 146 218 132 272 141C315 148 348 167 370 197C387 193 412 197 432 210C462 229 479 260 475 294C471 331 441 359 400 363C366 366 338 353 316 327C286 340 244 347 199 343C148 338 105 319 83 286Z"/>
-    <path d="M118 213C100 213 84 222 72 238C66 247 67 258 75 264C83 270 94 268 100 260C106 251 113 247 121 247L118 213Z"/>
-    <path d="M364 202C355 177 370 158 390 171C402 180 403 201 384 216L364 202Z"/>
-    <path d="M402 211C400 187 418 174 434 191C443 203 436 222 416 229L402 211Z"/>
-  </g>
-  <g stroke="#F7ECD9" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M378 251C391 243 410 246 423 259" stroke-width="10"/>
-    <path d="M405 305C420 312 437 306 447 292" stroke-width="10"/>
-    <path d="M161 329C186 344 222 350 261 347C287 345 310 338 328 327" stroke-width="9"/>
-    <path d="M374 215C363 229 357 250 358 274" stroke-width="8"/>
-  </g>
-  <g fill="#F7ECD9">
-    <circle cx="426" cy="271" r="7"/>
-    <circle cx="398" cy="242" r="6"/>
-  </g>
-  <path
-    d="M103 304C136 336 190 354 250 352C285 351 318 343 342 329"
-    stroke="#B7833F"
-    stroke-width="8"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-  />
+<svg width="200" height="200" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M115 85C125 85 130 75 130 65C130 55 122 48 112 48C108 48 105 50 102 52C95 45 85 40 70 40C50 40 35 55 30 75C25 95 35 115 55 120C60 122 80 125 105 115C115 110 125 100 125 85H115Z" stroke="#030A00" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M50 120V135M70 122V140M95 118V135M110 112V130" stroke="#030A00" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="115" cy="60" r="3" fill="#030A00"/>
+  <path d="M105 48C105 44 108 42 110 42" stroke="#030A00" stroke-width="4" stroke-linecap="round"/>
 </svg>
