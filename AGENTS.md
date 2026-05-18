@@ -424,6 +424,38 @@ Maintain consistent organization.
 
 ---
 
+# CHANGE ISOLATION RULE
+
+**MANDATORY:** Only modify files directly related to the requested issue.
+
+## DO NOT:
+- touch unrelated UI
+- alter spacing globally
+- change typography outside target scope
+- rewrite components unnecessarily
+- regenerate layouts
+- replace working sections
+- modify shared systems unless absolutely required
+
+## REQUIREMENTS:
+- minimal targeted edits only
+- isolate changes to the specific scope
+- preserve working implementations
+- avoid cascading changes to unrelated files
+
+---
+
+# BEFORE EDITING
+
+The agent must:
+1. Identify root cause
+2. Explain affected files internally
+3. Verify dependencies
+4. Check for reusable existing patterns
+5. Avoid introducing new architecture
+
+---
+
 # GIT WORKFLOW RULES
 
 After every stable feature:

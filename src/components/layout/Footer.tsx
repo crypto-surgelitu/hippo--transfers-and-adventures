@@ -14,7 +14,7 @@ export function Footer() {
           {/* Column 1: Brand & Social — Balanced Identity */}
           <div className="space-y-6">
             <Link href="/" className="flex items-center gap-4 hover:opacity-90 transition-opacity group">
-              <div className="relative w-[100px] h-[100px]">
+              <div className="relative h-[120px] w-[120px] shrink-0">
                 <Image
                   src="/brand/hippo-icon-white.svg"
                   alt={BRAND_NAME}
