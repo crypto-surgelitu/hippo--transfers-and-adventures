@@ -35,13 +35,13 @@ export function Footer() {
               Crafting extraordinary journeys with soul.
             </p>
             <div className="flex gap-4 items-center text-amber-100/80">
-              <a href="#" className="hover:text-amber-300 transition-colors duration-300">
+              <a href="https://www.instagram.com/hippotransfer" target="_blank" rel="noopener noreferrer" className="hover:text-amber-300 transition-colors duration-300">
                 <Camera size={22} />
               </a>
-              <a href="#" className="hover:text-amber-300 transition-colors duration-300">
+              <a href="https://www.facebook.com/hippotransfer" target="_blank" rel="noopener noreferrer" className="hover:text-amber-300 transition-colors duration-300">
                 <Globe size={22} />
               </a>
-              <a href="#" className="hover:text-amber-300 transition-colors duration-300">
+              <a href="https://www.youtube.com/@hippotransfer" target="_blank" rel="noopener noreferrer" className="hover:text-amber-300 transition-colors duration-300">
                 <PlayCircle size={22} />
               </a>
             </div>

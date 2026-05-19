@@ -90,7 +90,7 @@ export function Navbar() {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="fixed inset-0 top-[80px] lg:top-[148px] z-40 bg-surface lg:hidden flex flex-col px-8 pt-6 border-t border-outline-variant/20 overflow-y-auto">
+        <div className="fixed inset-0 top-[80px] lg:top-[148px] z-40 bg-surface lg:hidden flex flex-col px-8 pt-6 border-t border-surface-variant">
           {[
             { href: '/', label: 'Home' },
             { href: '/packages', label: 'Packages' },

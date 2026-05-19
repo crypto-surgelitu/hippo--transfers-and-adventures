@@ -114,7 +114,8 @@ export default function ContactForm() {
               id="dates" 
               name="dates"
               type="date" 
-              className="w-full px-0 py-2 bg-transparent border-0 border-b border-stone-300 text-[#2D3921] focus:ring-0 focus:border-[#2D3921] font-body-md"
+              min={new Date().toISOString().split('T')[0]}
+              className="w-full px-0 py-2 bg-transparent border-0 border-b border-stone-300 text-[#2D3921] focus:ring-0 focus:border-[#2D3921] font-body-md cursor-pointer"
             />
           </div>
           <div className="flex flex-col">
