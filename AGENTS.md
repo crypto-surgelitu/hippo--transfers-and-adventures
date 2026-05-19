@@ -93,6 +93,39 @@ Avoid overengineering at all costs.
 
 ---
 
+# CRASH PREVENTION RULES
+
+**THIS IS CRITICAL** — violations will crash the dev server process:
+
+## Client Component Rule
+ANY file that uses any of the following MUST have `"use client"` as the very first line:
+- framer-motion (motion.div, AnimatePresence, useAnimation, etc.)
+- React hooks (useState, useEffect, useRef, useCallback, useMemo)
+- Browser APIs (window, document, navigator, localStorage)
+- Event handlers (onClick, onChange, etc. on interactive elements)
+- Google Maps components
+
+If you are unsure — add `"use client"`. Never omit it from a component that touches any of the above.
+
+## SSR Guard Rule
+NEVER access `window`, `document`, `navigator`, or any browser API at module level or outside of:
+- `useEffect` hooks
+- `dynamic(() => import(...), { ssr: false })` wrappers
+- `typeof window !== 'undefined'` checks
+
+## Google Maps Rule
+The Google Maps component MUST always be wrapped in a dynamic import with `ssr: false`:
+```tsx
+const MapComponent = dynamic(() => import('@/components/MapComponent'), { ssr: false })
+```
+Never import it directly at the top of a Server Component page.
+
+## next.config.js Rule
+NEVER modify next.config.js unless explicitly instructed to do so.
+Any syntax error in this file kills the entire dev server.
+
+---
+
 # DESIGN RULES
 
 ## MUST:

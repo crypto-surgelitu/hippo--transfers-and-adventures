@@ -24,7 +24,7 @@ export function Navbar() {
 
           {/* Logo Section — Balanced Premium Branding */}
           <Link href="/" className="flex items-center gap-3 lg:gap-4 hover:opacity-90 active:opacity-80 transition-opacity duration-200 shrink-0">
-            <div className="relative w-[85px] h-[85px] sm:w-[100px] sm:h-[100px] lg:w-[140px] lg:h-[140px]">
+            <div className="relative w-[100px] h-[100px] sm:w-[120px] sm:h-[120px] lg:w-[165px] lg:h-[165px]">
               <Image
                 src="/brand/hippo-icon.svg"
                 alt={BRAND_NAME}
@@ -71,7 +71,7 @@ export function Navbar() {
           {/* Zone 3: Actions (Right) */}
           <div className="flex justify-end items-center gap-2 lg:gap-6 shrink-0">
             <Link
-              href="/packages"
+              href="/contact"
               className="bg-secondary text-on-secondary font-label-sm text-[9px] sm:text-[10px] lg:text-[11px] uppercase tracking-[0.1em] lg:tracking-[0.15em] px-3 py-2 sm:px-5 sm:py-2.5 lg:px-8 lg:py-4 rounded hover:bg-secondary/90 hover:scale-[1.02] active:scale-[0.98] active:opacity-90 transition-[transform,background-color,opacity] duration-100 whitespace-nowrap font-bold shadow-md"
             >
               Plan Your Journey
@@ -109,7 +109,7 @@ export function Navbar() {
             </Link>
           ))}
           <Link
-            href="/packages"
+            href="/contact"
             onClick={() => setIsMobileMenuOpen(false)}
             className="mt-8 bg-secondary text-on-secondary font-label-sm text-center uppercase tracking-[0.15em] px-8 py-4 rounded active:scale-[0.98] transition-transform duration-75"
           >
