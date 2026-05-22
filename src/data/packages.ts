@@ -173,7 +173,7 @@ export const safariPackages: SafariPackage[] = [
         title: "Final Game Drive",
         description: "Morning game drive in Taita Hills before returning to the coast.",
         icon: "camera",
-        image: "/images/packages/3-days-tsavo-east-taita-hills/gallery-2.webp"
+        image: "/images/packages/3-days-tsavo-east-taita-hills/gallery-3.webp"
       }
     ],
     inclusions: ['Professional Guide', '4x4 Safari Vehicle', 'Park Fees', 'All Meals', 'Lodging'],
@@ -303,7 +303,7 @@ export const safariPackages: SafariPackage[] = [
         title: "Return Journey",
         description: "Final morning safari.",
         icon: "compass",
-        image: "/images/packages/4-days-tsavo-east-amboseli-taita-hills/gallery-3.webp"
+        image: "/images/packages/4-days-tsavo-east-amboseli-taita-hills/gallery-4.webp"
       }
     ],
     inclusions: ['Professional Guide', '4x4 Safari Vehicle', 'Park Fees', 'All Meals', 'Lodging'],
@@ -404,7 +404,7 @@ export const safariPackages: SafariPackage[] = [
         description: "Finishing with the iconic Kilimanjaro views.",
         icon: "bed",
         accommodation: "Amboseli Lodge",
-        image: "/images/packages/6-days-safari-nairobi/gallery-3.webp"
+        image: "/images/packages/6-days-safari-nairobi/gallery-4.webp"
       }
     ],
     inclusions: ['Professional Guide', '4x4 Safari Vehicle', 'Park Fees', 'All Meals', 'Lodging'],
@@ -458,14 +458,14 @@ export const safariPackages: SafariPackage[] = [
         description: "Elephants in the shadow of the mountain.",
         icon: "bed",
         accommodation: "Amboseli Lodge",
-        image: "/images/packages/10-days-samburu-tsavo-east/gallery-4.webp"
+        image: "/images/packages/10-days-samburu-tsavo-east/gallery-5.webp"
       },
       {
         day: "9-10",
         title: "Tsavo East & Departure",
         description: "Finishing in the theatre of the wild.",
         icon: "compass",
-        image: "/images/packages/10-days-samburu-tsavo-east/gallery-3.webp"
+        image: "/images/packages/10-days-samburu-tsavo-east/gallery-6.webp"
       }
     ],
     inclusions: ['Professional Guide', '4x4 Safari Vehicle', 'Park Fees', 'All Meals', 'Lodging'],

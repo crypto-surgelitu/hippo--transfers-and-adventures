@@ -75,7 +75,7 @@ export const excursions: Excursion[] = [
         title: "Sunset over the Canyons",
         description: "Experience the magic as the setting sun amplifies the vibrant colors of the canyon walls. It is one of the most photographed locations in coastal Kenya.",
         icon: "camera",
-        image: "/images/excursions/marafa-hells-kitchen/gallery-1.webp"
+        image: "/images/excursions/marafa-hells-kitchen/gallery-2.webp"
       }
     ],
     inclusions: ['Entry Fees', 'Guide Fees', 'Transport', 'Water'],
@@ -111,7 +111,7 @@ export const excursions: Excursion[] = [
         title: "Beach BBQ",
         description: "Indulge in a fresh seafood BBQ prepared right on the boat or beach, featuring lobster, fish, and shrimp.",
         icon: "camera",
-        image: "/images/excursions/sardegna-2-island/gallery-2.webp"
+        image: "/images/excursions/sardegna-2-island/gallery-3.webp"
       }
     ],
     inclusions: ['Marine Park Fees', 'Glass Bottom Boat', 'Snorkeling Gear', 'Seafood BBQ', 'Soft Drinks'],
