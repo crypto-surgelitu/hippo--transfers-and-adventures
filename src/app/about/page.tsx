@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { Compass, Eye } from 'lucide-react';
 import { HeroSlideshow } from '@/components/layout/HeroSlideshow';
 import safariStory from '@/assets/picture 3 of safari.webp';
-import founderPortrait from '@/assets/picture 1 of safari .webp';
+import founderPortrait from '@/assets/picture-1-of-safari.webp';
 
 import { BRAND_NAME } from '@/lib/constants';
 

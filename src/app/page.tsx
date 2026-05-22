@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Image from 'next/image';
 import Link from 'next/link';
 import { BedDouble, Compass, Camera, ArrowRight } from 'lucide-react';
-import aboutImg from '@/assets/picture 1 of safari .webp';
+import aboutImg from '@/assets/picture-1-of-safari.webp';
 import ExperienceBadge from '@/components/ExperienceBadge';
 import { HeroSlideshow } from '@/components/layout/HeroSlideshow';
 
@@ -43,6 +43,11 @@ export default function HomePage() {
             </Link>
           </div>
         </div>
+
+        {/* Experience Badge - Positioned in Hero */}
+        <div className="absolute bottom-margin-mobile left-margin-mobile md:bottom-12 md:left-12 z-20">
+          <ExperienceBadge />
+        </div>
       </section>
 
       {/* About Snippet */}
@@ -67,7 +72,6 @@ export default function HomePage() {
               sizes="(max-width: 768px) 100vw, 50vw"
               loading="lazy"
             />
-            <ExperienceBadge />
           </div>
         </div>
       </section>

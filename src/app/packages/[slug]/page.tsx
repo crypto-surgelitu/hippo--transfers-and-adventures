@@ -1,8 +1,20 @@
 import Image from 'next/image';
 import { Clock, Map, PlaneTakeoff, CheckCircle2, XCircle, Bed, Compass, Camera } from 'lucide-react';
+import { Metadata } from 'next';
 import { safariPackages } from '@/data/packages';
+import { BRAND_NAME } from '@/lib/constants';
 import { notFound } from 'next/navigation';
 import { WhatsAppCTA } from '@/components/WhatsAppCTA';
+
+export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
+  const pkg = safariPackages.find(p => p.slug === params.slug);
+  if (!pkg) return {};
+
+  return {
+    title: `${pkg.title} | ${BRAND_NAME}`,
+    description: pkg.description,
+  };
+}
 
 export default function PackageItineraryPage({ params }: { params: { slug: string } }) {
   const pkg = safariPackages.find(p => p.slug === params.slug);
