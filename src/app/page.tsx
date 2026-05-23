@@ -23,9 +23,43 @@ const homeSlideshowImages = [
   '/images/slideshow/home/lioness.webp',
 ];
 
+const homeSchema = {
+  "@context": "https://schema.org",
+  "@type": "TravelAgency",
+  "name": "Hippo Transfers and Adventures",
+  "url": "https://www.hippotransfersandadventures.com",
+  "logo": "https://www.hippotransfersandadventures.com/logo.webp",
+  "image": "https://www.hippotransfersandadventures.com/og-image.webp",
+  "description": "Luxury safari packages, airport transfers, and coastal excursions in Kenya. Explore Tsavo, Amboseli, Masai Mara and more with expert local guides.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "KE",
+    "addressLocality": "Mombasa"
+  },
+  "areaServed": [
+    { "@type": "City", "name": "Mombasa" },
+    { "@type": "City", "name": "Diani Beach" },
+    { "@type": "City", "name": "Nairobi" },
+    { "@type": "City", "name": "Malindi" },
+    { "@type": "City", "name": "Watamu" }
+  ],
+  "telephone": "+254-720-899-402",
+  "email": "hippotransfer@gmail.com",
+  "priceRange": "$$",
+  "sameAs": [
+    "https://www.facebook.com/hippotransfer",
+    "https://www.instagram.com/hippotransfer"
+  ]
+};
+
 export default function HomePage() {
   return (
-    <main className="min-h-screen">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(homeSchema) }}
+      />
+      <main className="min-h-screen">
       {/* Hero Section */}
       <section className="relative w-full h-[90vh] min-h-[500px] md:min-h-[600px] flex items-center justify-center overflow-hidden">
         <HeroSlideshow images={homeSlideshowImages} />
@@ -120,5 +154,6 @@ export default function HomePage() {
         </div>
       </section>
     </main>
+    </>
   );
 }
