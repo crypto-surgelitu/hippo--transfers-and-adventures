@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Group to center the hippo precisely based on pixel analysis -->
+  <g transform="translate(-2, -8.5)">
+    <!-- Back Leg 2 (Background leg, offset) -->
+    <rect x="110" y="270" width="45" height="110" rx="15" fill="#030a00" />
+    
+    <!-- Front Leg 2 (Background leg) -->
+    <rect x="290" y="270" width="45" height="110" rx="15" fill="#030a00" />
+
+    <!-- Main Body (Large Ellipse) -->
+    <ellipse cx="220" cy="240" rx="130" ry="90" fill="#030a00" />
+
+    <!-- Neck connection -->
+    <path d="M 190 150 L 340 180 L 320 310 L 190 310 Z" fill="#030a00" />
+
+    <!-- Head -->
+    <rect x="300" y="175" width="130" height="95" rx="40" fill="#030a00" />
+    
+    <!-- Snout -->
+    <rect x="360" y="195" width="80" height="75" rx="25" fill="#030a00" />
+
+    <!-- Back Leg 1 (Foreground leg) -->
+    <rect x="145" y="260" width="45" height="120" rx="15" fill="#030a00" />
+
+    <!-- Front Leg 1 (Foreground leg) -->
+    <rect x="325" y="260" width="45" height="120" rx="15" fill="#030a00" />
+
+    <!-- Ear 1 -->
+    <g transform="translate(325, 175) rotate(-20)">
+      <ellipse cx="0" cy="0" rx="12" ry="25" fill="#030a00" />
+    </g>
+
+    <!-- Ear 2 -->
+    <g transform="translate(345, 170) rotate(-10)">
+      <ellipse cx="0" cy="0" rx="10" ry="20" fill="#030a00" />
+    </g>
+
+    <!-- Tail -->
+    <path d="M 95 210 Q 75 220 78 260 Q 83 260 88 230 Z" fill="#030a00" />
+  </g>
+</svg>

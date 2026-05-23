@@ -72,7 +72,6 @@ export default function RootLayout({
     <html lang="en" className={`light ${plusJakartaSans.variable} ${notoSerif.variable}`}>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
       </head>
       <body className="bg-background text-on-background font-body antialiased min-h-screen flex flex-col">
         <Navbar />
