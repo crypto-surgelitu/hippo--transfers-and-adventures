@@ -50,6 +50,9 @@ export const metadata: Metadata = {
     description: 'Experience unforgettable safari adventures and transfers in Kenya.',
     images: ['/og-image.webp'],
   },
+  icons: {
+    icon: '/icon.png',
+  },
   robots: {
     index: true,
     follow: true,

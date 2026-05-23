@@ -9,10 +9,10 @@ export function Footer() {
     <footer className="w-full pt-32 pb-16 bg-[#284420] border-t border-[#4a6741] relative overflow-hidden">
       <div className="absolute inset-0 opacity-5 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMjAgMjBoLTR2LTRIMnoiIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utb3BhY2l0eT0iMSIgc3Ryb2tlLXdpZHRoPSIxIi8+PC9zdmc+')]"></div>
       <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 md:gap-20 mb-20">
           
           {/* Column 1: Brand & Social — Balanced Identity */}
-          <div className="space-y-6">
+          <div className="space-y-6 md:mr-16">
             <Link href="/" className="flex items-center gap-4 hover:opacity-90 transition-opacity group">
               <div className="relative h-[120px] w-[120px] shrink-0">
                 <Image

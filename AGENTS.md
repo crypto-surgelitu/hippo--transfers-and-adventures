@@ -126,6 +126,56 @@ Any syntax error in this file kills the entire dev server.
 
 ---
 
+# SERVER EXECUTION POLICY
+
+**HIGH PRIORITY** — Server hallucination prevention.
+
+## DO NOT AUTOMATICALLY START SERVERS
+
+Agents MUST NOT automatically run `npm run dev`, `npm start`, `pnpm dev`, `pnpm start`, `yarn dev`, `next dev`, `vite`, or any dev server command unless the task EXPLICITLY requires runtime validation.
+
+## NO BACKGROUND SERVER PROCESSES
+
+Agents MUST NOT:
+- leave background servers running
+- spawn detached processes
+- open multiple dev servers
+- run duplicate ports
+- restart the server repeatedly
+- claim the server is running without confirmation
+
+## NO FAKE RUNTIME CLAIMS
+
+Agents MUST NEVER claim "application works", "page renders correctly", "runtime validated", "build passed", "hydration safe", or "no console errors" WITHOUT actual execution and evidence.
+
+If runtime validation was NOT performed, the agent MUST explicitly state: `Runtime not verified.`
+
+## BUILD VALIDATION RULE
+
+Agents MUST NEVER claim `npm run build passed` unless they ACTUALLY executed `npm run build` and inspected the result.
+
+## BROWSER VALIDATION RULE
+
+Agents MUST NEVER invent browser behavior, visual rendering, responsive layouts, console output, hydration state, or network responses without actual inspection. Static code analysis alone is NOT runtime validation.
+
+## REQUIRED BEHAVIOR
+
+If a task does NOT explicitly require runtime testing, agents should inspect code only, reason statically, avoid server execution, avoid unnecessary processes, and preserve system resources.
+
+## WHEN SERVER EXECUTION IS ALLOWED
+
+Server execution is ONLY allowed if the prompt explicitly requires: runtime debugging, hydration debugging, API testing, browser/network inspection, production validation, or deployment readiness checks. Even then, run ONE server only, terminate it cleanly after testing, and report REAL results only.
+
+## HALLUCINATION PREVENTION
+
+If the agent cannot verify something directly, it MUST say `Unable to verify directly.` instead of inventing results. Honest uncertainty is REQUIRED. Fabricated certainty is FORBIDDEN.
+
+## FINAL RULE
+
+False validation is WORSE than no validation. Agents must prioritize accuracy, traceability, real execution evidence, and minimal system interference over fake confidence or fabricated success reports.
+
+---
+
 # DESIGN RULES
 
 ## MUST:
