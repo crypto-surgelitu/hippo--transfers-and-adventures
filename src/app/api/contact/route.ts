@@ -21,10 +21,10 @@ export async function POST(request: Request) {
     // In a real production environment, you would use a verified domain.
     // For testing without a verified domain, Resend requires sending TO the email associated with the API key.
     // Replace 'delivered@resend.dev' with your verified email in production.
-    const toEmail = process.env.CONTACT_EMAIL_TO || '@info.hippotransfersandadventures.com';
+    const toEmail = process.env.CONTACT_EMAIL_TO || 'info@hippotransfersandadventures.com';
 
     const { data, error } = await resend.emails.send({
-      from: 'Hippo Transfers and Adventures <hippotransfersandadventures.com>', // Update with your verified domain in production
+      from: 'Hippo Transfers and Adventures <info@hippotransfersandadventures.com>',
       to: [toEmail],
       subject: `New Inquiry: ${subject || 'General'} from ${fullName}`,
       html: `
@@ -37,7 +37,7 @@ export async function POST(request: Request) {
         <p><strong>Travelers:</strong> ${travelers || 'Not specified'}</p>
         <br />
         <h3>Message:</h3>
-        <p>${message.replace(/\n/g, '<br>')}</p>
+        <p>${(message || '').replace(/\n/g, '<br>')}</p>
       `,
     });
 
