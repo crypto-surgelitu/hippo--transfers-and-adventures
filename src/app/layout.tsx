@@ -81,9 +81,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`light ${plusJakartaSans.variable} ${notoSerif.variable}`}>
-      <body className="bg-background text-on-background font-body antialiased min-h-screen flex flex-col">
+      <body className="bg-background text-on-background font-body antialiased min-h-screen flex flex-col w-full overflow-x-hidden">
         <Navbar />
-        <main className="flex-grow">
+        <main className="flex-grow w-full">
           {children}
         </main>
         <Footer />
