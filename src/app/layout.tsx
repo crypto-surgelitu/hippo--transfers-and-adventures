@@ -17,6 +17,11 @@ const notoSerif = Noto_Serif({
   display: 'swap',
 })
 
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+};
+
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://hippoadventureskenya.com'),
   title: {
@@ -76,9 +81,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`light ${plusJakartaSans.variable} ${notoSerif.variable}`}>
-      <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </head>
       <body className="bg-background text-on-background font-body antialiased min-h-screen flex flex-col">
         <Navbar />
         <main className="flex-grow">
