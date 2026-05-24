@@ -23,7 +23,7 @@ export function Navbar() {
         <div className="w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex justify-between lg:grid lg:grid-cols-[1fr_auto_1fr] items-center h-full gap-4">
 
           {/* Logo Section — Balanced Premium Branding */}
-          <Link href="/" className="flex items-center gap-3 lg:gap-4 hover:opacity-90 active:opacity-80 transition-opacity duration-200 shrink-0">
+          <Link href="/" className="flex items-center gap-3 lg:gap-4 hover:opacity-90 active:opacity-80 transition-opacity duration-200 min-w-0 lg:min-w-max">
             <div className="relative w-[100px] h-[100px] sm:w-[120px] sm:h-[120px] lg:w-[165px] lg:h-[165px]">
               <Image
                 src="/brand/hippo-icon.svg"
