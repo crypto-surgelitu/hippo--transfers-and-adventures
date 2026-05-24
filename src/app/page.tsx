@@ -72,7 +72,7 @@ export default function HomePage() {
             <Link href="/packages" className="bg-secondary text-on-secondary font-label-sm text-label-sm uppercase px-6 md:px-8 py-3 md:py-4 rounded hover:scale-105 transition-transform duration-150">
               Explore Safaris
             </Link>
-            <Link href="/packages" className="bg-transparent border border-surface-container-lowest text-surface-container-lowest font-label-sm text-label-sm uppercase px-6 md:px-8 py-3 md:py-4 rounded hover:bg-surface-container-lowest/20 transition-colors duration-150">
+            <Link href="/packages#day-tours" className="bg-transparent border border-surface-container-lowest text-surface-container-lowest font-label-sm text-label-sm uppercase px-6 md:px-8 py-3 md:py-4 rounded hover:bg-surface-container-lowest/20 transition-colors duration-150">
               View Day Tours
             </Link>
           </div>

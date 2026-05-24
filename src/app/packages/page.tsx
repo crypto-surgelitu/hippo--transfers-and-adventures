@@ -46,7 +46,7 @@ export default function PackagesPage() {
       </section>
 
       {/* Day Tours & Excursions */}
-      <section className="w-full">
+      <section id="day-tours" className="w-full">
         <div className="flex items-center justify-between mb-8 w-full px-4 border-b border-surface-variant pb-4">
           <h2 className="font-headline-md text-2xl md:text-3xl text-primary flex items-center gap-3">
             <Sailboat className="text-secondary" size={28} />
