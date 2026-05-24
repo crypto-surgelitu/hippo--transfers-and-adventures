@@ -94,7 +94,7 @@ export default function PackageItineraryPage({ params }: { params: { slug: strin
       </section>
 
       {/* Itinerary Flow */}
-      <section className="max-w-7xl mx-auto px-margin-mobile md:px-16 py-16 md:py-24">
+      <section className="w-full max-w-7xl mx-auto px-margin-mobile md:px-16 py-16 md:py-24">
         <div className="flex items-center gap-4 mb-12 md:mb-16">
           <h2 className="font-headline-xl text-3xl md:text-5xl font-bold text-primary">The Journey</h2>
           <div className="h-px bg-surface-variant flex-1"></div>
@@ -180,7 +180,7 @@ export default function PackageItineraryPage({ params }: { params: { slug: strin
       </section>
 
       {/* CTA Section */}
-      <section className="max-w-4xl mx-auto px-5 text-center py-24">
+      <section className="w-full max-w-4xl mx-auto px-5 text-center py-24">
         <h2 className="font-headline-md text-3xl md:text-4xl font-bold text-primary mb-6">Ready to Experience the Wild?</h2>
         <p className="font-body-lg text-lg text-stone-600 mb-10 max-w-2xl mx-auto">
           Connect with our safari experts directly via WhatsApp to customize your journey or secure your dates.

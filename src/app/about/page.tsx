@@ -32,7 +32,7 @@ export default function AboutPage() {
       {/* Hero Section - matches home page style */}
       <section className="relative w-full h-[90vh] min-h-[600px] flex items-center justify-center overflow-hidden">
         <HeroSlideshow images={aboutSlideshowImages} />
-        <div className="relative z-10 text-center px-4 max-w-4xl mx-auto flex flex-col items-center">
+        <div className="relative z-10 text-center px-4 w-full max-w-4xl mx-auto flex flex-col items-center">
           <h1 className="font-display-lg text-4xl md:text-display-lg text-surface-container-lowest mb-6 uppercase">
             A Legacy of Discovery
           </h1>
@@ -43,8 +43,8 @@ export default function AboutPage() {
       </section>
 
       {/* Our Story - Asymmetric Layout */}
-      <section className="py-16 md:py-24 px-margin-mobile md:px-16 max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+      <section className="py-16 md:py-24">
+        <div className="max-w-7xl mx-auto px-margin-mobile md:px-16 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
           <div className="lg:col-span-5 lg:col-start-1 relative">
             <div className="aspect-[4/5] relative rounded-lg overflow-hidden shadow-2xl z-10">
               <Image 

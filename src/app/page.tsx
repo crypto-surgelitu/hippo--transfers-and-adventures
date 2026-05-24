@@ -63,7 +63,7 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="relative w-full h-[90vh] min-h-[500px] md:min-h-[600px] flex items-center justify-center overflow-hidden">
         <HeroSlideshow images={homeSlideshowImages} />
-        <div className="relative z-10 text-center px-margin-mobile md:px-gutter max-w-4xl mx-auto flex flex-col items-center">
+        <div className="relative z-10 text-center px-margin-mobile md:px-gutter w-full max-w-4xl mx-auto flex flex-col items-center">
           <h1 className="font-display-lg text-3xl md:text-5xl lg:text-display-lg text-surface-container-lowest mb-6 md:mb-8 uppercase tracking-wide">Kenya Safari Adventures Await</h1>
           <p className="font-body-lg text-base md:text-lg lg:text-body-lg text-surface-container-lowest max-w-2xl mb-8 md:mb-10">
             Experience the raw beauty of Africa with our curated, luxury safari journeys. Expertly guided, deeply immersive, and unforgettably comfortable.
@@ -85,8 +85,8 @@ export default function HomePage() {
       </section>
 
       {/* About Snippet */}
-      <section className="py-16 md:py-section-gap px-margin-mobile md:px-margin-desktop bg-surface max-w-7xl mx-auto">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+      <section className="py-16 md:py-section-gap bg-surface">
+        <div className="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop grid md:grid-cols-2 gap-12 items-center">
           <div>
             <span className="font-label-sm text-label-sm text-secondary uppercase tracking-widest mb-4 block">Our Heritage</span>
             <h2 className="font-headline-xl text-3xl md:text-headline-xl text-primary mb-6">Crafting Extraordinary Journeys for Over a Decade</h2>

@@ -48,7 +48,7 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Layout (Bento-style Split) */}
-      <section className="max-w-7xl mx-auto px-margin-mobile md:px-16 -mt-24 relative z-20">
+      <section className="w-full max-w-7xl mx-auto px-margin-mobile md:px-16 -mt-24 relative z-20">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           
           {/* Contact Information & Map Area */}
