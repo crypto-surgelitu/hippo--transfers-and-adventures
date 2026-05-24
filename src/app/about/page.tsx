@@ -44,7 +44,7 @@ export default function AboutPage() {
 
       {/* Our Story - Asymmetric Layout */}
       <section className="py-16 md:py-24">
-        <div className="max-w-7xl mx-auto px-margin-mobile md:px-16 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        <div className="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
           <div className="lg:col-span-5 lg:col-start-1 relative">
             <div className="aspect-[4/5] relative rounded-lg overflow-hidden shadow-2xl z-10">
               <Image 
@@ -107,7 +107,7 @@ export default function AboutPage() {
       </section>
 
       {/* Mission & Vision - Bento Grid Style */}
-      <section className="bg-surface-container-low py-16 md:py-24 px-margin-mobile md:px-16">
+      <section className="bg-surface-container-low py-16 md:py-24 px-margin-mobile md:px-margin-desktop">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12 md:mb-16">
             <h2 className="font-headline-xl text-3xl md:text-5xl font-bold text-primary mb-4">Our Guiding Stars</h2>

@@ -44,7 +44,7 @@ export default function PackageItineraryPage({ params }: { params: { slug: strin
   return (
     <main className="pt-0 pb-24">
       {/* Hero Section */}
-      <section className="relative h-[80vh] min-h-[600px] w-full flex flex-col justify-end pb-16 px-5 md:px-16 bg-cover bg-center">
+      <section className="relative h-[80vh] min-h-[600px] w-full flex flex-col justify-end pb-16 px-margin-mobile md:px-margin-desktop bg-cover bg-center">
         <div className="absolute inset-0 z-0">
           <Image 
             src={pkg.heroImage}
@@ -94,7 +94,7 @@ export default function PackageItineraryPage({ params }: { params: { slug: strin
       </section>
 
       {/* Itinerary Flow */}
-      <section className="w-full max-w-7xl mx-auto px-margin-mobile md:px-16 py-16 md:py-24">
+      <section className="w-full max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop py-16 md:py-24">
         <div className="flex items-center gap-4 mb-12 md:mb-16">
           <h2 className="font-headline-xl text-3xl md:text-5xl font-bold text-primary">The Journey</h2>
           <div className="h-px bg-surface-variant flex-1"></div>
@@ -138,7 +138,7 @@ export default function PackageItineraryPage({ params }: { params: { slug: strin
 
       {/* Inclusions/Exclusions Bento */}
       <section className="bg-surface-container-low py-16 md:py-24">
-        <div className="max-w-7xl mx-auto px-margin-mobile md:px-16">
+        <div className="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Inclusions */}
             <div className="bg-white p-8 md:p-12 rounded-xl shadow-sm border border-surface-variant/50">
