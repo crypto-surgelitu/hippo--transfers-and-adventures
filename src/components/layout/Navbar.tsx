@@ -38,6 +38,9 @@ export function Navbar() {
                 <div>Hippo</div>
                 <div className="text-[0.8em] sm:text-[0.85em] lg:text-[0.9em] opacity-90">Transfers & Adventures</div>
               </div>
+              <span className="hidden sm:block font-label-sm text-[8px] lg:text-[9px] text-secondary uppercase tracking-[0.2em] lg:tracking-[0.25em] mt-1 lg:mt-2 font-semibold opacity-70">
+                {BRAND_TAGLINE}
+              </span>
             </div>
           </Link>
 
