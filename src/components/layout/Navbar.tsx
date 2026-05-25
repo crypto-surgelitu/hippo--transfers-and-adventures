@@ -24,7 +24,7 @@ export function Navbar() {
 
           {/* Logo Section — Balanced Premium Branding */}
           <Link href="/" className="flex items-center gap-3 lg:gap-4 hover:opacity-90 active:opacity-80 transition-opacity duration-200 min-w-0 lg:min-w-max">
-            <div className="relative w-[100px] h-[100px] sm:w-[120px] sm:h-[120px] lg:w-[165px] lg:h-[165px]">
+            <div className="relative w-[115px] h-[115px] sm:w-[135px] sm:h-[135px] lg:w-[165px] lg:h-[165px]">
               <Image
                 src="/brand/hippo-icon.svg"
                 alt={BRAND_NAME}
@@ -34,11 +34,11 @@ export function Navbar() {
               />
             </div>
             <div className="flex flex-col justify-center leading-tight">
-              <div className="font-serif text-[1.1rem] sm:text-[1.25rem] lg:text-[1.4rem] font-bold text-primary uppercase tracking-[0.08em] leading-none">
+              <div className="font-serif text-[1.2rem] sm:text-[1.35rem] lg:text-[1.4rem] font-bold text-primary uppercase tracking-[0.08em] leading-none">
                 <div>Hippo</div>
                 <div className="text-[0.85em] lg:text-[0.9em] opacity-90">Transfers & Adventures</div>
               </div>
-              <span className="font-label-sm text-[7px] sm:text-[8px] lg:text-[9px] text-secondary uppercase tracking-[0.25em] mt-1.5 lg:mt-2 font-semibold opacity-70">
+              <span className="font-label-sm text-[8px] sm:text-[9px] lg:text-[9px] text-secondary uppercase tracking-[0.25em] mt-1.5 lg:mt-2 font-semibold opacity-70">
                 {BRAND_TAGLINE}
               </span>
             </div>
