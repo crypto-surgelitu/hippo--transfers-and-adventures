@@ -33,14 +33,11 @@ export function Navbar() {
                 priority
               />
             </div>
-            <div className="flex flex-col justify-center leading-tight min-w-0">
-              <div className="font-serif text-[0.95rem] sm:text-[1.15rem] lg:text-[1.4rem] font-bold text-primary uppercase tracking-[0.08em] leading-tight">
+            <div className="flex flex-col justify-center leading-none min-w-0">
+              <div className="font-serif text-[0.95rem] sm:text-[1.15rem] lg:text-[1.4rem] font-bold text-primary uppercase tracking-[0.08em] leading-none">
                 <div>Hippo</div>
                 <div className="text-[0.8em] sm:text-[0.85em] lg:text-[0.9em] opacity-90">Transfers & Adventures</div>
               </div>
-              <span className="font-label-sm text-[6.5px] sm:text-[8px] lg:text-[9px] text-secondary uppercase tracking-[0.2em] sm:tracking-[0.25em] mt-0.5 sm:mt-1 lg:mt-2 font-semibold opacity-70">
-                {BRAND_TAGLINE}
-              </span>
             </div>
           </Link>
 
