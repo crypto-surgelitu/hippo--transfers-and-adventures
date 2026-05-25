@@ -54,7 +54,7 @@ export function Footer() {
               <li><Link href="/about" className="hover:text-amber-300 transition-colors duration-300">Sustainability</Link></li>
               <li><Link href="/packages" className="hover:text-amber-300 transition-colors duration-300">Travel Guides</Link></li>
               <li><Link href="/contact" className="hover:text-amber-300 transition-colors duration-300">Partner With Us</Link></li>
-              <li><Link href="/about" className="hover:text-amber-300 transition-colors duration-300">Privacy Policy</Link></li>
+              <li><Link href="/privacy-policy" className="hover:text-amber-300 transition-colors duration-300">Privacy Policy</Link></li>
             </ul>
           </div>
           
