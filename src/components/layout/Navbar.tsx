@@ -23,8 +23,8 @@ export function Navbar() {
         <div className="w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex justify-between lg:grid lg:grid-cols-[1fr_auto_1fr] items-center h-full gap-4">
 
           {/* Logo Section — Balanced Premium Branding */}
-          <Link href="/" className="flex items-center gap-3 lg:gap-4 hover:opacity-90 active:opacity-80 transition-opacity duration-200 min-w-0 lg:min-w-max">
-            <div className="relative w-[115px] h-[115px] sm:w-[135px] sm:h-[135px] lg:w-[165px] lg:h-[165px]">
+          <Link href="/" className="flex items-center gap-2 sm:gap-3 lg:gap-4 hover:opacity-90 active:opacity-80 transition-opacity duration-200 min-w-0 lg:min-w-max">
+            <div className="relative w-[60px] h-[60px] sm:w-[90px] sm:h-[90px] lg:w-[165px] lg:h-[165px] flex-shrink-0">
               <Image
                 src="/brand/hippo-icon.svg"
                 alt={BRAND_NAME}
@@ -33,12 +33,12 @@ export function Navbar() {
                 priority
               />
             </div>
-            <div className="flex flex-col justify-center leading-tight">
-              <div className="font-serif text-[1.2rem] sm:text-[1.35rem] lg:text-[1.4rem] font-bold text-primary uppercase tracking-[0.08em] leading-none">
+            <div className="flex flex-col justify-center leading-tight min-w-0">
+              <div className="font-serif text-[0.95rem] sm:text-[1.15rem] lg:text-[1.4rem] font-bold text-primary uppercase tracking-[0.08em] leading-tight">
                 <div>Hippo</div>
-                <div className="text-[0.85em] lg:text-[0.9em] opacity-90">Transfers & Adventures</div>
+                <div className="text-[0.8em] sm:text-[0.85em] lg:text-[0.9em] opacity-90">Transfers & Adventures</div>
               </div>
-              <span className="font-label-sm text-[8px] sm:text-[9px] lg:text-[9px] text-secondary uppercase tracking-[0.25em] mt-1.5 lg:mt-2 font-semibold opacity-70">
+              <span className="font-label-sm text-[6.5px] sm:text-[8px] lg:text-[9px] text-secondary uppercase tracking-[0.2em] sm:tracking-[0.25em] mt-0.5 sm:mt-1 lg:mt-2 font-semibold opacity-70">
                 {BRAND_TAGLINE}
               </span>
             </div>
