@@ -143,7 +143,7 @@ export default function ContactForm() {
         
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-6 border-t border-stone-200">
           <p className="text-xs text-stone-500 max-w-xs leading-relaxed">
-            By submitting this form, you agree to our <a href="#" className="underline hover:text-[#2D3921]">Privacy Policy</a> regarding your data.
+            By submitting this form, you agree to our <a href="/privacy-policy" className="underline hover:text-[#2D3921]">Privacy Policy</a> regarding your data.
           </p>
           <button 
             type="submit" 
