@@ -7,18 +7,36 @@ import ContactForm from '@/components/forms/ContactForm';
 import { BRAND_NAME } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: `Contact Us | ${BRAND_NAME}`,
+  title: 'Contact Us',
   description: 'Connect with our safari specialists to craft a personalized, luxury expedition into the heart of wild Kenya. Reach out via form, email, or WhatsApp.',
   keywords: ['contact hippo adventures', 'kenya safari inquiry', 'book safari kenya', 'safari contact', 'hippo transfers and adventures'],
+  alternates: {
+    canonical: '/contact',
+  },
   openGraph: {
     title: `Contact Us | ${BRAND_NAME}`,
     description: 'Connect with our safari specialists to craft a personalized, luxury expedition into the heart of wild Kenya.',
+    url: '/contact',
   },
 }
+
+const contactSchema = {
+  "@context": "https://schema.org",
+  "@type": "ContactPoint",
+  "telephone": "+254-720-899-402",
+  "email": "info@hippotransfersandadventures.com",
+  "contactType": "customer service",
+  "availableLanguage": ["English"],
+  "areaServed": "KE",
+};
 
 export default function ContactPage() {
   return (
     <main className="w-full pb-24">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(contactSchema) }}
+      />
       {/* Hero Section */}
       <section className="relative w-full h-[64svh] min-h-[520px] md:h-[68vh] lg:h-[72vh] 2xl:h-[760px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">

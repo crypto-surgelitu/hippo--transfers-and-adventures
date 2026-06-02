@@ -8,12 +8,16 @@ import founderPortrait from '@/assets/picture-1-of-safari.webp';
 import { BRAND_NAME } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: `Our Story | ${BRAND_NAME}`,
+  title: 'Our Story',
   description: `Discover the story behind ${BRAND_NAME}. Over a decade of crafting extraordinary safari journeys with passion, expertise, and commitment to the wild.`,
   keywords: ['hippo adventures kenya', 'safari company kenya', 'kenya safari history', 'sustainable tourism kenya', 'hippo transfers and adventures'],
+  alternates: {
+    canonical: '/about',
+  },
   openGraph: {
     title: `Our Story | ${BRAND_NAME}`,
     description: `Discover the story behind ${BRAND_NAME}. Over a decade of crafting extraordinary safari journeys.`,
+    url: '/about',
   },
 }
 

@@ -1,13 +1,16 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy | Hippo Transfers and Adventures',
+  title: 'Privacy Policy',
   description: 'Learn how Hippo Transfers and Adventures collects, uses, and protects your personal information. Read our comprehensive privacy policy for safari booking inquiries and contact communications.',
+  alternates: {
+    canonical: '/privacy-policy',
+  },
   openGraph: {
     title: 'Privacy Policy | Hippo Transfers and Adventures',
     description: 'Learn how Hippo Transfers and Adventures collects, uses, and protects your personal information.',
     type: 'website',
-    url: 'https://hippotransfersandadventures.com/privacy-policy',
+    url: '/privacy-policy',
   },
 };
 

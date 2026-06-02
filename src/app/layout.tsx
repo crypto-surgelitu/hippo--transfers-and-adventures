@@ -26,7 +26,7 @@ export const viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://hippotransfersandadventures.com'),
   title: {
-    default: 'Hippo Transfers and Adventures | Kenya Safari Packages',
+    default: 'Kenya Safari Packages',
     template: '%s | Hippo Transfers and Adventures',
   },
   description: 'Experience unforgettable safari adventures and transfers in Kenya. Discover luxury safari packages, day tours, and excursions to Tsavo, Amboseli, Masai Mara and more.',
@@ -37,7 +37,6 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: '/',
     siteName: 'Hippo Transfers and Adventures',
     title: 'Hippo Transfers and Adventures | Kenya Safari Packages',
     description: 'Experience unforgettable safari adventures and transfers in Kenya. Discover luxury safari packages, day tours, and excursions.',
@@ -71,7 +70,7 @@ export const metadata: Metadata = {
     },
   },
   other: {
-    'msvalidate.01': '8F9CD5B71179B7EA60ADEDC2B4ACF6F3',
+    'msvalidate.01': process.env.NEXT_PUBLIC_BING_VERIFICATION_TOKEN || '8F9CD5B71179B7EA60ADEDC2B4ACF6F3',
   },
 }
 

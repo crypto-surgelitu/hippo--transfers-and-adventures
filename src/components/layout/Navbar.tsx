@@ -50,6 +50,7 @@ export function Navbar() {
               {[
                 { href: '/', label: 'Home' },
                 { href: '/packages', label: 'Packages' },
+                { href: '/excursions', label: 'Excursions' },
                 { href: '/about', label: 'Our Story' },
                 { href: '/contact', label: 'Contact' },
               ].map(({ href, label }) => (
@@ -94,6 +95,7 @@ export function Navbar() {
           {[
             { href: '/', label: 'Home' },
             { href: '/packages', label: 'Packages' },
+            { href: '/excursions', label: 'Excursions' },
             { href: '/about', label: 'Our Story' },
             { href: '/contact', label: 'Contact' },
           ].map(({ href, label }) => (

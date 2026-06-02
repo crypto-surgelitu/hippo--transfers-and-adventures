@@ -9,9 +9,12 @@ import { HeroSlideshow } from '@/components/layout/HeroSlideshow';
 import { BRAND_NAME } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: `${BRAND_NAME} | Luxury Safari Experiences`,
+  title: 'Luxury Safari Experiences',
   description: 'Experience the raw beauty of Africa with our curated, luxury safari journeys. Expertly guided, deeply immersive, and unforgettably comfortable.',
   keywords: ['kenya safari', 'luxury safari', 'masai mara safari', 'tsavo east safari', 'hippo adventures', 'hippo transfers and adventures'],
+  alternates: {
+    canonical: '/',
+  },
 }
 
 const homeSlideshowImages = [

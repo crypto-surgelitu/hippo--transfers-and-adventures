@@ -11,9 +11,14 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   const excursion = excursions.find(e => e.slug === params.slug);
   if (!excursion) return {};
 
+  const enhancedDescription = `${excursion.description} This ${excursion.duration.toLowerCase()} excursion in ${excursion.location}${excursion.starts ? ` starts from ${excursion.starts}` : ''}. Book your Kenya day tour or coastal adventure today.`;
+
   return {
-    title: `${excursion.title} | ${BRAND_NAME}`,
-    description: excursion.description,
+    title: excursion.title,
+    description: enhancedDescription,
+    alternates: {
+      canonical: `/excursions/${params.slug}`,
+    },
   };
 }
 
@@ -33,8 +38,30 @@ export default function ExcursionDetailPage({ params }: { params: { slug: string
     }
   };
 
+  const excursionSchema = {
+    "@context": "https://schema.org",
+    "@type": "TouristTrip",
+    "name": excursion.title,
+    "description": excursion.description,
+    "itinerary": excursion.itinerary.map((item) => ({
+      "@type": "TouristAttraction",
+      "name": item.title,
+      "description": item.description,
+    })),
+    "offers": {
+      "@type": "Offer",
+      "availability": "https://schema.org/InStock",
+      "price": "Contact for pricing",
+      "priceCurrency": "KES",
+    },
+  };
+
   return (
     <main className="pt-0 pb-24">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(excursionSchema) }}
+      />
       {/* Hero Section */}
       <section className="relative h-[80vh] min-h-[600px] w-full flex flex-col justify-end pb-16 px-margin-mobile md:px-margin-desktop bg-cover bg-center">
         <div className="absolute inset-0 z-0">

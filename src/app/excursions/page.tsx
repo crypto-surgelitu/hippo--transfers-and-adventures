@@ -5,12 +5,16 @@ import { excursions } from '@/data/excursions';
 import { BRAND_NAME } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: `Day Tours & Excursions | ${BRAND_NAME}`,
+  title: 'Day Tours & Excursions',
   description: 'Explore our curated day excursions and coastal adventures in Kenya. Wasini Island, Marafa Hell\'s Kitchen, marine parks, and more. Book your perfect day tour today.',
   keywords: ['kenya day tours', 'kenyan excursions', 'wasini island', 'marafa canyon', 'coastal tours', 'marine park tours', 'kenya activities', 'hippo transfers and adventures'],
+  alternates: {
+    canonical: '/excursions',
+  },
   openGraph: {
     title: `Day Tours & Excursions | ${BRAND_NAME}`,
     description: 'Explore our curated day excursions and coastal adventures in Kenya.',
+    url: '/excursions',
   },
 }
 

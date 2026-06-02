@@ -10,9 +10,14 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   const pkg = safariPackages.find(p => p.slug === params.slug);
   if (!pkg) return {};
 
+  const enhancedDescription = `${pkg.description} This ${pkg.duration.toLowerCase()} safari covers ${pkg.destinations} across ${pkg.location}, starting from ${pkg.starts}. Book your luxury Kenya safari experience today.`;
+
   return {
-    title: `${pkg.title} | ${BRAND_NAME}`,
-    description: pkg.description,
+    title: pkg.title,
+    description: enhancedDescription,
+    alternates: {
+      canonical: `/packages/${params.slug}`,
+    },
   };
 }
 
@@ -41,8 +46,30 @@ export default function PackageItineraryPage({ params }: { params: { slug: strin
     }
   };
   
+  const packageSchema = {
+    "@context": "https://schema.org",
+    "@type": "TouristTrip",
+    "name": pkg.title,
+    "description": pkg.description,
+    "itinerary": pkg.itinerary.map((item) => ({
+      "@type": "TouristAttraction",
+      "name": item.title,
+      "description": item.description,
+    })),
+    "offers": {
+      "@type": "Offer",
+      "availability": "https://schema.org/InStock",
+      "price": "Contact for pricing",
+      "priceCurrency": "KES",
+    },
+  };
+
   return (
     <main className="pt-0 pb-24">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(packageSchema) }}
+      />
       {/* Hero Section */}
       <section className="relative h-[80vh] min-h-[600px] w-full flex flex-col justify-end pb-16 px-margin-mobile md:px-margin-desktop bg-cover bg-center">
         <div className="absolute inset-0 z-0">
