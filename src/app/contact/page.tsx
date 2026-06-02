@@ -96,10 +96,10 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-label-sm text-xs text-stone-500 uppercase tracking-widest mb-1 font-semibold">Email</h3>
                     <a 
-                      href="mailto:hippotransfer@gmail.com" 
+                      href="mailto:info@hippotransfersandadventures.com" 
                       className="font-body-md text-[#2D3921] font-medium break-all hover:text-[#C6893F] transition-colors duration-200 block"
                     >
-                      hippotransfer@gmail.com
+                      info@hippotransfersandadventures.com
                     </a>
                   </div>
                 </div>

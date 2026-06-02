@@ -81,7 +81,7 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Mail size={18} className="text-amber-300" />
-                <a href="mailto:hippotransfer@gmail.com" className="hover:text-amber-300">hippotransfer@gmail.com</a>
+                <a href="mailto:info@hippotransfersandadventures.com" className="hover:text-amber-300">info@hippotransfersandadventures.com</a>
               </li>
               <li className="flex items-center gap-3">
                 <MapPin size={18} className="text-amber-300" />

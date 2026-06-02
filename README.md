@@ -11,6 +11,8 @@ A modern safari and tourism marketing website focused on safari package discover
 - **Messaging**: WhatsApp Click-to-Chat
 - **Maps**: Google Maps JavaScript API
 - **Hosting**: Vercel
+  **DNS**: Cloudflare
+  **Mail**: Zoho
 
 ## Getting Started
 

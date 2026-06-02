@@ -44,7 +44,7 @@ const homeSchema = {
     { "@type": "City", "name": "Watamu" }
   ],
   "telephone": "+254-720-899-402",
-  "email": "hippotransfer@gmail.com",
+  "email": "info@hippotransfersandadventures.com",
   "priceRange": "$$",
   "sameAs": [
     "https://www.facebook.com/hippotransfer",

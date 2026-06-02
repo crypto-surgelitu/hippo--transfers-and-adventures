@@ -366,7 +366,7 @@ export default function PrivacyPolicyPage() {
                 <span className="font-semibold">Address:</span> Kwarandu business square, Box 55, Kaloleni, Mombasa, Kenya
               </p>
               <p className="text-on-surface mb-2">
-                <span className="font-semibold">Email:</span> <a href="mailto:hippotransfer@gmail.com" className="text-secondary hover:opacity-80">hippotransfer@gmail.com</a>
+                <span className="font-semibold">Email:</span> <a href="mailto:info@hippotransfersandadventures.com" className="text-secondary hover:opacity-80">info@hippotransfersandadventures.com</a>
               </p>
               <p className="text-on-surface">
                 <span className="font-semibold">WhatsApp:</span> <a href="https://wa.me/254720899402" className="text-secondary hover:opacity-80">+254 720 899 402</a>
