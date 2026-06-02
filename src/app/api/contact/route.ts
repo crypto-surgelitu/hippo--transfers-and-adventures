@@ -3,7 +3,10 @@ import { Resend } from 'resend';
 
 // Initialize Resend with the API key from environment variables
 // Note: You need to add RESEND_API_KEY to your .env.local file
-const resend = new Resend(process.env.RESEND_API_KEY || 're_placeholder_key');
+if (!process.env.RESEND_API_KEY) {
+  throw new Error('RESEND_API_KEY environment variable is required');
+}
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(request: Request) {
   try {

@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://hippoadventureskenya.com/sitemap.xml
+Sitemap: https://hippotransfersandadventures.com/sitemap.xml
 
 # Crawl delay
 Crawl-delay: 1

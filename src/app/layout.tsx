@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Plus_Jakarta_Sans, Noto_Serif } from 'next/font/google'
+import { Analytics } from '@vercel/analytics/next'
 import '@/styles/globals.css'
 import { Navbar } from '@/components/layout/Navbar'
 import { Footer } from '@/components/layout/Footer'
@@ -23,7 +24,7 @@ export const viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://hippoadventureskenya.com'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://hippotransfersandadventures.com'),
   title: {
     default: 'Hippo Transfers and Adventures | Kenya Safari Packages',
     template: '%s | Hippo Transfers and Adventures',
@@ -88,6 +89,7 @@ export default function RootLayout({
         </main>
         <Footer />
         <WhatsAppFloat />
+        <Analytics />
       </body>
     </html>
   )
