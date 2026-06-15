@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { Camera, Globe, PlayCircle, Phone, Mail, MapPin } from 'lucide-react';
+import { Camera, Globe, PlayCircle, Phone, Mail, MapPin, Leaf, BookOpen, HeartHandshake, Shield, Package, Sun, Book, MessageSquare } from 'lucide-react';
 
 import { BRAND_NAME, BRAND_TAGLINE } from '@/lib/constants';
 
@@ -51,10 +51,22 @@ export function Footer() {
           <div>
             <h4 className="font-serif text-sm text-amber-300 uppercase tracking-[0.2em] mb-6 font-light">Explore</h4>
             <ul className="space-y-4 font-sans text-base text-amber-100/80">
-              <li><Link href="/about" className="hover:text-amber-300 transition-colors duration-300">Sustainability</Link></li>
-              <li><Link href="/packages" className="hover:text-amber-300 transition-colors duration-300">Travel Guides</Link></li>
-              <li><Link href="/contact" className="hover:text-amber-300 transition-colors duration-300">Partner With Us</Link></li>
-              <li><Link href="/privacy-policy" className="hover:text-amber-300 transition-colors duration-300">Privacy Policy</Link></li>
+              <li className="flex items-center gap-3">
+                <Leaf size={18} className="text-amber-300" />
+                <Link href="/about" className="hover:text-amber-300 transition-colors duration-300">Sustainability</Link>
+              </li>
+              <li className="flex items-center gap-3">
+                <BookOpen size={18} className="text-amber-300" />
+                <Link href="/packages" className="hover:text-amber-300 transition-colors duration-300">Travel Guides</Link>
+              </li>
+              <li className="flex items-center gap-3">
+                <HeartHandshake size={18} className="text-amber-300" />
+                <Link href="/contact" className="hover:text-amber-300 transition-colors duration-300">Partner With Us</Link>
+              </li>
+              <li className="flex items-center gap-3">
+                <Shield size={18} className="text-amber-300" />
+                <Link href="/privacy-policy" className="hover:text-amber-300 transition-colors duration-300">Privacy Policy</Link>
+              </li>
             </ul>
           </div>
           
@@ -62,10 +74,22 @@ export function Footer() {
           <div>
             <h4 className="font-serif text-sm text-amber-300 uppercase tracking-[0.2em] mb-6 font-light">Experiences</h4>
             <ul className="space-y-4 font-sans text-base text-amber-100/80">
-              <li><Link href="/packages" className="hover:text-amber-300 transition-colors duration-300">Packages</Link></li>
-              <li><Link href="/packages" className="hover:text-amber-300 transition-colors duration-300">Day Tours</Link></li>
-              <li><Link href="/about" className="hover:text-amber-300 transition-colors duration-300">Our Story</Link></li>
-              <li><Link href="/contact" className="hover:text-amber-300 transition-colors duration-300">Contact</Link></li>
+              <li className="flex items-center gap-3">
+                <Package size={18} className="text-amber-300" />
+                <Link href="/packages" className="hover:text-amber-300 transition-colors duration-300">Packages</Link>
+              </li>
+              <li className="flex items-center gap-3">
+                <Sun size={18} className="text-amber-300" />
+                <Link href="/packages" className="hover:text-amber-300 transition-colors duration-300">Day Tours</Link>
+              </li>
+              <li className="flex items-center gap-3">
+                <Book size={18} className="text-amber-300" />
+                <Link href="/about" className="hover:text-amber-300 transition-colors duration-300">Our Story</Link>
+              </li>
+              <li className="flex items-center gap-3">
+                <MessageSquare size={18} className="text-amber-300" />
+                <Link href="/contact" className="hover:text-amber-300 transition-colors duration-300">Contact</Link>
+              </li>
             </ul>
           </div>
           
