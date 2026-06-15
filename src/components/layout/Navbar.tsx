@@ -24,7 +24,7 @@ export function Navbar() {
 
           {/* Logo Section — Balanced Premium Branding */}
           <Link href="/" className="flex items-center gap-3 sm:gap-4 lg:gap-5 hover:opacity-90 active:opacity-80 transition-opacity duration-200 min-w-0 lg:min-w-max">
-            <div className="relative w-[48px] h-[48px] sm:w-[60px] sm:h-[60px] lg:w-[60px] lg:h-[60px] flex-shrink-0">
+            <div className="relative w-[56px] h-[56px] sm:w-[100px] sm:h-[100px] lg:w-[140px] lg:h-[140px] flex-shrink-0">
               <Image
                 src="/brand/hippo-icon.svg"
                 alt={BRAND_NAME}
