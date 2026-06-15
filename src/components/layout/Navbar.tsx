@@ -23,8 +23,8 @@ export function Navbar() {
         <div className="w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex justify-between lg:grid lg:grid-cols-[1fr_auto_1fr] items-center h-full gap-4">
 
           {/* Logo Section — Balanced Premium Branding */}
-          <Link href="/" className="flex items-center gap-3 sm:gap-4 lg:gap-5 hover:opacity-90 active:opacity-80 transition-opacity duration-200 min-w-0 lg:min-w-max">
-            <div className="relative w-[56px] h-[56px] sm:w-[100px] sm:h-[100px] lg:w-[140px] lg:h-[140px] flex-shrink-0">
+          <Link href="/" className="flex items-center self-center gap-3 sm:gap-4 lg:gap-5 hover:opacity-90 active:opacity-80 transition-opacity duration-200 min-w-0 lg:min-w-max">
+            <div className="relative w-[60px] h-[60px] sm:w-[90px] sm:h-[90px] lg:w-[120px] lg:h-[120px] flex-shrink-0">
               <Image
                 src="/brand/hippo-icon.svg"
                 alt={BRAND_NAME}
@@ -46,7 +46,7 @@ export function Navbar() {
 
           {/* Zone 2: Navigation (Center) */}
           <div className="hidden lg:flex justify-center items-center h-full">
-            <div className="flex items-center gap-8 xl:gap-12">
+            <div className="flex items-center gap-6 xl:gap-8">
               {[
                 { href: '/', label: 'Home' },
                 { href: '/packages', label: 'Packages' },
@@ -73,7 +73,7 @@ export function Navbar() {
           <div className="flex justify-end items-center gap-2 lg:gap-6 shrink-0">
             <Link
               href="/contact"
-              className="bg-secondary text-on-secondary font-label-sm text-[9px] sm:text-[10px] lg:text-[11px] uppercase tracking-[0.1em] lg:tracking-[0.15em] px-3 py-2 sm:px-5 sm:py-2.5 lg:px-9 lg:py-3.5 rounded hover:bg-secondary/90 hover:scale-[1.02] active:scale-[0.98] active:opacity-90 transition-[transform,background-color,opacity] duration-100 whitespace-nowrap font-bold shadow-md"
+              className="bg-secondary text-on-secondary font-label-sm text-[9px] sm:text-[10px] lg:text-[11px] uppercase tracking-[0.1em] lg:tracking-[0.15em] px-3 py-2 sm:px-5 sm:py-2.5 lg:px-6 lg:py-3 rounded hover:bg-secondary/90 hover:scale-[1.02] active:scale-[0.98] active:opacity-90 transition-[transform,background-color,opacity] duration-100 whitespace-nowrap font-bold shadow-md"
             >
               Plan Your Journey
             </Link>
