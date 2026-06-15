@@ -19,12 +19,12 @@ export function Navbar() {
 
   return (
     <>
-      <nav className="sticky top-0 w-full z-50 bg-surface/95 backdrop-blur-sm border-b border-outline-variant/20 h-[80px] lg:h-[100px] flex items-center transition-[height] duration-200">
+      <nav className="sticky top-0 w-full z-50 bg-surface/95 backdrop-blur-sm border-b border-outline-variant/20 py-3 lg:py-5 flex items-center transition-[padding] duration-200">
         <div className="w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex justify-between lg:grid lg:grid-cols-[1fr_auto_1fr] items-center h-full gap-4">
 
           {/* Logo Section — Balanced Premium Branding */}
           <Link href="/" className="flex items-center gap-3 sm:gap-4 lg:gap-5 hover:opacity-90 active:opacity-80 transition-opacity duration-200 min-w-0 lg:min-w-max">
-            <div className="relative w-[52px] h-[52px] sm:w-[72px] sm:h-[72px] lg:w-[72px] lg:h-[72px] flex-shrink-0">
+            <div className="relative w-[48px] h-[48px] sm:w-[60px] sm:h-[60px] lg:w-[60px] lg:h-[60px] flex-shrink-0">
               <Image
                 src="/brand/hippo-icon.svg"
                 alt={BRAND_NAME}
@@ -91,7 +91,7 @@ export function Navbar() {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="fixed inset-0 top-[80px] lg:top-[100px] z-40 bg-surface lg:hidden flex flex-col px-8 pt-6 border-t border-surface-variant">
+        <div className="fixed inset-0 top-[64px] lg:top-[82px] z-40 bg-surface lg:hidden flex flex-col px-8 pt-6 border-t border-surface-variant">
           {[
             { href: '/', label: 'Home' },
             { href: '/packages', label: 'Packages' },
