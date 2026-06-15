@@ -9,7 +9,7 @@ export function Footer() {
     <footer className="w-full pt-32 pb-16 bg-[#284420] border-t border-[#4a6741] relative overflow-hidden">
       <div className="absolute inset-0 opacity-5 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMjAgMjBoLTR2LTRIMnoiIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utb3BhY2l0eT0iMSIgc3Ryb2tlLXdpZHRoPSIxIi8+PC9zdmc+')]"></div>
       <div className="w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[1.5fr_1fr_1fr_1fr] gap-14 md:gap-24 mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[1.2fr_1fr_1fr_1.2fr] gap-14 md:gap-24 mb-20">
           
           {/* Column 1: Brand & Social — Balanced Identity */}
           <div className="space-y-6 lg:mr-32">
@@ -49,7 +49,7 @@ export function Footer() {
           
           {/* Column 2: Explore */}
           <div>
-            <h4 className="font-serif text-sm text-amber-300 uppercase tracking-[0.2em] mb-6 font-light">Explore</h4>
+            <h4 className="font-serif text-lg text-amber-200 uppercase tracking-[0.3em] mb-6 font-light border-b border-amber-200/20 pb-2 inline-block">Explore</h4>
             <ul className="space-y-4 font-sans text-base text-amber-100/80">
               <li className="flex items-center gap-3">
                 <Leaf size={18} className="text-amber-300" />
@@ -72,7 +72,7 @@ export function Footer() {
           
           {/* Column 3: Experiences */}
           <div>
-            <h4 className="font-serif text-sm text-amber-300 uppercase tracking-[0.2em] mb-6 font-light">Experiences</h4>
+            <h4 className="font-serif text-lg text-amber-200 uppercase tracking-[0.3em] mb-6 font-light border-b border-amber-200/20 pb-2 inline-block">Experiences</h4>
             <ul className="space-y-4 font-sans text-base text-amber-100/80">
               <li className="flex items-center gap-3">
                 <Package size={18} className="text-amber-300" />
@@ -95,7 +95,7 @@ export function Footer() {
           
           {/* Column 4: Contact */}
           <div>
-            <h4 className="font-serif text-sm text-amber-300 uppercase tracking-[0.2em] mb-6 font-light">Contact</h4>
+            <h4 className="font-serif text-lg text-amber-200 uppercase tracking-[0.3em] mb-6 font-light border-b border-amber-200/20 pb-2 inline-block">Contact</h4>
             <ul className="space-y-4 font-sans text-base text-amber-100/80">
               <li className="flex items-center gap-3">
                 <Phone size={18} className="text-amber-300" />
