@@ -1,10 +1,8 @@
 import type { Metadata } from 'next'
 import { PackageCard } from '@/components/PackageCard';
-import { ExcursionCard } from '@/components/ExcursionCard';
-import { Compass, Sailboat } from 'lucide-react';
+import { Compass } from 'lucide-react';
 
 import { safariPackages } from '@/data/packages';
-import { excursions } from '@/data/excursions';
 
 import { BRAND_NAME } from '@/lib/constants';
 
@@ -45,21 +43,6 @@ export default function PackagesPage() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 w-full">
           {safariPackages.map((pkg, index) => (
             <PackageCard key={index} {...pkg} />
-          ))}
-        </div>
-      </section>
-
-      {/* Day Tours & Excursions */}
-      <section id="day-tours" className="w-full">
-        <div className="flex items-center justify-between mb-8 w-full px-4 border-b border-surface-variant pb-4">
-          <h2 className="font-headline-md text-2xl md:text-3xl text-primary flex items-center gap-3">
-            <Sailboat className="text-secondary" size={28} />
-            Day Tours & Excursions
-          </h2>
-        </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full">
-          {excursions.map((exc, index) => (
-            <ExcursionCard key={index} {...exc} />
           ))}
         </div>
       </section>
