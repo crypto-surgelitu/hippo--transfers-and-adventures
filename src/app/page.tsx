@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Image from 'next/image';
 import Link from 'next/link';
 import { BedDouble, Compass, Camera, ArrowRight } from 'lucide-react';
-import aboutImg from '@/assets/picture-1-of-safari.webp';
+import zebrasOriginal from '@/assets/zebras-original.webp';
 import ExperienceBadge from '@/components/ExperienceBadge';
 import { HeroSlideshow } from '@/components/layout/HeroSlideshow';
 
@@ -102,8 +102,8 @@ export default function HomePage() {
           </div>
           <div className="relative h-[350px] sm:h-[450px] md:h-[550px] mt-8 md:mt-0">
             <Image 
-              src={aboutImg} 
-              alt={`Professional safari guide representing ${BRAND_NAME}`} 
+              src={zebrasOriginal} 
+              alt="Zebras in their natural habitat on safari in Kenya" 
               fill
               className="object-cover rounded-xl shadow-lg"
               sizes="(max-width: 768px) 100vw, 50vw"
