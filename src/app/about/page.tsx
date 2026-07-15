@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Image from 'next/image';
 import { Compass, Eye } from 'lucide-react';
 import { HeroSlideshow } from '@/components/layout/HeroSlideshow';
-import safariStory from '@/assets/picture 3 of safari.webp';
+import safariStory from '@/assets/elephant-original.webp';
 import founderPortrait from '@/assets/picture-1-of-safari.webp';
 
 import { BRAND_NAME } from '@/lib/constants';
@@ -53,7 +53,7 @@ export default function AboutPage() {
             <div className="aspect-[4/5] relative rounded-lg overflow-hidden shadow-2xl z-10">
               <Image 
                 src={safariStory}
-                alt="Safari Experience in Kenya"
+                alt="Elephant in its natural habitat on safari in Kenya"
                 fill
                 sizes="(max-width: 1024px) 100vw, 40vw"
                 className="object-cover"
