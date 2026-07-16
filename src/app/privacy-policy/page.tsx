@@ -372,7 +372,7 @@ export default function PrivacyPolicyPage() {
                 <span className="font-semibold">Email:</span> <a href="mailto:info@hippotransfersandadventures.com" className="text-secondary hover:opacity-80">info@hippotransfersandadventures.com</a>
               </p>
               <p className="text-on-surface">
-                <span className="font-semibold">WhatsApp:</span> <a href="https://wa.me/254720899402" className="text-secondary hover:opacity-80">+254 720 899 402</a>
+                <span className="font-semibold">WhatsApp:</span> <a href="https://wa.me/254741020481" className="text-secondary hover:opacity-80">+254 741 020 481</a>
               </p>
             </div>
             <p className="text-on-surface leading-relaxed mt-6">

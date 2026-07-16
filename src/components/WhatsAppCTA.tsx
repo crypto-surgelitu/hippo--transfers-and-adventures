@@ -10,7 +10,7 @@ interface WhatsAppCTAProps {
 }
 
 export const WhatsAppCTA = ({ href, text, className }: WhatsAppCTAProps) => {
-  const cleanNumber = (process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '254720899402').replace(/\D/g, '');
+  const cleanNumber = (process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '254741020481').replace(/\D/g, '');
   const defaultHref = `https://wa.me/${cleanNumber}`;
   
   return (

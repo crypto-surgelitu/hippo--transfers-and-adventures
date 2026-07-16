@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 const contactSchema = {
   "@context": "https://schema.org",
   "@type": "ContactPoint",
-  "telephone": "+254-720-899-402",
+  "telephone": "+254741020481",
   "email": "info@hippotransfersandadventures.com",
   "contactType": "customer service",
   "availableLanguage": ["English"],
@@ -97,12 +97,12 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-label-sm text-xs text-stone-500 uppercase tracking-widest mb-1 font-semibold">Call or WhatsApp</h3>
                     <a 
-                      href="https://wa.me/254720899402" 
+                      href="https://wa.me/254741020481" 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="font-body-md text-[#2D3921] font-medium hover:text-[#C6893F] transition-colors duration-200 block"
                     >
-                      +254 720 899 402
+                      +254 741 020 481
                     </a>
                   </div>
                 </div>

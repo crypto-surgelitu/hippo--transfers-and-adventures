@@ -206,7 +206,7 @@ export default function ExcursionDetailPage({ params }: { params: { slug: string
         </p>
         <WhatsAppCTA 
           text="Book Now via WhatsApp" 
-          href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '254720899402'}`}
+          href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '254741020481'}`}
         />
       </section>
     </main>

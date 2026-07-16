@@ -114,8 +114,8 @@ export function Footer() {
             <ul className="flex flex-col gap-5">
               <li className="flex items-start gap-3 text-amber-100/75">
                 <Phone size={16} className="text-amber-300 shrink-0 mt-0.5" />
-                <a href="https://wa.me/254720899402" target="_blank" rel="noopener noreferrer" className="font-sans text-sm whitespace-nowrap hover:text-amber-300 transition-colors duration-200">
-                  +254 720 899 402
+                <a href="https://wa.me/254741020481" target="_blank" rel="noopener noreferrer" className="font-sans text-sm whitespace-nowrap hover:text-amber-300 transition-colors duration-200">
+                  +254 741 020 481
                 </a>
               </li>
               <li className="flex items-start gap-3 text-amber-100/75">

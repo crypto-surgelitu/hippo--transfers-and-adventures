@@ -46,7 +46,7 @@ const homeSchema = {
     { "@type": "City", "name": "Malindi" },
     { "@type": "City", "name": "Watamu" }
   ],
-  "telephone": "+254-720-899-402",
+  "telephone": "+254741020481",
   "email": "info@hippotransfersandadventures.com",
   "priceRange": "$$",
   "sameAs": [

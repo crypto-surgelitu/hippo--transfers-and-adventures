@@ -214,7 +214,7 @@ export default function PackageItineraryPage({ params }: { params: { slug: strin
         </p>
         <WhatsAppCTA 
           text="Contact Us to Book via WhatsApp" 
-          href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '254720899402'}`}
+          href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '254741020481'}`}
         />
       </section>
     </main>
